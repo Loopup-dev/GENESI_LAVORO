@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Candidati / Prenota un colloquio — Genesi Lavoro</title>
+<meta name="description" content="Prenota un colloquio gratuito con Genesi Lavoro, in sede o su Google Meet. Ti aiutiamo a scegliere il corso e a capire se puoi farlo gratis. WhatsApp e telefono 0965 375421." />
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,500;0,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}html,body{margin:0;padding:0}
+  body{background:#F7F3EC;color:#4A2B25;font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:#8A4B3A;text-decoration:none}a:hover{color:#B8925A}
+  input,select,textarea{font-family:'Inter',sans-serif}
+  input::placeholder,textarea::placeholder{color:#a99f92}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:#7C8A5A !important}
+  ::selection{background:#B8925A;color:#FBF8F2}
+  @keyframes gl-fade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+  @media(max-width:900px){[data-nav-links]{display:none !important}[data-split]{grid-template-columns:1fr !important}[data-row]{grid-template-columns:1fr !important}[data-pad]{padding-left:22px !important;padding-right:22px !important}}
+</style>
+</helmet>
+
+<div style="position:relative;width:100%;overflow:hidden">
+  <nav data-pad style="position:sticky;top:0;z-index:900;display:flex;align-items:center;justify-content:space-between;padding:16px 40px;background:rgba(247,243,236,.9);backdrop-filter:blur(12px);border-bottom:1px solid rgba(74,43,37,.08)">
+    <a href="Home.dc.html" style="display:flex;align-items:center;gap:12px;color:#4A2B25"><span style="width:44px;height:44px;border-radius:50%;background:#FBF8F2;box-shadow:0 3px 10px rgba(74,43,37,.1);display:flex;align-items:center;justify-content:center;flex:none"><img src="assets/logo.jpg" alt="" style="width:36px;height:36px;object-fit:contain;border-radius:50%" /></span><span style="display:flex;flex-direction:column;line-height:1"><span style="font-family:'Playfair Display',serif;font-weight:700;font-size:19px">Genesi Lavoro</span><span style="font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:#8C8478;margin-top:3px">Formazione Professionale</span></span></a>
+    <div data-nav-links style="display:flex;align-items:center;gap:30px">
+      <a href="corsi.dc.html" style="font-size:14px;font-weight:500;color:#4A2B25">Corsi</a>
+      <a href="finanziamenti.dc.html" style="font-size:14px;font-weight:500;color:#4A2B25">Finanziamenti</a>
+      <a href="eventi.dc.html" style="font-size:14px;font-weight:500;color:#4A2B25">Eventi</a>
+      <a href="blog.dc.html" style="font-size:14px;font-weight:500;color:#4A2B25">Blog</a>
+      <a href="Home.dc.html#chisiamo" style="font-size:14px;font-weight:500;color:#4A2B25">Chi siamo</a>
+    </div>
+    <a href="candidati.dc.html" style="font-size:13px;font-weight:600;color:#FBF8F2;background:#B8925A;padding:11px 22px;border-radius:100px;box-shadow:0 5px 16px rgba(184,146,90,.32)">Candidati</a>
+  </nav>
+
+  <div data-split data-pad style="max-width:1240px;margin:0 auto;padding:70px 40px 90px;display:grid;grid-template-columns:0.85fr 1.15fr;gap:60px;align-items:start">
+
+    <!-- LEFT: intro + direct contacts -->
+    <div style="position:sticky;top:110px">
+      <a href="Home.dc.html" style="font-size:13px;color:#8C8478">← Torna alla home</a>
+      <div style="font-size:12px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:#B8925A;margin:26px 0 16px">Fai il primo passo</div>
+      <h1 style="font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(36px,4.6vw,58px);line-height:1.02;letter-spacing:-.02em;margin:0">Prenota il tuo colloquio.</h1>
+      <p style="font-size:16px;line-height:1.65;color:#5c4038;margin:22px 0 32px">Raccontaci il tuo obiettivo: ti aiutiamo a scegliere il corso e a capire se puoi farlo gratis. In sede o su Google Meet — decidi tu.</p>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <a href="https://wa.me/390965375421" target="_blank" style="display:flex;align-items:center;gap:12px;background:#FBF8F2;border:1px solid rgba(74,43,37,.1);border-radius:12px;padding:16px 18px;color:#4A2B25;transition:border-color .25s" style-hover="border-color:#7C8A5A"><span style="font-size:22px">💬</span><span><span style="display:block;font-weight:600;font-size:15px">Scrivici su WhatsApp</span><span style="font-size:13px;color:#8C8478">Risposta veloce in orario d'ufficio</span></span></a>
+        <a href="tel:0965375421" style="display:flex;align-items:center;gap:12px;background:#FBF8F2;border:1px solid rgba(74,43,37,.1);border-radius:12px;padding:16px 18px;color:#4A2B25;transition:border-color .25s" style-hover="border-color:#7C8A5A"><span style="font-size:22px">📞</span><span><span style="display:block;font-weight:600;font-size:15px">0965 375421</span><span style="font-size:13px;color:#8C8478">lun–sab · 9–12 / 16–19</span></span></a>
+        <div style="display:flex;align-items:center;gap:12px;background:#FBF8F2;border:1px solid rgba(74,43,37,.1);border-radius:12px;padding:16px 18px"><span style="font-size:22px">📍</span><span><span style="display:block;font-weight:600;font-size:15px">Via Sbarre Inferiori 262</span><span style="font-size:13px;color:#8C8478">89129 Reggio Calabria</span></span></div>
+      </div>
+    </div>
+
+    <!-- RIGHT: form -->
+    <div style="background:#FBF8F2;border:1px solid rgba(74,43,37,.1);border-radius:22px;box-shadow:0 20px 60px rgba(74,43,37,.09);padding:38px 38px 40px">
+
+      <sc-if value="{{ showForm }}" hint-placeholder-val="{{ true }}">
+        <form onSubmit="{{ onSubmit }}">
+          <div data-row style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+            <label style="display:block"><span style="display:block;font-size:12.5px;font-weight:600;color:#5c4038;margin-bottom:7px">Nome e cognome *</span><input required type="text" placeholder="Es. Maria Rossi" style="width:100%;font-size:15px;padding:13px 15px;border:1.5px solid rgba(74,43,37,.16);border-radius:10px;background:#F7F3EC;color:#4A2B25" /></label>
+            <label style="display:block"><span style="display:block;font-size:12.5px;font-weight:600;color:#5c4038;margin-bottom:7px">Telefono *</span><input required type="tel" placeholder="Es. 333 1234567" style="width:100%;font-size:15px;padding:13px 15px;border:1.5px solid rgba(74,43,37,.16);border-radius:10px;background:#F7F3EC;color:#4A2B25" /></label>
+          </div>
+          <label style="display:block;margin-bottom:16px"><span style="display:block;font-size:12.5px;font-weight:600;color:#5c4038;margin-bottom:7px">Email</span><input type="email" placeholder="nome@email.it" style="width:100%;font-size:15px;padding:13px 15px;border:1.5px solid rgba(74,43,37,.16);border-radius:10px;background:#F7F3EC;color:#4A2B25" /></label>
+          <label style="display:block;margin-bottom:20px"><span style="display:block;font-size:12.5px;font-weight:600;color:#5c4038;margin-bottom:7px">Corso di interesse</span>
+            <select style="width:100%;font-size:15px;padding:13px 15px;border:1.5px solid rgba(74,43,37,.16);border-radius:10px;background:#F7F3EC;color:#4A2B25">
+              <option>Non ho ancora deciso — aiutatemi voi</option>
+              <option>OSS — Operatore Socio Sanitario</option>
+              <option>Tecnico del Suono</option>
+              <option>Programmazione e Sviluppo Web</option>
+              <option>Cybersecurity Specialist</option>
+              <option>Tecnico di Meccatronica</option>
+              <option>Tecnico Amministrativo Contabile</option>
+              <option>Somministrazione Alimenti e Bevande</option>
+              <option>Dizione, Recitazione e Doppiaggio</option>
+              <option>Operatore del Verde e Forestale</option>
+            </select>
+          </label>
+
+          <div style="font-size:12.5px;font-weight:600;color:#5c4038;margin-bottom:10px">Modalità del colloquio *</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px">
+            <button type="button" onClick="{{ setSede }}" style="{{ sedeStyle }}"><span style="font-size:20px">🏫</span><span style="font-weight:600;font-size:14.5px">In sede</span><span style="font-size:12px;color:#8C8478">Via Sbarre Inferiori 262</span></button>
+            <button type="button" onClick="{{ setMeet }}" style="{{ meetStyle }}"><span style="font-size:20px">💻</span><span style="font-weight:600;font-size:14.5px">Google Meet</span><span style="font-size:12px;color:#8C8478">Videochiamata online</span></button>
+          </div>
+
+          <sc-if value="{{ isMeet }}" hint-placeholder-val="{{ false }}">
+            <div style="background:rgba(124,138,90,.1);border:1px solid rgba(124,138,90,.28);border-radius:12px;padding:16px 18px;margin-bottom:20px;animation:gl-fade .4s both">
+              <div style="font-size:12.5px;font-weight:600;color:#5f6d42;margin-bottom:10px">Scegli uno slot per la call</div>
+              <div style="display:flex;flex-wrap:wrap;gap:8px">
+                <sc-for list="{{ slots }}" as="s" hint-placeholder-count="4">
+                  <button type="button" onClick="{{ s.onClick }}" style="{{ s.style }}">{{ s.label }}</button>
+                </sc-for>
+              </div>
+            </div>
+          </sc-if>
+
+          <div data-row style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+            <label style="display:block"><span style="display:block;font-size:12.5px;font-weight:600;color:#5c4038;margin-bottom:7px">Data preferita</span><input type="date" style="width:100%;font-size:15px;padding:12px 15px;border:1.5px solid rgba(74,43,37,.16);border-radius:10px;background:#F7F3EC;color:#4A2B25" /></label>
+            <label style="display:block"><span style="display:block;font-size:12.5px;font-weight:600;color:#5c4038;margin-bottom:7px">Fascia oraria</span><select style="width:100%;font-size:15px;padding:12px 15px;border:1.5px solid rgba(74,43,37,.16);border-radius:10px;background:#F7F3EC;color:#4A2B25"><option>Mattina (9–12)</option><option>Pomeriggio (16–19)</option></select></label>
+          </div>
+          <label style="display:block;margin-bottom:24px"><span style="display:block;font-size:12.5px;font-weight:600;color:#5c4038;margin-bottom:7px">Note</span><textarea rows="3" placeholder="Raccontaci il tuo obiettivo, la tua situazione, eventuali domande…" style="width:100%;font-size:15px;padding:13px 15px;border:1.5px solid rgba(74,43,37,.16);border-radius:10px;background:#F7F3EC;color:#4A2B25;resize:vertical"></textarea></label>
+
+          <button type="submit" style="width:100%;cursor:pointer;font-family:'Inter',sans-serif;font-size:16px;font-weight:600;color:#FBF8F2;background:#4A2B25;border:none;padding:17px;border-radius:100px;transition:background .25s" style-hover="background:#8A4B3A">Invia la richiesta di colloquio →</button>
+          <p style="font-size:11.5px;line-height:1.5;color:#a2917f;margin:16px 0 0;text-align:center">Inviando accetti di essere ricontattato/a. I dati sono trattati secondo il GDPR. Prototipo dimostrativo: l'invio non recapita ancora una email reale.</p>
+        </form>
+      </sc-if>
+
+      <sc-if value="{{ showThanks }}" hint-placeholder-val="{{ false }}">
+        <div style="text-align:center;padding:20px 0 10px;animation:gl-fade .5s both">
+          <div style="width:72px;height:72px;border-radius:50%;background:rgba(124,138,90,.16);display:flex;align-items:center;justify-content:center;font-size:34px;margin:0 auto 22px">🌱</div>
+          <div style="font-family:'Playfair Display',serif;font-size:30px;line-height:1.15;margin-bottom:14px">Richiesta inviata!</div>
+          <p style="font-size:15.5px;line-height:1.65;color:#5c4038;max-width:42ch;margin:0 auto 26px">Grazie. Ti ricontatteremo al più presto per confermare il tuo colloquio <strong>{{ modeLabel }}</strong>. Nel frattempo, puoi scriverci su WhatsApp per qualsiasi cosa.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center">
+            <a href="https://wa.me/390965375421" target="_blank" style="font-size:14.5px;font-weight:600;color:#4A2B25;background:#B8925A;padding:14px 26px;border-radius:100px">💬 Apri WhatsApp</a>
+            <a href="corsi.dc.html" style="font-size:14.5px;font-weight:600;color:#4A2B25;padding:14px 24px;border-radius:100px;border:1.5px solid rgba(74,43,37,.2)">Esplora i corsi</a>
+          </div>
+          <button type="button" onClick="{{ reset }}" style="margin-top:22px;cursor:pointer;background:none;border:none;font-family:'Inter',sans-serif;font-size:13.5px;color:#8C8478">↺ Invia un'altra richiesta</button>
+        </div>
+      </sc-if>
+
+    </div>
+  </div>
+
+  <footer data-pad style="background:#4A2B25;color:#F7F3EC;padding:48px 40px;text-align:center">
+    <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:20px;color:#B8925A;margin:0 0 8px">Sapere · Saper fare · Saper essere</p>
+    <div style="font-size:13px;color:rgba(247,243,236,.7)">Genesi Lavoro · P.IVA 92104080806 · Accreditamento Regione Calabria D.D. 3251/2022</div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { mode: "sede", slot: null, submitted: false };
+
+  renderVals() {
+    const isMeet = this.state.mode === "meet";
+    const modeCard = (active) => "display:flex;flex-direction:column;gap:4px;text-align:left;cursor:pointer;font-family:'Inter',sans-serif;padding:15px 16px;border-radius:12px;transition:all .25s;background:" + (active ? "#fff" : "#F7F3EC") + ";border:2px solid " + (active ? "#7C8A5A" : "rgba(74,43,37,.14)");
+    const slotChip = (active) => "cursor:pointer;font-family:'Inter',sans-serif;font-size:13px;font-weight:500;padding:8px 14px;border-radius:100px;transition:all .2s;border:1.5px solid " + (active ? "#5f6d42" : "rgba(124,138,90,.4)") + ";background:" + (active ? "#7C8A5A" : "transparent") + ";color:" + (active ? "#fff" : "#5f6d42");
+
+    const SLOTS = ["Lun · 10:00", "Mar · 17:00", "Gio · 11:00", "Ven · 18:00"];
+    const slots = SLOTS.map(s => ({ label: s, style: slotChip(this.state.slot === s), onClick: () => this.setState({ slot: s }) }));
+
+    return {
+      showForm: !this.state.submitted,
+      showThanks: this.state.submitted,
+      isMeet,
+      sedeStyle: modeCard(this.state.mode === "sede"),
+      meetStyle: modeCard(isMeet),
+      setSede: () => this.setState({ mode: "sede" }),
+      setMeet: () => this.setState({ mode: "meet" }),
+      slots,
+      modeLabel: isMeet ? ("su Google Meet" + (this.state.slot ? " (" + this.state.slot + ")" : "")) : "in sede a Reggio Calabria",
+      onSubmit: (e) => { e.preventDefault(); this.setState({ submitted: true }); window.scrollTo({ top: 0, behavior: "smooth" }); },
+      reset: () => this.setState({ submitted: false, slot: null })
+    };
+  }
+}
+</script>
+</body>
+</html>

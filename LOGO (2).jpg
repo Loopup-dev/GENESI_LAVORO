@@ -1,0 +1,55 @@
+# 02 — DESIGN SYSTEM — "Radici & Fioritura"
+
+> Palette dai colori REALI del logo (albero che cresce dal libro). Direzione: **chiaro, minimal, editoriale,
+> molto respiro** — ma percepito di **alto valore** (istituzionale + umano). Niente pesantezza: il lusso qui è
+> la pulizia, lo spazio bianco caldo, la tipografia e il racconto della crescita.
+
+## Concept visivo
+La metafora del brand ("Sapere · Saper fare · Saper essere" — l'albero che nasce dal libro) è il filo di tutto il
+sito: **radici nella conoscenza → tronco (il percorso) → fioritura (il lavoro)**. Un tratto/linea che "cresce"
+accompagna l'utente nello scroll come una pianta che germoglia.
+
+## Palette (reale, dal logo)
+| Ruolo | HEX | Uso |
+|---|---|---|
+| **Espresso** (primario) | `#4A2B25` | Testo, titoli, wordmark |
+| **Terracotta** | `#8A4B3A` | Secondario, tronco/linee, hover |
+| **Crema / avorio** | `#F7F3EC` | Sfondo principale |
+| **Bianco caldo** | `#FBF8F2` | Card, superfici |
+| **Oro / ottone** (accento premium) | `#B8925A` | CTA, filetti, dettagli di valore, badge accreditamento |
+| **Verde salvia** (crescita) | `#7C8A5A` | Accento "positivo/gratuito", icone finanziamenti, foglie |
+| **Blossom** (fiore) | `#C98BA8` | SOLO tocchi rari (highlight, hover fiore) |
+| **Testo muted** | `#8C8478` | Didascalie, sottotitoli |
+| **Hairline** | `rgba(74,43,37,0.12)` | Divisori sottili |
+
+**Regola:** 85% crema+espresso (base editoriale), **oro** per ciò che è premium/CTA, **verde salvia** per ciò che
+è opportunità/gratuito (finanziamenti, quiz idoneità). Blossom quasi assente = eleganza.
+
+## Tipografia
+Il wordmark "GENESI" è un serif classico maiuscolo → riprendiamo un serif elegante.
+- **Display / Titoli:** *Cormorant Garamond* o *Playfair Display* — serif alto valore, titoli ariosi.
+- **Corpo / UI:** *Inter* (alt. *Source Sans*) — pulito, leggibilissimo (è una scuola: chiarezza prima di tutto).
+- **Eyebrow/label:** Inter MAIUSCOLO, letter-spacing 0.22em, colore oro o salvia.
+- Numeri/statistiche in serif grande (per i count-up: "dal 2018", "N corsi", "N corsisti").
+
+## Motion (elegante, non invadente)
+- **Smooth scroll** (Lenis). Easing morbido cubic-bezier(0.16,1,0.3,1), durate 0.6–1.0s.
+- **Firma del sito — "l'albero che cresce":** una linea/ramo SVG che si disegna (stroke-dashoffset) lungo lo scroll
+  della home, collegando le sezioni come i rami di un albero; ai nodi "sbocciano" i punti chiave.
+- **Reveal on scroll** (fade + translateY + clip), **parallax** leggero sulle immagini, **count-up** sui numeri.
+- **Hover** con micro-scala e sottolineatura oro. **prefers-reduced-motion** rispettato; mobile semplificato.
+
+## Elementi di fiducia (istituzionali — danno "alto valore")
+Da mostrare con eleganza (loghi in scala di grigio/monocromo che si colorano all'hover):
+- **Accreditamento Regione Calabria — D.D. N.3251 del 25.03.2022** (badge in home)
+- Loghi **UE · Regione Calabria · Città Metropolitana di RC** (dal logo/partnership)
+- "Dal 2018" · loghi programmi **GOL / Garanzia Giovani**
+- Partner/docenti di prestigio (es. Antonio Taccone, fonico dei Pooh; Fabrizio Simoncioni) nei corsi spettacolo.
+
+## Immagini
+Foto reali di aule/laboratori/corsisti/eventi (già in cartella: classi Tecnico del Suono, Sanremo Rock). Trattamento
+naturale e luminoso, tono caldo. Dove mancano → **placeholder eleganti** (crema + icona albero + etichetta).
+
+## Iconografia
+Set lineare sottile (1,5px), stile essenziale, colore espresso/salvia. Icone per: aree corsi, finanziamenti,
+eventi, sede, telefono, WhatsApp, Meet.

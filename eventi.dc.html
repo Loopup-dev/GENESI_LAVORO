@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Eventi & Masterclass — Genesi Lavoro | Reggio Calabria</title>
+<meta name="description" content="Eventi, spettacoli e masterclass di Genesi Lavoro a Reggio Calabria: Progetto Agorà con Giovanni Baglioni, spettacoli all'Auditorium Lucianum, Sanremo Rock all'Arena dello Stretto." />
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,500;0,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}html,body{margin:0;padding:0}
+  body{background:#F7F3EC;color:#4A2B25;font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:#8A4B3A;text-decoration:none}a:hover{color:#B8925A}
+  ::selection{background:#B8925A;color:#FBF8F2}
+  @media(max-width:900px){[data-nav-links]{display:none !important}[data-arch]{grid-template-columns:1fr !important}[data-feat]{grid-template-columns:1fr !important}[data-pad]{padding-left:22px !important;padding-right:22px !important}}
+</style>
+</helmet>
+
+<div style="position:relative;width:100%;overflow:hidden">
+  <nav data-pad style="position:sticky;top:0;z-index:900;display:flex;align-items:center;justify-content:space-between;padding:16px 40px;background:rgba(247,243,236,.9);backdrop-filter:blur(12px);border-bottom:1px solid rgba(74,43,37,.08)">
+    <a href="Home.dc.html" style="display:flex;align-items:center;gap:12px;color:#4A2B25"><span style="width:44px;height:44px;border-radius:50%;background:#FBF8F2;box-shadow:0 3px 10px rgba(74,43,37,.1);display:flex;align-items:center;justify-content:center;flex:none"><img src="assets/logo.jpg" alt="" style="width:36px;height:36px;object-fit:contain;border-radius:50%" /></span><span style="display:flex;flex-direction:column;line-height:1"><span style="font-family:'Playfair Display',serif;font-weight:700;font-size:19px">Genesi Lavoro</span><span style="font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:#8C8478;margin-top:3px">Formazione Professionale</span></span></a>
+    <div data-nav-links style="display:flex;align-items:center;gap:30px">
+      <a href="corsi.dc.html" style="font-size:14px;font-weight:500;color:#4A2B25">Corsi</a>
+      <a href="finanziamenti.dc.html" style="font-size:14px;font-weight:500;color:#4A2B25">Finanziamenti</a>
+      <a href="eventi.dc.html" style="font-size:14px;font-weight:600;color:#8A4B3A">Eventi</a>
+      <a href="blog.dc.html" style="font-size:14px;font-weight:500;color:#4A2B25">Blog</a>
+      <a href="Home.dc.html#chisiamo" style="font-size:14px;font-weight:500;color:#4A2B25">Chi siamo</a>
+    </div>
+    <a href="candidati.dc.html" style="font-size:13px;font-weight:600;color:#FBF8F2;background:#B8925A;padding:11px 22px;border-radius:100px;box-shadow:0 5px 16px rgba(184,146,90,.32)">Candidati</a>
+  </nav>
+
+  <header data-pad style="padding:70px 40px 46px;max-width:1240px;margin:0 auto">
+    <a href="Home.dc.html" style="font-size:13px;color:#8C8478">← Torna alla home</a>
+    <div style="font-size:12px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:#C98BA8;margin:26px 0 16px">Eventi & Masterclass</div>
+    <h1 style="font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(40px,6vw,80px);line-height:1;letter-spacing:-.02em;margin:0;max-width:14ch">Genesi si vive, non solo si studia.</h1>
+    <p style="font-size:17px;line-height:1.6;color:#5c4038;max-width:56ch;margin:24px 0 0">Concerti, spettacoli, masterclass e incontri: la formazione diventa cultura e comunità. Ecco cosa bolle in pentola — e cosa abbiamo già portato a Reggio Calabria.</p>
+  </header>
+
+  <!-- PROSSIMI -->
+  <section data-pad style="max-width:1240px;margin:0 auto;padding:20px 40px 40px">
+    <div style="font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#7C8A5A;margin-bottom:22px;padding-bottom:14px;border-bottom:1px solid rgba(74,43,37,.12)">Prossimi eventi</div>
+    <div data-feat style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+      <sc-for list="{{ prossimi }}" as="e" hint-placeholder-count="2">
+        <div style="background:#FBF8F2;border:1px solid rgba(74,43,37,.09);border-radius:16px;padding:30px;display:flex;flex-direction:column">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
+            <div style="flex:none;width:62px;height:62px;border-radius:12px;background:#4A2B25;color:#F7F3EC;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1"><span style="font-family:'Playfair Display',serif;font-size:24px">{{ e.day }}</span><span style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;margin-top:2px">{{ e.month }}</span></div>
+            <div><div style="font-size:11.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#C98BA8">{{ e.tag }}</div><div style="font-size:13px;color:#8C8478;margin-top:4px">{{ e.venue }}</div></div>
+          </div>
+          <h3 style="font-family:'Playfair Display',serif;font-size:24px;line-height:1.18;margin:0 0 8px">{{ e.title }}</h3>
+          <p style="font-size:14px;line-height:1.6;color:#5c4038;margin:0 0 20px;flex:1">{{ e.desc }}</p>
+          <div style="display:flex;align-items:center;justify-content:space-between"><span style="font-size:12.5px;color:#8C8478">Ospite: {{ e.guest }}</span><a href="candidati.dc.html" style="font-size:13.5px;font-weight:600;color:#8A4B3A;border-bottom:1.5px solid #B8925A;padding-bottom:2px">Prenota posto →</a></div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- ARCHIVIO -->
+  <section data-pad style="max-width:1240px;margin:0 auto;padding:50px 40px 100px">
+    <div style="font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#8C8478;margin-bottom:22px;padding-bottom:14px;border-bottom:1px solid rgba(74,43,37,.12)">Archivio · cosa abbiamo portato in scena</div>
+    <div data-arch style="display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:20px">
+      <div style="position:relative;min-height:340px;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(180deg,rgba(74,43,37,.05),rgba(74,43,37,.86)),url('assets/sanremorock.jpeg');background-size:cover;background-position:center;padding:28px;color:#F7F3EC">
+        <div style="font-size:11.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#B8925A;margin-bottom:8px">Luglio 2023</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:26px;line-height:1.12;margin:0 0 6px">Sanremo Rock — Finale Multiregionale Sud Italia</h3>
+        <div style="font-size:13.5px;color:rgba(247,243,236,.82)">Summer Live Tour · Arena dello Stretto, Reggio Calabria</div>
+      </div>
+      <div style="background:#FBF8F2;border:1px solid rgba(74,43,37,.09);border-radius:16px;padding:28px;display:flex;flex-direction:column"><div style="font-size:11.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#7C8A5A;margin-bottom:12px">Progetto Agorà</div><h3 style="font-family:'Playfair Display',serif;font-size:22px;line-height:1.16;margin:0 0 8px">«Forza venite gente»</h3><p style="font-size:13.5px;line-height:1.6;color:#5c4038;margin:0;flex:1">Il musical su San Francesco con Michele Paolicelli. Auditorium Lucianum.</p></div>
+      <div style="background:#FBF8F2;border:1px solid rgba(74,43,37,.09);border-radius:16px;padding:28px;display:flex;flex-direction:column"><div style="font-size:11.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#7C8A5A;margin-bottom:12px">Masterclass</div><h3 style="font-family:'Playfair Display',serif;font-size:22px;line-height:1.16;margin:0 0 8px">Tecnico del Suono con Fabrizio Simoncioni</h3><p style="font-size:13.5px;line-height:1.6;color:#5c4038;margin:0;flex:1">Incontro con uno dei più importanti fonici italiani, per i corsisti dello spettacolo.</p></div>
+    </div>
+  </section>
+
+  <footer data-pad style="background:#4A2B25;color:#F7F3EC;padding:48px 40px;text-align:center">
+    <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:20px;color:#B8925A;margin:0 0 8px">Sapere · Saper fare · Saper essere</p>
+    <div style="font-size:13px;color:rgba(247,243,236,.7)">Genesi Lavoro · Via Sbarre Inferiori 262, Reggio Calabria · <a href="tel:0965375421" style="color:#F7F3EC">0965 375421</a></div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const prossimi = [
+      { day: "—", month: "TBD", tag: "Progetto Agorà · Concerto", venue: "Auditorium Lucianum, RC", title: "Giovanni Baglioni in concerto", desc: "Chitarra fingerstyle e racconto: un dialogo tra musica e generazioni, aperto a corsisti e città. Data in via di definizione.", guest: "Giovanni Baglioni" },
+      { day: "—", month: "TBD", tag: "Progetto Agorà · Teatro", venue: "Auditorium Lucianum, RC", title: "«Novecento» da Alessandro Baricco", desc: "Il celebre monologo del pianista nato e vissuto su una nave, con l'Associazione Manacuma. Data in via di definizione.", guest: "Ass. Manacuma" }
+    ];
+    return { prossimi };
+  }
+}
+</script>
+</body>
+</html>
