@@ -1,87 +1,92 @@
-# GENESI LAVORO — Discovery & impostazione sito (documento di lavoro)
+# 04 — CONTENUTI / COPY (italiano)
 
-> Base di partenza per costruire insieme il prompt da consegnare a Claude Design. Contiene: dati reali raccolti,
-> quadro dei finanziamenti, proposta di architettura UX, domande aperte. Il sito lo genererà Claude Design.
+> Testi pronti. Le parti tra [ ] e le voci "PLACEHOLDER" vanno confermate col cliente (corsi, recensioni, blog, numeri).
 
-## 1. Dati reali (da genesilavoro.it — lug 2026, DA CONFERMARE)
-- **Chi è:** scuola di formazione professionale, fondata nel **2018** a Reggio Calabria.
-- **Mission (fortissima come leva narrativa):** *"abbattere gli stereotipi di un Sud Italia che non cresce"* →
-  formazione qualificante + accompagnamento al lavoro + consulenza.
-- **Aree formative:**
-  - Socio-sanitaria: **OSS / OSSS**
-  - Informatica: programmazione, **cybersecurity**, sviluppo web, sistemi di comunicazione
-  - Artigianale/tecnica: **meccatronica**
-  - Amministrazione/HR: operatore procedure amministrative
-  - Spettacolo: **dizione, recitazione, doppiaggio**, tecnico audio/mixaggio
-- **Corsi GOL gratuiti** già offerti (Garanzia Occupabilità Lavoratori).
-- **Accreditamento:** collabora con Fondazione Lavoro e partner regionali → probabile **ente accreditato Regione
-  Calabria** (numero accreditamento DA CONFERMARE).
-- **Contatti:** Via Sbarre Inferiori 262, 89129 Reggio Calabria · Tel **0965 375421** (lun–sab 9–12 / 16–19) ·
-  Email **formazione@genesilavoro.com** (⚠️ dominio sito è .it → confermare .com/.it) · Social: FB, IG, LinkedIn, WhatsApp.
-- **Sito attuale (da sostituire):** sezioni Agenda, Sede, Segreteria, Servizi, carrello acquisti online.
+## Navigazione
+Corsi · Finanziamenti · Eventi · Blog · Chi siamo — CTA: **Candidati**
 
-## 2. Quadro finanziamenti / politiche attive (per le sezioni "corso gratis" e "NASPI/GOL")
-### Programma GOL (Regione Calabria, PNRR) — corsi GRATUITI
-- **Beneficiari:** disoccupati percettori **NASPI/DIS-COLL**, percettori di sostegno al reddito, NEET under 30,
-  donne svantaggiate, over 55, disabili/fragili, disoccupati da 6+ mesi, working poor.
-- **5 percorsi:** 1) Reinserimento occupazionale · 2) Upskilling (aggiornamento) · 3) Reskilling (riqualificazione)
-  · 4) Lavoro e inclusione (fragili) · 5) Ricollocazione collettiva (crisi aziendali).
-- **Accesso:** tramite **Centro per l'Impiego** (profilazione) → poi ente accreditato dal *Catalogo Offerta GOL*.
-- **Condizionalità:** per percettori NASPI/DIS-COLL/RdC la partecipazione ai corsi è obbligatoria per mantenere il sostegno.
-### Altri bandi Calabria Europa (calabriaeuropa.regione.calabria.it) — per la sezione Blog/News
-- GOL **Avviso 5** (PNRR, tirocini/percorsi) · **Lavoro Giovani Calabria** · **Sistema Duale** ·
-  **Incentivi formazione continua imprese** (5 mln €, domande da 28/01/2026) · **Certificazione competenze digitali** ·
-  Autoimpiego · Dunamis (incentivi assunzioni). → Fonti da monitorare per il blog dei bandi.
+## Hero (manifesto)
+- Eyebrow: **SCUOLA DI FORMAZIONE PROFESSIONALE · REGGIO CALABRIA · DAL 2018**
+- Titolo: **Qui il Sud non aspetta. Cresce.**
+- Sottotitolo: *Sapere, saper fare, saper essere: trasformiamo la formazione in lavoro vero.*
+- CTA: **Scopri i corsi** · **Verifica se puoi farlo gratis**
+- Micro: Accreditati Regione Calabria · D.D. 3251/2022
 
-## 3. La sfida UX
-Cinque pubblici diversi in un solo sito, senza confondere nessuno. Si riducono a **3 intenti**:
-1. **"Voglio formarmi e trovare lavoro"** (neodiplomati + chi vuole candidarsi) → Catalogo corsi + Candidatura.
-2. **"Voglio farlo gratis / con i fondi"** (incentivi + NASPI/GOL) → Finanziamenti/GOL/Bandi + verifica idoneità.
-3. **"Cerco eventi/masterclass"** → Agenda eventi.
+## Manifesto
+**Da un libro nasce un albero.**
+Genesi Lavoro esiste per una cosa sola: dare alle persone del nostro territorio competenze che diventano lavoro.
+Dalla conoscenza (sapere) alla pratica (saper fare), fino alla persona (saper essere). Dal 2018 formiamo, orientiamo
+e accompagniamo al lavoro — spesso **gratuitamente**, grazie ai fondi pubblici.
 
-## 4. Proposta di architettura (il "viaggio")
-0. **Preloader** con logo.
-1. **Hero immersivo + manifesto** — usa la mission ("il Sud che cresce"). Emozionale, alto valore, scroll cue.
-2. **BIVIO INTELLIGENTE ("Da dove vuoi ripartire?")** — 3 grandi porte animate che instradano i 3 intenti.
-   È il cuore del "viaggio": l'utente si auto-identifica e viene guidato.
-3. **Corsi** — catalogo filtrabile per area (Socio-sanitario · IT · Meccatronica · Spettacolo · Amministrazione).
-   Card premium → scheda corso → **"Candidati"**.
-4. **Finanziamenti & Opportunità** — spiega GOL e bandi in modo semplice (chi può, come, gratis) +
-   **strumento "Verifica se hai diritto a un corso gratuito"** (mini-quiz: NASPI? disoccupato? under 30?… → esito).
-5. **Eventi & Masterclass** — agenda con prossimi eventi culturali.
-6. **Chi siamo** — mission, dal 2018, numeri, accreditamento, sede/aule (cucina a vista del valore: aule, laboratori).
-7. **Candidatura / Prenota un colloquio** — in sede o su **Google Meet** (booking con scelta data/ora).
-8. **Blog / News bandi** — articoli sui bandi attivi (chi può accedere, come usufruirne).
-9. **Contatti + mappa + footer.**
+## Bivio — "Da dove vuoi ripartire?"
+- 🎓 **Voglio specializzarmi e trovare lavoro** — *Scegli il corso giusto per la tua carriera.*
+- 💶 **Voglio formarmi gratis o con i fondi** — *Scopri se hai diritto a un corso finanziato.*
+- 🎭 **Cerco eventi e masterclass** — *Musica, cultura, incontri: vivi Genesi.*
 
-### 2 funzionalità "killer" (fanno percepire alto valore + utilità reale)
-- **Verifica idoneità** (quiz finanziamenti) → risponde all'ansia n.1 dell'utente calabrese: "posso farlo gratis?".
-- **Prenota colloquio** (sede/Meet) → trasforma la visita in lead concreto.
+## Corsi in vetrina — "Prossimi a partire" (PLACEHOLDER — da confermare quali)
+Selezione provvisoria dallo storico (da sostituire con i corsi reali in partenza):
+1. **OSS — Operatore Socio Sanitario** · Socio-sanitario · Certificato Regione Calabria · *rate disponibili*
+2. **Tecnico del Suono** · Spettacolo/Audio · docenti di livello nazionale · *finanziabile*
+3. **Somministrazione Alimenti e Bevande** · Ho.Re.Ca · *anche gratuito via GOL*
+4. **Tecnico Amministrativo Contabile** · Amministrazione · *gratuito (GOL)*
 
-## 5. DECISIONI CONFERMATE (dal cliente)
-- **Accreditamento Regione Calabria: D.D. N.3251 del 25.03.2022** → in evidenza in home (autorevolezza).
-- **Struttura: IBRIDA** — home immersiva one-page + pagine dedicate (Corsi, Finanziamenti, Blog).
-- **Corsi:** database in `Genesi_Corsi_Eventi.xlsx`. Prezzi = placeholder/simbolici da rifinire; **pagamento a rate** disponibile.
-  Ogni corso ha una **sezione dedicata con recensioni + foto + copy tipo blog** (esperienza e opportunità).
-- **Vetrina "Prossimi a partire":** gruppo di corsi (da definire quali) evidenziato in home.
-- **Blog bandi:** gestito da noi a partire dallo screening; aggiornamenti periodici su richiesta in chat.
-- **Colloquio/candidatura:** collegamento **WhatsApp** + **form per prenotare uno slot di call su Google Meet**.
-- **Eventi:** dal file (Sanremo Rock, Progetto Agorà con Baglioni, spettacoli Auditorium Lucianum, seminari).
+## Finanziamenti in breve
+**Molti dei nostri corsi sono gratuiti.**
+Grazie a **Programma GOL**, ai **bandi regionali** e al **Supporto Formazione e Lavoro (INPS)**, puoi formarti
+senza spendere — e in alcuni casi mantenendo il tuo sostegno al reddito.
+CTA: **Verifica in 1 minuto se hai diritto a un corso gratis →**
 
-## 6. BRAND / PALETTE (dal logo reale)
-Logo: **albero che cresce da un libro aperto**, motto **"Sapere · Saper fare · Saper essere"**; wordmark
-"GENESI Lavoro" serif marrone; presenti loghi **UE + Regione Calabria + Città Metropolitana**.
-Palette (chiaro/minimal/alto valore):
-- Marrone espresso `#4A2B25` (primario, testo/wordmark)
-- Terracotta `#8A4B3A` (secondario)
-- Crema/avorio `#F7F3EC` (sfondo chiaro)
-- Oro/ottone `#B8925A` (accento premium, CTA)
-- Verde salvia `#7C8A5A` (accento "crescita/gratuito", dalle foglie)
-- Rosa blossom (dai fiori) — solo tocchi rari
-Motivo grafico ricorrente: **l'albero/la crescita** (radici nella conoscenza → fioritura nel lavoro) = il "viaggio".
+### Quiz "Hai diritto a un corso gratuito?" (domande)
+1. Attualmente sei… (Disoccupato/a · Occupato/a · Studente/ssa)
+2. Percepisci NASPI, DIS-COLL o un sostegno al reddito? (Sì / No)
+3. Quanti anni hai? (Under 30 · 30–54 · Over 55)
+4. Sei iscritto/a a un Centro per l'Impiego? (Sì / No / Non lo so)
+→ **Esito:** "Con ottima probabilità puoi accedere a un corso gratuito (es. GOL/SFL). Prenota un colloquio, ti
+guidiamo noi." + CTA. *(Disclaimer: esito indicativo, la verifica finale spetta al Centro per l'Impiego.)*
 
-## 7. Prossimi step
-1. ⏳ Screening bandi (in corso) → genera `01_SCREENING_BANDI.md` + alimenta il Blog.
-2. Estetica: definire con questi colori il design system.
-3. Costruire il prompt completo per Claude Design (come per Attimo).
-4. Da completare col cliente: durate/prezzi/recensioni/foto per corso, quali corsi in "Prossimi a partire".
+## Numeri (PLACEHOLDER — chiedere i reali)
+Dal **2018** · **[XX] corsi** erogati · **[XXX] corsisti** formati · **Accreditati Regione Calabria (D.D. 3251/2022)**
+
+## Chi siamo
+**Nati nel 2018 per abbattere uno stereotipo.**
+Quello di un Sud che non cresce. Genesi Lavoro è una scuola di formazione professionale accreditata dalla Regione
+Calabria: corsi qualificanti, docenti di valore, accompagnamento al lavoro e progetti con enti pubblici e imprese.
+Dalla sanità all'informatica, dalla meccatronica allo spettacolo: ogni corso è un seme che diventa opportunità.
+
+## Candidati / Prenota colloquio
+**Fai il primo passo.**
+Raccontaci il tuo obiettivo: ti aiutiamo a scegliere il corso e a capire se puoi farlo gratis.
+[Form: nome · telefono · email · corso di interesse · modalità (In sede / Google Meet) · data e ora preferite · note]
+Oppure: **Scrivici su WhatsApp** · **Chiama 0965 375421** (lun–sab 9–12 / 16–19).
+
+## Footer
+**Genesi Lavoro** — Scuola di Formazione Professionale (dal 2018)
+Via Sbarre Inferiori 262 — 89129 Reggio Calabria · Tel 0965 375421
+Email **formazione@genesilavoro.it** · P.IVA 92104080806 · Accreditamento Regione Calabria D.D. 3251/2022
+Social: Facebook · Instagram · LinkedIn · WhatsApp
+*Sapere · Saper fare · Saper essere*
+
+---
+
+## RECENSIONI — PLACEHOLDER (inventate, da sostituire con quelle reali)
+> ⚠️ Testi fittizi solo per impaginare. NON pubblicare senza consenso di ex corsisti reali.
+- ★★★★★ «Ho fatto il corso OSS e dopo tre mesi lavoravo in una RSA. Docenti presenti e tirocinio vero.» — *M. R., Reggio Calabria*
+- ★★★★★ «Il corso di Tecnico del Suono mi ha aperto un mondo: strumentazione professionale e docenti che lavorano davvero nel settore.» — *A. P.*
+- ★★★★★ «Non sapevo di poter studiare gratis con la NASPI. In segreteria mi hanno seguito passo passo.» — *G. C.*
+- ★★★★☆ «Ambiente umano e organizzato. Il corso amministrativo mi ha dato competenze subito spendibili.» — *S. L.*
+
+## BLOG — stub articoli (PLACEHOLDER, base: 01_SCREENING_BANDI.md)
+> Corpo articolo da completare; struttura pronta.
+1. **"Programma GOL in Calabria: come fare un corso gratis (anche con la NASPI)"**
+   Chi può accedere · come ci si iscrive al Centro per l'Impiego · quali corsi · [corpo…]
+2. **"Sistema Duale: qualifica e diploma professionale studiando e lavorando"**
+   Cos'è · a chi si rivolge · vantaggi dell'apprendistato · [corpo…]
+3. **"Supporto per la Formazione e il Lavoro (SFL): 500€ al mese mentre ti formi"**
+   Requisiti ISEE · come mantenere il beneficio frequentando un corso · [corpo…]
+4. **"Voucher competenze digitali under 35: fino a 800€ per certificarti"** — [corpo…]
+
+## SEO (esempi)
+- Home title: "Genesi Lavoro — Scuola di Formazione Professionale a Reggio Calabria (corsi anche gratuiti)"
+- Meta: "Corsi professionali a Reggio Calabria: OSS, informatica, meccatronica, tecnico del suono. Tanti corsi
+  gratuiti con GOL e bandi regionali. Accreditati Regione Calabria dal 2018. Candidati ora."
+- Keyword: corsi formazione Reggio Calabria, corso OSS Reggio Calabria, corsi gratuiti GOL Calabria, corso tecnico del suono Calabria.
