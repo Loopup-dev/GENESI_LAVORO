@@ -1,0 +1,4 @@
+
+# Build output — generato al deploy
+dist/
+genesilavoro-deploy.zip
