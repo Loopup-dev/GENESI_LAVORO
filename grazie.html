@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grazie — Genesi Lavoro</title>
+<meta name="description" content="La tua richiesta è stata inviata. Ti ricontatteremo il prima possibile.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,500;0,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}html,body{margin:0;padding:0}
+  body{background:#F7F3EC;color:#4A2B25;font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.55;min-height:100vh;display:flex;flex-direction:column}
+  a{color:#8A4B3A;text-decoration:none}a:hover{color:#B8925A}
+
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 40px;border-bottom:1px solid rgba(74,43,37,.08)}
+  .nav__brand{display:flex;align-items:center;gap:12px;color:#4A2B25}
+  .nav__brand-badge{width:44px;height:44px;border-radius:50%;background:#FBF8F2;box-shadow:0 3px 10px rgba(74,43,37,.1);display:flex;align-items:center;justify-content:center;flex:none}
+  .nav__brand-badge img{width:36px;height:36px;object-fit:contain;border-radius:50%}
+  .nav__brand-name{font-family:'Playfair Display',serif;font-weight:700;font-size:19px}
+  .nav__brand-sub{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:#8C8478;margin-top:3px;display:block}
+
+  main{flex:1;display:flex;align-items:center;justify-content:center;padding:60px 22px}
+  .box{max-width:560px;width:100%;text-align:center;background:#FBF8F2;border:1px solid rgba(74,43,37,.1);border-radius:22px;box-shadow:0 20px 60px rgba(74,43,37,.08);padding:56px 38px 46px}
+  .badge{width:86px;height:86px;border-radius:50%;background:rgba(124,138,90,.16);display:flex;align-items:center;justify-content:center;font-size:40px;margin:0 auto 24px}
+  h1{font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(30px,4vw,42px);line-height:1.1;letter-spacing:-.01em;margin:0 0 14px;color:#4A2B25}
+  .lead{font-size:16px;line-height:1.65;color:#5c4038;margin:0 0 28px}
+  .lead em{font-style:italic;color:#7C8A5A;font-weight:500}
+  .actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-bottom:26px}
+  .btn{font-size:14.5px;font-weight:600;padding:14px 24px;border-radius:100px;transition:transform .25s,box-shadow .25s;display:inline-flex;align-items:center;gap:8px}
+  .btn:hover{transform:translateY(-2px)}
+  .btn--primary{color:#4A2B25;background:#B8925A;box-shadow:0 6px 18px rgba(184,146,90,.28)}
+  .btn--primary:hover{color:#4A2B25;box-shadow:0 10px 24px rgba(184,146,90,.38)}
+  .btn--ghost{color:#4A2B25;border:1.5px solid rgba(74,43,37,.2)}
+  .btn--ghost:hover{color:#4A2B25;border-color:#8A4B3A}
+  .meta{font-size:13px;color:#8C8478}
+
+  .error-box{background:rgba(138,75,58,.08);border:1px solid rgba(138,75,58,.28);border-radius:12px;padding:14px 16px;margin:0 0 22px;color:#8A4B3A;font-size:13.5px;text-align:left}
+  .error-box[hidden]{display:none}
+
+  .footer{background:#4A2B25;color:#F7F3EC;padding:36px 40px;text-align:center}
+  .footer__motto{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:19px;color:#B8925A;margin:0 0 6px}
+  .footer__meta{font-size:12.5px;color:rgba(247,243,236,.7)}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="Home.dc.html" class="nav__brand">
+    <span class="nav__brand-badge"><img src="assets/logo.jpg" alt=""></span>
+    <span>
+      <span class="nav__brand-name">Genesi Lavoro</span>
+      <span class="nav__brand-sub">Formazione Professionale</span>
+    </span>
+  </a>
+</nav>
+
+<main>
+  <div class="box">
+    <div class="error-box" id="errorBox" hidden>
+      Attenzione: alcune informazioni non sono state ricevute correttamente.
+      Se il problema si ripete, scrivici direttamente a
+      <a href="mailto:formazione@genesilavoro.it">formazione@genesilavoro.it</a>.
+    </div>
+
+    <div class="badge">🌱</div>
+    <h1 id="title">Richiesta inviata!</h1>
+    <p class="lead" id="lead">
+      Grazie. Abbiamo ricevuto la tua richiesta e ti ricontatteremo il <em>prima possibile</em>.
+      Nel frattempo, per qualunque cosa puoi scriverci su WhatsApp o chiamarci in orario d'ufficio.
+    </p>
+
+    <div class="actions">
+      <a href="https://wa.me/390965375421" target="_blank" rel="noopener" class="btn btn--primary">💬 Apri WhatsApp</a>
+      <a href="Home.dc.html" class="btn btn--ghost">← Torna alla home</a>
+    </div>
+
+    <div class="meta">
+      📞 0965 375421 · lun–sab · 9–12 / 16–19<br>
+      📍 Via Sbarre Inferiori 262, Reggio Calabria
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <p class="footer__motto">Sapere · Saper fare · Saper essere</p>
+  <div class="footer__meta">Genesi Lavoro E.T.S. · P.IVA 92104080806 · Accreditamento D.D. 3251/2022</div>
+</footer>
+
+<script>
+(() => {
+  const params = new URLSearchParams(window.location.search);
+  const tipo = params.get('tipo');
+  const err  = params.get('err');
+
+  if (tipo === 'candidatura') {
+    document.getElementById('title').textContent = 'Candidatura ricevuta.';
+    document.getElementById('lead').innerHTML =
+      "Grazie. Se il tuo profilo rientra in un progetto in corso o in apertura, ti ricontatteremo entro <em>15 giorni lavorativi</em>. Ti abbiamo mandato una copia via email.";
+  } else if (tipo === 'colloquio') {
+    document.getElementById('title').textContent = 'Richiesta inviata!';
+    document.getElementById('lead').innerHTML =
+      "Grazie. Ti ricontatteremo <em>al più presto</em> per confermare il colloquio. Se hai lasciato l'email, ne trovi una copia in casella.";
+  }
+
+  if (err) {
+    document.getElementById('errorBox').hidden = false;
+  }
+})();
+</script>
+
+</body>
+</html>

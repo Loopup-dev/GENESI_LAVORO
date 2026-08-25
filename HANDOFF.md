@@ -43,6 +43,10 @@ Backup del vecchio WordPress:
 
 ## 2. BUG DA FIXARE (priorità utente) — task per la prossima sessione
 
+> **Aggiornamento 2026-08-25 pomeriggio (2ª sessione):** BUG 1 (form) risolto lato codice —
+> vedi §7 "Deploy backend form" per i passi che l'utente deve fare su cPanel per attivarlo.
+> BUG 2 e BUG 3 ancora aperti. `build_corsi.py` rimosso dal repo (era un PNG corrotto).
+
 ### 🐛 BUG 1 — Form contatti non funzionano (nessuna email arriva)
 
 **Problema:** L'utente ha detto: *"se compilo i form di contatto per prenotare una call dal sito non arrivano"*.
@@ -212,3 +216,98 @@ Tempo totale stimato: **3-4 ore** per una prossima sessione focused.
 
 **Autore handoff:** Claude Opus 4.7 · sessione 2026-08-25 pomeriggio
 **Prossimo Claude Code:** parti da qui, non ripartire da zero.
+
+---
+
+## 7. Deploy backend form (aggiunto 2026-08-25, 2ª sessione)
+
+### Cosa è stato aggiunto al repo
+
+```
+api/
+├── invia-colloquio.php        # endpoint form candidati
+├── invia-candidatura.php      # endpoint form lavora-con-noi (con upload CV)
+├── shared.php                 # helper (sanitize, honeypot, rate limit, PHPMailer wrapper)
+├── smtp-config.example.php    # template versionato
+├── smtp-config.php            # placeholder locale — NON in git, va compilato SUL SERVER
+├── vendor/PHPMailer/          # PHPMailer 6.9.1 bundled (3 file, ~230 KB totali)
+└── uploads/                   # cartella temporanea CV (creata al primo submit, cancellata dopo invio)
+grazie.html                    # thank-you page (?tipo=colloquio | ?tipo=candidatura)
+```
+
+Riscritti in HTML puro:
+- `candidati.dc.html` — form con `name=` corretti, honeypot, JS vanilla per mode/slot,
+  `action="/api/invia-colloquio.php"` + fallback fetch progressive-enhancement
+- `lavora-con-noi.dc.html` — aggiunto `action="/api/invia-candidatura.php"` + honeypot,
+  sostituito il fake setTimeout con `fetch()` reale
+
+### Passi che l'utente deve fare su cPanel per attivarlo
+
+**1. Verificare che l'account e-mail esista**
+
+cPanel → Account e-mail → deve esistere `formazione@genesilavoro.it`. Se manca, crearlo.
+Segnare host SMTP e password. Su VHosting il host tipico è `mail.genesilavoro.it`.
+
+**2. Deploy dei file sul server**
+
+Da terminale cPanel (Terminale nel pannello, oppure SSH):
+```bash
+cd /home/genesil1/public_html
+git pull origin main    # se il repo è già clonato lì; altrimenti scaricare zip da GitHub
+```
+
+Se il repo NON è clonato sul server, alternativa manuale via File Manager:
+- upload di `api/` (intera cartella), `grazie.html`, versioni aggiornate di `candidati.dc.html` e `lavora-con-noi.dc.html`
+
+**3. Compilare `api/smtp-config.php` con credenziali reali**
+
+Il file arriva sul server con placeholder. Editarlo (File Manager → Modifica) e mettere:
+- `password` → la password reale dell'account `formazione@genesilavoro.it`
+- Verificare host/port/encryption (`ssl` port 465 di default; se fallisce provare `tls` port 587)
+
+**4. Permessi**
+
+```bash
+chmod 640 api/smtp-config.php    # leggibile solo dal web server
+chmod 755 api/uploads            # se serve creazione manuale
+```
+
+**5. Test**
+
+- Aprire https://genesilavoro.it/candidati.dc.html, compilare, inviare
+- Verificare arrivo mail a `formazione@genesilavoro.it`
+- Se non arriva: `tail -20 /home/genesil1/public_html/api/debug.log` (attivo se `debug: true`)
+- Testare anche https://genesilavoro.it/lavora-con-noi.dc.html con un PDF <8MB
+
+**6. Hardening (dopo primi test riusciti)**
+
+- Editare `api/smtp-config.php` → `debug: false` per non lasciare log accessibili
+- Aggiungere SPF/DKIM al DNS di `genesilavoro.it` per migliorare deliverability
+  (in cPanel → Email Deliverability, il pannello mostra i record esatti)
+
+### Come funziona il flusso
+
+1. Utente compila form → JS fa `fetch(action, FormData)` con `Accept: application/json`
+2. Endpoint valida: honeypot, rate limit (5/5min per IP), campi required, email/tel format,
+   MIME + size CV (se presente)
+3. Se ok: invia via SMTP autenticato tramite PHPMailer a `formazione@genesilavoro.it` + copia
+   di cortesia al mittente
+4. Risposta JSON `{ok:true}` → JS redirect a `/grazie.html?tipo=…`
+5. Se JS disabilitato → submit tradizionale, il server risponde con Location header
+
+### Cosa NON abbiamo fatto (motivo)
+
+- **Configurato SPF/DKIM/DMARC**: sono modifiche DNS, l'utente le fa da cPanel → Email Deliverability
+- **Testato lato server**: non possiamo lanciare PHP in locale Windows senza LAMP.
+  Il test reale lo fa l'utente compilando i form sul sito live dopo il deploy
+- **Rimosso `support.js`**: alcune pagine `.dc.html` residue ancora lo usano (blog, eventi,
+  finanziamenti, corso). Sarà rimosso quando quelle pagine saranno riscritte in HTML puro
+
+### Rollback rapido
+
+Se dopo il deploy i form iniziano a rompere qualcosa, ripristinare le vecchie versioni:
+```bash
+cd /home/genesil1/public_html
+git checkout HEAD~1 -- candidati.dc.html lavora-con-noi.dc.html
+rm -rf api grazie.html
+```

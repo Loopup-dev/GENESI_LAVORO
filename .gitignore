@@ -1,4 +1,8 @@
-
 # Build output — generato al deploy
 dist/
 genesilavoro-deploy.zip
+
+# API — credenziali reali e run-time
+api/smtp-config.php
+api/debug.log
+api/uploads/

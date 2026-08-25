@@ -197,10 +197,15 @@
     </aside>
 
     <!-- RIGHT: form -->
-    <form class="form" id="lavoraForm" enctype="multipart/form-data" novalidate>
+    <form class="form" id="lavoraForm" action="/api/invia-candidatura.php" method="POST" enctype="multipart/form-data" novalidate>
       <div class="form__head">
         <h2 class="form__title">Candidatura & CV</h2>
         <div class="form__sub">Ti rispondiamo entro 15 giorni lavorativi. Alcuni campi sono facoltativi.</div>
+      </div>
+
+      <!-- Honeypot: nascosto agli umani, i bot lo compilano -->
+      <div style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden" aria-hidden="true">
+        <label>Non compilare<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
       </div>
 
       <div class="form__row">
@@ -342,24 +347,33 @@
   const btn = document.getElementById('submitBtn');
   const success = document.getElementById('success');
 
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    // Native validation feedback
+  form.addEventListener('submit', async (e) => {
     if (!form.checkValidity()) {
+      e.preventDefault();
       form.reportValidity();
       return;
     }
+    e.preventDefault();
     btn.disabled = true;
     btn.innerHTML = 'Invio in corso…';
 
-    // TODO backend: sostituire con fetch() al server (endpoint /api/candidature).
-    // Per ora è una demo client-side che simula successo.
-    setTimeout(() => {
-      form.style.opacity = '.6';
-      form.style.pointerEvents = 'none';
-      success.classList.add('is-visible');
-      success.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }, 900);
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json', 'X-Requested-With': 'fetch' }
+      });
+      const data = await res.json().catch(() => ({ ok: res.ok }));
+      if (data.ok) {
+        window.location.href = '/grazie.html?tipo=candidatura';
+      } else {
+        throw new Error(data.error || 'errore');
+      }
+    } catch (ex) {
+      btn.disabled = false;
+      btn.innerHTML = 'Riprova <span style="font-size:18px">→</span>';
+      alert("Non siamo riusciti a inviare la candidatura. Riprova, oppure scrivici a formazione@genesilavoro.it allegando il CV.");
+    }
   });
 })();
 </script>
