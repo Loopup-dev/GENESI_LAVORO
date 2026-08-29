@@ -1,0 +1,355 @@
+{
+  "_nota": "Fonte di verita' per le pagine corso. Modifica qui, poi rilancia `python build_corsi.py` per rigenerare i file corso-*.html.",
+  "corsi": [
+    {
+      "slug": "oss",
+      "titolo": "OSS — Operatore Socio Sanitario",
+      "titolo_breve": "OSS",
+      "area": "Socio-sanitaria",
+      "tipo": "pagamento",
+      "badge": "A pagamento — rate personalizzate",
+      "durata": "1.000 ore",
+      "durata_dettaglio": "550 ore di teoria e laboratorio + 450 ore di tirocinio",
+      "foto": "assets/corsi/01-oss.jpg",
+      "foto_alt": "Operatore socio sanitario in corsia",
+      "meta_desc": "Corso OSS a Reggio Calabria: qualifica riconosciuta dalla Regione Calabria, 1.000 ore con tirocinio in struttura. Rate personalizzate.",
+      "lead": "La qualifica più richiesta del settore socio-sanitario in Calabria. Un percorso serio, con tirocinio vero in struttura, che si chiude con un titolo riconosciuto dalla Regione.",
+      "imparerai": [
+        "Igiene e assistenza diretta alla persona non autosufficiente",
+        "Mobilizzazione, postura e prevenzione delle lesioni da decubito",
+        "Elementi di anatomia, fisiologia e principali patologie dell'anziano",
+        "Somministrazione dei pasti e gestione delle diete speciali",
+        "Relazione con il paziente, la famiglia e l'équipe multidisciplinare",
+        "Sicurezza sul lavoro, primo soccorso e protocolli igienico-sanitari"
+      ],
+      "rivolto": [
+        "Chi cerca un ingresso rapido e stabile nel mondo del lavoro",
+        "Chi già assiste familiari e vuole trasformarlo in professione",
+        "Chi proviene da altri settori e cerca una riqualificazione concreta"
+      ],
+      "sbocchi": [
+        "RSA e case di riposo",
+        "Reparti ospedalieri e case di cura",
+        "Assistenza domiciliare privata e cooperative sociali",
+        "Centri diurni e strutture per disabilità"
+      ],
+      "esperienza": "Le 450 ore di tirocinio non sono un adempimento burocratico: sono il momento in cui si impara davvero. Vi accompagniamo nella scelta della struttura e vi seguiamo per tutta la durata, perché è lì che nasce quasi sempre la prima proposta di lavoro.",
+      "cta_titolo": "Pronto a entrare in corsia?"
+    },
+    {
+      "slug": "osss",
+      "titolo": "OSSS — OSS Specializzato",
+      "titolo_breve": "OSSS",
+      "area": "Socio-sanitaria",
+      "tipo": "pagamento",
+      "badge": "A pagamento — rate personalizzate",
+      "durata": "400 ore",
+      "durata_dettaglio": "250 ore di teoria e laboratorio + 150 ore di tirocinio",
+      "foto": "assets/corsi/02-osss.jpg",
+      "foto_alt": "OSS specializzato in reparto",
+      "meta_desc": "Corso OSSS a Reggio Calabria: modulo di specializzazione per OSS già qualificati. 400 ore con tirocinio. Competenze infermieristiche di base.",
+      "lead": "Il modulo di specializzazione per chi ha già la qualifica OSS e vuole ampliare il proprio raggio d'azione — e la propria busta paga.",
+      "imparerai": [
+        "Prestazioni infermieristiche di base sotto supervisione",
+        "Gestione dei presidi e dei dispositivi medici più comuni",
+        "Assistenza in area critica e riabilitativa",
+        "Rilevazione dei parametri vitali e monitoraggio del paziente",
+        "Protocolli di sterilizzazione e gestione del rischio clinico",
+        "Documentazione sanitaria e responsabilità professionale"
+      ],
+      "rivolto": [
+        "OSS già qualificati che vogliono specializzarsi",
+        "Chi lavora in struttura e punta a un inquadramento superiore",
+        "Chi vuole accedere a reparti più complessi"
+      ],
+      "sbocchi": [
+        "Reparti ospedalieri ad alta intensità assistenziale",
+        "Strutture riabilitative e lungodegenza",
+        "Servizi di assistenza domiciliare integrata",
+        "Coordinamento di piccole équipe assistenziali"
+      ],
+      "esperienza": "Il corso è pensato per chi lavora: la didattica è organizzata per essere compatibile con i turni, e il tirocinio può essere svolto in accordo con la struttura in cui si è già impiegati.",
+      "cta_titolo": "Fai il salto di livello."
+    },
+    {
+      "slug": "tecnico-del-suono",
+      "titolo": "Tecnico del Suono",
+      "titolo_breve": "Tecnico del Suono",
+      "area": "Spettacolo · Audio",
+      "tipo": "gratuito",
+      "badge": "Finanziabile",
+      "durata": "600 ore",
+      "durata_dettaglio": "400 ore tra teoria e studio + 200 ore di pratica sul campo",
+      "foto": "assets/corsi/03-tecnico-suono.jpg",
+      "foto_alt": "Tecnico del suono al banco mixer",
+      "meta_desc": "Corso Tecnico del Suono a Reggio Calabria: registrazione, mixaggio, live e broadcast. Docenti di livello nazionale, strumentazione professionale.",
+      "lead": "Registrazione, mixaggio, live e broadcast con strumentazione professionale e docenti che nel settore ci lavorano davvero. Il nostro corso di punta nell'area spettacolo.",
+      "imparerai": [
+        "Acustica applicata e comportamento del suono negli ambienti",
+        "Microfonazione: scelta, posizionamento, tecniche stereo",
+        "Registrazione multitraccia in studio e gestione delle sessioni",
+        "Mixaggio: equalizzazione, dinamica, effetti, spazializzazione",
+        "Service audio live: line array, monitoraggio, gestione del palco",
+        "Post-produzione audio per video, podcast e broadcast"
+      ],
+      "rivolto": [
+        "Appassionati di musica e audio che vogliono professionalizzarsi",
+        "Aspiranti fonici, producer e sound designer",
+        "Chi già lavora nello spettacolo e vuole specializzarsi sull'audio"
+      ],
+      "sbocchi": [
+        "Fonico di studio di registrazione",
+        "Fonico live e service audio per eventi",
+        "Sound designer e assistente di produzione",
+        "Post-produzione audio per media e broadcast"
+      ],
+      "esperienza": "Le nostre aule audio sono attrezzate con strumentazione professionale, non didattica. Si lavora su sessioni reali, si sbaglia, si rifà. Chi esce da qui ha già le mani sporche di lavoro vero.",
+      "cta_titolo": "Pronto a mettere le mani sul mixer?"
+    },
+    {
+      "slug": "dizione-recitazione-doppiaggio",
+      "titolo": "Dizione, Recitazione e Doppiaggio",
+      "titolo_breve": "Dizione e Doppiaggio",
+      "area": "Spettacolo · Recitazione",
+      "tipo": "pagamento",
+      "badge": "A pagamento — rate personalizzate",
+      "durata": "200 ore",
+      "durata_dettaglio": "160 ore di laboratorio + 40 ore in sala di doppiaggio",
+      "foto": "assets/corsi/04-dizione.jpg",
+      "foto_alt": "Doppiatore al leggio in sala di registrazione",
+      "meta_desc": "Corso di dizione, recitazione e doppiaggio a Reggio Calabria. Docenti dal settore del doppiaggio, laboratorio in sala di registrazione.",
+      "lead": "La voce come strumento di lavoro. Un percorso laboratoriale con docenti che vengono dal settore, per chi vuole recitare, doppiare o semplicemente parlare in pubblico senza inciampare.",
+      "imparerai": [
+        "Dizione italiana: ortoepia, accenti, correzione della cadenza regionale",
+        "Respirazione, appoggio diaframmatico e cura dello strumento vocale",
+        "Tecniche di recitazione: analisi del testo, sottotesto, intenzione",
+        "Sincronizzazione labiale e tecnica del doppiaggio",
+        "Lettura interpretata per audiolibri, podcast e speakeraggio",
+        "Provini e autopresentazione: come si costruisce uno showreel"
+      ],
+      "rivolto": [
+        "Aspiranti attori, doppiatori e speaker",
+        "Professionisti che parlano in pubblico e vogliono migliorare",
+        "Chi vuole liberarsi della cadenza regionale in contesti professionali"
+      ],
+      "sbocchi": [
+        "Doppiaggio e speakeraggio pubblicitario",
+        "Audiolibri, podcast e contenuti narrati",
+        "Teatro e produzioni audiovisive",
+        "Formazione e public speaking aziendale"
+      ],
+      "esperienza": "Si lavora in piccoli gruppi, perché sulla voce non si può fare lezione frontale. Ogni allievo entra in sala, registra, riascolta e rifà — con il docente accanto.",
+      "cta_titolo": "La tua voce merita di essere allenata."
+    },
+    {
+      "slug": "sab-somministrazione",
+      "titolo": "SAB — Somministrazione Alimenti e Bevande",
+      "titolo_breve": "SAB",
+      "area": "Ho.Re.Ca",
+      "tipo": "gratuito",
+      "badge": "Gratuito via GOL*",
+      "durata": "100 ore",
+      "durata_dettaglio": "100 ore d'aula, con verifica finale",
+      "foto": "assets/corsi/05-sab.jpg",
+      "foto_alt": "Barista al banco di un pubblico esercizio",
+      "meta_desc": "Corso SAB a Reggio Calabria: abilitazione obbligatoria per aprire bar, ristoranti e pubblici esercizi. Gratuito con i requisiti GOL.",
+      "lead": "L'abilitazione obbligatoria per chi vuole aprire o gestire un bar, un ristorante o qualunque pubblico esercizio. Cento ore che valgono una licenza.",
+      "imparerai": [
+        "Normativa sul commercio e sulla somministrazione al pubblico",
+        "HACCP: igiene degli alimenti e autocontrollo",
+        "Merceologia alimentare e conservazione delle materie prime",
+        "Adempimenti amministrativi per l'apertura di un esercizio",
+        "Nozioni di gestione: food cost, magazzino, fornitori",
+        "Sicurezza sul lavoro nei pubblici esercizi"
+      ],
+      "rivolto": [
+        "Chi vuole aprire un bar, un ristorante o un locale",
+        "Chi lavora nella ristorazione e serve il titolo abilitante",
+        "Chi subentra in un'attività di famiglia"
+      ],
+      "sbocchi": [
+        "Titolarità o gestione di pubblici esercizi",
+        "Ruoli di responsabilità in ristorazione",
+        "Attività di somministrazione su area pubblica",
+        "Gestione di strutture ricettive con somministrazione"
+      ],
+      "esperienza": "È un corso breve e denso, pensato per chi ha già un progetto in testa. Alla fine dovete sapere non solo cosa dice la norma, ma cosa fare lunedì mattina per aprire.",
+      "cta_titolo": "Il tuo locale inizia da qui."
+    },
+    {
+      "slug": "amministrativo-contabile",
+      "titolo": "Tecnico Amministrativo Contabile",
+      "titolo_breve": "Amministrativo Contabile",
+      "area": "Amministrazione",
+      "tipo": "gratuito",
+      "badge": "Gratuito via GOL*",
+      "durata": "300 ore",
+      "durata_dettaglio": "220 ore d'aula + 80 ore di project work su casi reali",
+      "foto": "assets/corsi/06-amministrativo.jpg",
+      "foto_alt": "Addetta amministrativa alla scrivania",
+      "meta_desc": "Corso Tecnico Amministrativo Contabile a Reggio Calabria: contabilità, paghe, adempimenti fiscali. Gratuito con i requisiti GOL.",
+      "lead": "Contabilità, paghe e adempimenti: le competenze che ogni studio commercialista e ogni ufficio amministrativo cerca e fatica a trovare.",
+      "imparerai": [
+        "Partita doppia e scritture contabili di esercizio",
+        "IVA: liquidazioni, registri, dichiarazioni periodiche",
+        "Fatturazione elettronica e conservazione digitale",
+        "Elementi di gestione del personale e buste paga",
+        "Bilancio: formazione, lettura e riclassificazione",
+        "Software gestionali e fogli di calcolo per la contabilità"
+      ],
+      "rivolto": [
+        "Diplomati che vogliono entrare in studio o in azienda",
+        "Chi ha esperienza d'ufficio e vuole strutturare le competenze",
+        "Chi rientra nel mercato del lavoro dopo una pausa"
+      ],
+      "sbocchi": [
+        "Studi commercialisti e consulenti del lavoro",
+        "Uffici amministrativi di PMI",
+        "Centri di elaborazione dati contabili",
+        "Associazioni di categoria e enti del terzo settore"
+      ],
+      "esperienza": "Le 80 ore di project work si svolgono su documentazione reale anonimizzata: fatture vere, registri veri, scadenze vere. Perché la contabilità sui libri di testo non esiste.",
+      "cta_titolo": "Le aziende cercano chi sa fare i conti."
+    },
+    {
+      "slug": "meccatronico-auto",
+      "titolo": "Meccatronico Auto",
+      "titolo_breve": "Meccatronico",
+      "area": "Meccatronica",
+      "tipo": "gratuito",
+      "badge": "Finanziabile",
+      "durata": "800 ore",
+      "durata_dettaglio": "480 ore tra aula e officina + 320 ore di tirocinio",
+      "foto": "assets/corsi/07-meccatronico.jpg",
+      "foto_alt": "Meccatronico con strumento di diagnostica elettronica",
+      "meta_desc": "Corso Meccatronico Auto a Reggio Calabria: diagnostica elettronica, officina, manutenzione. 800 ore con tirocinio. Finanziabile.",
+      "lead": "L'auto di oggi è un computer con quattro ruote. Il meccatronico è la figura che sa leggerla — ed è la più cercata dalle officine del territorio.",
+      "imparerai": [
+        "Meccanica del motore e degli organi di trasmissione",
+        "Impianti elettrici ed elettronici di bordo",
+        "Diagnostica computerizzata e lettura delle centraline",
+        "Sistemi di sicurezza attiva: ABS, ESP, ADAS",
+        "Motorizzazioni ibride ed elettriche: principi e sicurezza",
+        "Climatizzazione, sospensioni e sistemi frenanti"
+      ],
+      "rivolto": [
+        "Chi vuole entrare in officina con una qualifica completa",
+        "Meccanici tradizionali che devono aggiornarsi sull'elettronica",
+        "Chi punta ad aprire una propria attività"
+      ],
+      "sbocchi": [
+        "Officine autorizzate e indipendenti",
+        "Concessionarie e centri assistenza",
+        "Manutenzione di flotte aziendali",
+        "Manutenzione industriale e mezzi speciali"
+      ],
+      "esperienza": "Metà del corso si svolge in officina, con veicoli reali e strumentazione diagnostica professionale. Le 320 ore di tirocinio si fanno presso officine del territorio con cui collaboriamo.",
+      "cta_titolo": "L'officina ti aspetta."
+    },
+    {
+      "slug": "sviluppo-web",
+      "titolo": "Sviluppo Web Junior",
+      "titolo_breve": "Sviluppo Web",
+      "area": "Informatica · Web",
+      "tipo": "gratuito",
+      "badge": "Finanziabile",
+      "durata": "600 ore",
+      "durata_dettaglio": "420 ore di didattica + 180 ore di progetto e portfolio",
+      "foto": "assets/corsi/08-web-dev.jpg",
+      "foto_alt": "Sviluppatore web davanti al codice",
+      "meta_desc": "Corso Sviluppo Web a Reggio Calabria: HTML, CSS, JavaScript e framework moderni. 600 ore con portfolio finale. Finanziabile.",
+      "lead": "Dal primo tag HTML al primo progetto pubblicato online. Un percorso che si chiude con un portfolio vero — perché nel web è quello che ti fa assumere, non l'attestato.",
+      "imparerai": [
+        "HTML semantico e CSS moderno: flexbox, grid, responsive design",
+        "JavaScript: fondamenti, DOM, asincronia, fetch e API",
+        "Un framework component-based per interfacce dinamiche",
+        "Versionamento con Git e collaborazione su repository",
+        "Basi di back-end, database e integrazione con API REST",
+        "Accessibilità, performance e pubblicazione in produzione"
+      ],
+      "rivolto": [
+        "Chi vuole entrare nell'IT partendo da zero",
+        "Grafici e creativi che vogliono realizzare quello che disegnano",
+        "Chi lavora in azienda e vuole riconvertirsi al digitale"
+      ],
+      "sbocchi": [
+        "Sviluppatore front-end junior",
+        "Web agency e studi di comunicazione",
+        "Manutenzione e sviluppo di siti aziendali",
+        "Freelance e lavoro da remoto"
+      ],
+      "esperienza": "Le ultime 180 ore sono dedicate interamente al progetto personale: ognuno costruisce e pubblica qualcosa di suo, seguito da un docente. Alla fine avete un link da mettere nel CV.",
+      "cta_titolo": "Il tuo primo commit ti aspetta."
+    },
+    {
+      "slug": "cybersecurity",
+      "titolo": "Cybersecurity — Fondamenti",
+      "titolo_breve": "Cybersecurity",
+      "area": "Informatica · Sicurezza",
+      "tipo": "gratuito",
+      "badge": "Finanziabile",
+      "durata": "400 ore",
+      "durata_dettaglio": "300 ore di didattica e laboratorio + 100 ore di esercitazioni pratiche",
+      "foto": "assets/corsi/09-cybersecurity.jpg",
+      "foto_alt": "Analista di sicurezza informatica al lavoro",
+      "meta_desc": "Corso Cybersecurity a Reggio Calabria: sicurezza informatica, penetration testing di base, adeguamento GDPR. Finanziabile.",
+      "lead": "Le PMI del territorio sono bersagli facili e lo sanno. Servono figure che sappiano proteggerle — e oggi in Calabria non ce ne sono abbastanza.",
+      "imparerai": [
+        "Fondamenti di reti e protocolli dal punto di vista della sicurezza",
+        "Principali vettori di attacco: phishing, malware, ransomware",
+        "Hardening di sistemi e configurazione sicura dei servizi",
+        "Penetration testing di base in ambiente di laboratorio",
+        "Gestione degli incidenti e continuità operativa",
+        "GDPR e adeguamento normativo per le aziende"
+      ],
+      "rivolto": [
+        "Tecnici informatici che vogliono specializzarsi sulla sicurezza",
+        "Chi si occupa di IT in azienda e deve gestire il rischio",
+        "Chi vuole entrare in un settore in forte carenza di personale"
+      ],
+      "sbocchi": [
+        "Security analyst junior",
+        "Consulenza sulla sicurezza per PMI",
+        "Adeguamento GDPR e compliance",
+        "Supporto sistemistico con focus sulla sicurezza"
+      ],
+      "esperienza": "Tutte le esercitazioni si svolgono in laboratorio isolato, su macchine predisposte. Si impara ad attaccare per capire come si difende — in un ambiente controllato e nel pieno rispetto della legge.",
+      "cta_titolo": "Difendere è un mestiere."
+    },
+    {
+      "slug": "hardware-reti",
+      "titolo": "Tecnico Hardware e Reti",
+      "titolo_breve": "Hardware e Reti",
+      "area": "Informatica · Reti",
+      "tipo": "gratuito",
+      "badge": "Finanziabile",
+      "durata": "400 ore",
+      "durata_dettaglio": "280 ore tra aula e laboratorio + 120 ore di tirocinio",
+      "foto": "assets/corsi/10-hardware-reti.jpg",
+      "foto_alt": "Tecnico di rete all'armadio di cablaggio",
+      "meta_desc": "Corso Tecnico Hardware e Reti a Reggio Calabria: cablaggio, configurazione, manutenzione e fondamenti di sysadmin. Finanziabile.",
+      "lead": "Quando la rete aziendale si ferma, si ferma l'azienda. Il tecnico hardware e reti è la figura che tiene tutto in piedi — e che ogni impresa strutturata deve avere.",
+      "imparerai": [
+        "Architettura dell'hardware e assemblaggio di sistemi",
+        "Diagnosi e riparazione dei guasti più frequenti",
+        "Cablaggio strutturato e certificazione delle linee",
+        "Configurazione di switch, router e apparati di rete",
+        "Amministrazione di base di sistemi Windows e Linux",
+        "Backup, monitoraggio e gestione del parco macchine"
+      ],
+      "rivolto": [
+        "Chi vuole entrare nell'assistenza tecnica informatica",
+        "Chi già ripara PC e vuole strutturare le competenze",
+        "Chi punta a un ruolo di sistemista junior"
+      ],
+      "sbocchi": [
+        "Assistenza tecnica e help desk",
+        "Manutenzione di reti aziendali",
+        "Installatore di sistemi e cablaggi",
+        "Sistemista junior in azienda"
+      ],
+      "esperienza": "Il laboratorio è attrezzato con apparati veri: armadi, switch gestiti, patch panel. Si monta, si smonta, si configura. Il tirocinio si svolge presso aziende di assistenza del territorio.",
+      "cta_titolo": "Tieni in piedi la rete."
+    }
+  ]
+}

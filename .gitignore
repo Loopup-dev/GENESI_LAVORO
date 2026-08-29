@@ -6,3 +6,7 @@ genesilavoro-deploy.zip
 api/smtp-config.php
 api/debug.log
 api/uploads/
+
+# Pacchetti di deploy temporanei
+deploy_*.zip
+api/debug-test.php

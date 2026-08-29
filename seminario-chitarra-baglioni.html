@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chitarra Acustica — un percorso con Giovanni Baglioni | Genesi Lavoro</title>
+<meta name="description" content="40 ore di seminario di chitarra acustica con Giovanni Baglioni, tra i nomi più originali del fingerstyle italiano. Tapping, accordature aperte, armonici, uso percussivo. Reggio Calabria, posti limitati.">
+<link rel="canonical" href="https://genesilavoro.it/seminario-chitarra-baglioni.html">
+<meta property="og:title" content="Chitarra Acustica — un percorso con Giovanni Baglioni">
+<meta property="og:description" content="40 ore con uno dei nomi più originali della chitarra acustica solista italiana. Reggio Calabria — posti limitati.">
+<meta property="og:image" content="https://genesilavoro.it/assets/locandina-baglioni.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#14100E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Chitarra Acustica — un percorso con Giovanni Baglioni",
+  "description": "Seminario di 40 ore di chitarra acustica fingerstyle con Giovanni Baglioni: tecnica, repertorio, simulazioni di performance e consulenze individuali.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Genesi Lavoro E.T.S.",
+    "url": "https://genesilavoro.it",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Sbarre Inferiori 262",
+      "addressLocality": "Reggio Calabria",
+      "postalCode": "89129",
+      "addressCountry": "IT"
+    },
+    "telephone": "+393935726245"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "1500",
+    "priceCurrency": "EUR",
+    "category": "Seminario",
+    "availability": "https://schema.org/LimitedAvailability"
+  }
+}
+</script>
+
+<style>
+/* ═══════════════════════════════════════════════════════════
+   TOKENS — palette derivata dalla locandina + brand Genesi
+   ═══════════════════════════════════════════════════════════ */
+:root{
+  --ink:        #14100E;   /* fondo profondo, mai #000 puro */
+  --ink-2:      #1C1714;   /* superfici sollevate */
+  --ink-3:      #241D18;   /* card */
+  --rust:       #C0563C;   /* terracotta della locandina */
+  --rust-soft:  #D97E63;
+  --gold:       #B8925A;   /* oro Genesi */
+  --gold-soft:  #D4B482;
+  --sage:       #7C8A5A;   /* verde Genesi */
+  --cream:      #F2EDE4;   /* testo su fondo scuro */
+  --cream-dim:  #C9BFB2;
+  --cream-faint:#8B8175;
+  --line:       rgba(242,237,228,.12);
+  --line-strong:rgba(242,237,228,.22);
+
+  --serif:  'Playfair Display', Georgia, serif;
+  --script: 'Cormorant Garamond', Georgia, serif;
+  --sans:   'Inter', system-ui, -apple-system, sans-serif;
+
+  --ease: cubic-bezier(.16,1,.3,1);
+  --shell: min(1240px, 100% - 80px);
+}
+@media(max-width:720px){ :root{ --shell: min(1240px, 100% - 40px); } }
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{margin:0;padding:0}
+body{
+  background:var(--ink);
+  color:var(--cream);
+  font-family:var(--sans);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--gold-soft);text-decoration:none;transition:color .25s}
+a:hover{color:var(--gold)}
+button{font:inherit;cursor:pointer}
+::selection{background:var(--rust);color:var(--cream)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:4px;border-radius:6px}
+
+/* Grana filmica su tutta la pagina */
+body::after{
+  content:"";position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.045;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.shell{width:var(--shell);margin:0 auto}
+.eyebrow{font-size:11px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--gold)}
+.h2{font-family:var(--serif);font-weight:600;font-size:clamp(30px,4.6vw,58px);line-height:1.04;letter-spacing:-.02em;margin:0}
+.h2 em{font-style:italic;color:var(--rust-soft);font-weight:500}
+.lede{font-size:clamp(16px,1.7vw,19px);line-height:1.72;color:var(--cream-dim);max-width:62ch}
+
+/* ═══════════ NAV ═══════════ */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:800;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:16px clamp(20px,4vw,40px);
+  transition:background .4s,backdrop-filter .4s,border-color .4s;
+  border-bottom:1px solid transparent;
+}
+.nav.is-stuck{background:rgba(20,16,14,.82);backdrop-filter:blur(16px) saturate(1.3);border-bottom-color:var(--line)}
+.nav__brand{display:flex;align-items:center;gap:11px;color:var(--cream)}
+.nav__brand:hover{color:var(--cream)}
+.nav__brand img{width:38px;height:38px;border-radius:50%;object-fit:contain;background:var(--cream);padding:2px}
+.nav__brand-name{font-family:var(--serif);font-weight:700;font-size:16.5px;display:block;line-height:1.1}
+.nav__brand-sub{font-size:8.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--cream-faint);display:block}
+.nav__cta{
+  font-size:13px;font-weight:600;color:var(--ink);background:var(--gold);
+  padding:11px 22px;border-radius:100px;transition:transform .3s var(--ease),box-shadow .3s;
+  box-shadow:0 6px 20px rgba(184,146,90,.28);
+}
+.nav__cta:hover{transform:translateY(-2px);color:var(--ink);box-shadow:0 10px 28px rgba(184,146,90,.4)}
+@media(max-width:560px){.nav__brand-sub{display:none}.nav__cta{padding:10px 16px;font-size:12px}}
+
+/* ═══════════ HERO ═══════════ */
+.hero{
+  position:relative;min-height:100svh;display:flex;align-items:center;
+  padding:120px 0 70px;overflow:hidden;
+}
+/* Luci di scena */
+.hero__light{position:absolute;border-radius:50%;filter:blur(90px);pointer-events:none}
+.hero__light--rust{width:60vw;height:60vw;max-width:760px;max-height:760px;background:rgba(192,86,60,.24);top:-18%;right:-14%;animation:drift 22s ease-in-out infinite}
+.hero__light--gold{width:44vw;height:44vw;max-width:560px;max-height:560px;background:rgba(184,146,90,.16);bottom:-16%;left:-10%;animation:drift 27s ease-in-out infinite reverse}
+@keyframes drift{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(4%,6%) scale(1.09)}}
+
+/* Corde di chitarra animate */
+.strings{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:.5}
+.strings path{fill:none;stroke:var(--gold);stroke-width:1;vector-effect:non-scaling-stroke}
+.strings path:nth-child(1){opacity:.30}
+.strings path:nth-child(2){opacity:.22;stroke:var(--rust-soft)}
+.strings path:nth-child(3){opacity:.34}
+.strings path:nth-child(4){opacity:.20;stroke:var(--rust-soft)}
+.strings path:nth-child(5){opacity:.28}
+.strings path:nth-child(6){opacity:.16}
+
+.hero__grid{
+  position:relative;z-index:3;display:grid;grid-template-columns:1.08fr .92fr;
+  gap:clamp(32px,5vw,72px);align-items:center;
+}
+@media(max-width:940px){.hero__grid{grid-template-columns:1fr;gap:44px}}
+
+.hero__flag{
+  display:inline-flex;align-items:center;gap:9px;font-size:11.5px;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--rust-soft);
+  border:1px solid rgba(192,86,60,.42);border-radius:100px;padding:8px 17px;margin-bottom:26px;
+  background:rgba(192,86,60,.09);
+}
+.hero__flag .dot{width:6px;height:6px;border-radius:50%;background:var(--rust);animation:pulse 2.2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(1.5)}}
+
+.hero__kicker{font-family:var(--script);font-style:italic;font-size:clamp(21px,2.6vw,30px);color:var(--gold-soft);margin:0 0 6px;font-weight:500}
+.hero__title{
+  font-family:var(--serif);font-weight:700;
+  font-size:clamp(46px,8.4vw,116px);line-height:.9;letter-spacing:-.035em;
+  margin:0 0 8px;color:var(--cream);
+}
+.hero__title .line{display:block;overflow:hidden}
+.hero__title .line > span{display:block;animation:riseIn 1.15s var(--ease) both}
+.hero__title .line:nth-child(1) > span{animation-delay:.15s}
+.hero__title .line:nth-child(2) > span{animation-delay:.28s}
+@keyframes riseIn{from{transform:translateY(105%)}to{transform:translateY(0)}}
+.hero__name{
+  font-family:var(--serif);font-style:italic;font-weight:500;
+  font-size:clamp(25px,3.9vw,50px);line-height:1.06;color:var(--rust-soft);
+  margin:0 0 30px;letter-spacing:-.015em;
+}
+.hero__lede{font-size:clamp(15.5px,1.6vw,18px);line-height:1.68;color:var(--cream-dim);max-width:48ch;margin:0 0 34px}
+.hero__lede strong{color:var(--cream);font-weight:600}
+
+.hero__actions{display:flex;flex-wrap:wrap;gap:13px;align-items:center}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;font-size:15px;font-weight:600;
+  padding:16px 32px;border-radius:100px;border:1.5px solid transparent;
+  transition:transform .3s var(--ease),box-shadow .3s,background .3s,border-color .3s;
+  cursor:pointer;white-space:nowrap;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn--primary{background:var(--rust);color:#fff;box-shadow:0 8px 26px rgba(192,86,60,.36)}
+.btn--primary:hover{background:var(--rust-soft);color:#fff;box-shadow:0 14px 36px rgba(192,86,60,.5)}
+.btn--ghost{border-color:var(--line-strong);color:var(--cream);background:transparent}
+.btn--ghost:hover{border-color:var(--gold);color:var(--gold)}
+.btn--gold{background:var(--gold);color:var(--ink);box-shadow:0 8px 26px rgba(184,146,90,.32)}
+.btn--gold:hover{background:var(--gold-soft);color:var(--ink)}
+
+.hero__meta{display:flex;flex-wrap:wrap;gap:22px;margin-top:34px;padding-top:26px;border-top:1px solid var(--line)}
+.hero__meta div{font-size:13px;color:var(--cream-faint)}
+.hero__meta strong{display:block;color:var(--cream);font-size:15px;font-weight:600;margin-top:2px}
+
+/* Locandina */
+.poster{position:relative;perspective:1400px;justify-self:center;width:100%;max-width:min(360px,52svh)}
+.poster__inner{
+  position:relative;border-radius:14px;overflow:hidden;
+  box-shadow:0 44px 90px -26px rgba(0,0,0,.85), 0 0 0 1px rgba(242,237,228,.09);
+  transform:rotateY(-7deg) rotateX(2.5deg);
+  transition:transform .8s var(--ease);
+  animation:posterIn 1.5s var(--ease) .35s both;
+}
+.poster:hover .poster__inner{transform:rotateY(-2deg) rotateX(0)}
+@keyframes posterIn{from{opacity:0;transform:rotateY(-16deg) rotateX(6deg) translateY(44px)}to{opacity:1;transform:rotateY(-7deg) rotateX(2.5deg) translateY(0)}}
+.poster__inner::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(255,255,255,.2) 0%,transparent 32%,transparent 68%,rgba(192,86,60,.14) 100%);pointer-events:none}
+.poster__tag{
+  position:absolute;bottom:-15px;left:-15px;z-index:4;
+  background:var(--ink-2);border:1px solid var(--line-strong);border-radius:11px;
+  padding:13px 19px;box-shadow:0 18px 40px rgba(0,0,0,.6);
+}
+.poster__tag-k{font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:3px}
+.poster__tag-v{font-family:var(--serif);font-size:20px;font-weight:600;color:var(--cream);line-height:1}
+@media(max-width:940px){.poster__inner{transform:none;animation:none}.poster:hover .poster__inner{transform:none}}
+
+.scrollcue{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:4;display:flex;flex-direction:column;align-items:center;gap:9px;color:var(--cream-faint)}
+.scrollcue span{font-size:9.5px;letter-spacing:.24em;text-transform:uppercase}
+.scrollcue i{display:block;width:1px;height:44px;background:var(--line-strong);position:relative;overflow:hidden}
+.scrollcue i::after{content:"";position:absolute;top:0;left:0;width:1px;height:15px;background:var(--gold);animation:cue 1.9s ease-in-out infinite}
+@keyframes cue{0%{transform:translateY(-16px)}100%{transform:translateY(46px)}}
+@media(max-width:940px){.scrollcue{display:none}}
+
+/* ═══════════ NUMERI ═══════════ */
+.stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(28,23,20,.5)}
+.stats__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line)}
+@media(max-width:860px){.stats__grid{grid-template-columns:repeat(2,1fr)}}
+.stat{background:var(--ink);padding:clamp(28px,4vw,48px) clamp(18px,2.4vw,30px);text-align:center}
+.stat__n{font-family:var(--serif);font-weight:600;font-size:clamp(34px,5vw,58px);line-height:1;color:var(--gold);letter-spacing:-.02em}
+.stat__n sup{font-size:.42em;vertical-align:super;color:var(--rust-soft)}
+.stat__l{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--cream-faint);margin-top:11px;line-height:1.5}
+
+/* ═══════════ SEZIONI ═══════════ */
+.sec{padding:clamp(76px,11vw,150px) 0;position:relative}
+.sec--tint{background:linear-gradient(180deg,transparent,rgba(28,23,20,.66) 22%,rgba(28,23,20,.66) 78%,transparent)}
+.sec__head{margin-bottom:clamp(38px,5vw,66px);max-width:74ch}
+.sec__head .eyebrow{display:block;margin-bottom:16px}
+
+/* Ritratto + racconto */
+.bio{display:grid;grid-template-columns:.86fr 1.14fr;gap:clamp(34px,5.5vw,80px);align-items:start}
+@media(max-width:940px){.bio{grid-template-columns:1fr;gap:38px}}
+.bio__media{position:relative}
+.bio__media img{width:100%;border-radius:16px;filter:grayscale(.28) contrast(1.08);box-shadow:0 34px 70px -22px rgba(0,0,0,.8)}
+.bio__media::after{content:"";position:absolute;inset:0;border-radius:16px;background:linear-gradient(180deg,transparent 52%,rgba(20,16,14,.62));pointer-events:none}
+.bio__cite{margin-top:22px;padding-left:19px;border-left:2px solid var(--rust)}
+.bio__cite p{font-family:var(--script);font-style:italic;font-size:19px;line-height:1.5;color:var(--cream-dim);margin:0 0 7px}
+.bio__cite cite{font-style:normal;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--cream-faint)}
+
+.beats{display:grid;gap:0;margin-top:6px}
+.beat{display:grid;grid-template-columns:82px 1fr;gap:24px;padding:24px 0;border-bottom:1px solid var(--line)}
+.beat:first-child{padding-top:0}
+.beat:last-child{border-bottom:0}
+.beat__y{font-family:var(--serif);font-size:26px;font-weight:600;color:var(--rust-soft);line-height:1;letter-spacing:-.01em}
+.beat__t{font-weight:600;font-size:16.5px;color:var(--cream);margin:0 0 6px}
+.beat__d{font-size:15px;line-height:1.68;color:var(--cream-dim);margin:0}
+@media(max-width:560px){.beat{grid-template-columns:1fr;gap:8px}}
+
+/* Tecniche */
+.tech{display:grid;grid-template-columns:repeat(auto-fit,minmax(252px,1fr));gap:18px}
+.tech__card{
+  background:var(--ink-3);border:1px solid var(--line);border-radius:16px;
+  padding:30px 26px 28px;transition:transform .45s var(--ease),border-color .45s,background .45s;
+  position:relative;overflow:hidden;
+}
+.tech__card::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,var(--rust),var(--gold));
+  transform:scaleX(0);transform-origin:left;transition:transform .55s var(--ease);
+}
+.tech__card:hover{transform:translateY(-5px);border-color:var(--line-strong);background:#2a221c}
+.tech__card:hover::before{transform:scaleX(1)}
+.tech__ico{width:42px;height:42px;margin-bottom:18px;color:var(--gold)}
+.tech__t{font-family:var(--serif);font-size:21px;font-weight:600;color:var(--cream);margin:0 0 9px}
+.tech__d{font-size:14.5px;line-height:1.66;color:var(--cream-dim);margin:0}
+
+/* Cosa comprende */
+.incl{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(32px,5vw,72px);align-items:start}
+@media(max-width:940px){.incl{grid-template-columns:1fr;gap:40px}}
+.modlist{display:grid;gap:14px;counter-reset:m}
+.mod{
+  display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start;
+  background:var(--ink-3);border:1px solid var(--line);border-radius:14px;padding:22px 24px;
+  transition:border-color .35s,transform .35s var(--ease);
+}
+.mod:hover{border-color:var(--line-strong);transform:translateX(4px)}
+.mod__n{
+  counter-increment:m;width:34px;height:34px;flex:none;border-radius:50%;
+  border:1px solid var(--gold);color:var(--gold);
+  display:flex;align-items:center;justify-content:center;
+  font-size:13px;font-weight:600;font-variant-numeric:tabular-nums;
+}
+.mod__n::before{content:counter(m,decimal-leading-zero)}
+.mod__t{font-weight:600;font-size:16px;color:var(--cream);margin:0 0 5px}
+.mod__d{font-size:14.5px;line-height:1.62;color:var(--cream-dim);margin:0}
+.mod__h{font-size:12px;color:var(--gold);font-weight:600;white-space:nowrap;margin-top:6px;display:block}
+
+/* Prezzo */
+.price{
+  position:sticky;top:96px;background:linear-gradient(165deg,#2a221c,var(--ink-2));
+  border:1px solid var(--line-strong);border-radius:22px;padding:36px 34px;
+  box-shadow:0 34px 74px -24px rgba(0,0,0,.8);
+}
+@media(max-width:940px){.price{position:static}}
+.price__k{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.price__v{font-family:var(--serif);font-size:clamp(50px,7vw,74px);font-weight:700;line-height:.94;color:var(--cream);letter-spacing:-.03em}
+.price__v span{font-size:.42em;color:var(--cream-faint);font-weight:500;vertical-align:super;margin-right:4px}
+.price__note{font-size:13.5px;color:var(--cream-faint);margin:9px 0 26px}
+.price__list{list-style:none;padding:0;margin:0 0 28px;display:grid;gap:12px}
+.price__list li{position:relative;padding-left:29px;font-size:14.5px;line-height:1.55;color:var(--cream-dim)}
+.price__list li::before{
+  content:"";position:absolute;left:0;top:7px;width:16px;height:16px;border-radius:50%;
+  background:rgba(124,138,90,.2);border:1.5px solid var(--sage);
+}
+.price__list li::after{
+  content:"";position:absolute;left:5px;top:11px;width:5px;height:8px;
+  border-right:1.5px solid var(--sage);border-bottom:1.5px solid var(--sage);
+  transform:rotate(42deg);
+}
+.price .btn{width:100%;justify-content:center}
+.price__micro{font-size:12px;color:var(--cream-faint);text-align:center;margin:15px 0 0;line-height:1.55}
+
+/* Destinatari */
+.who{display:grid;grid-template-columns:repeat(auto-fit,minmax(238px,1fr));gap:18px}
+.who__card{border:1px solid var(--line);border-radius:14px;padding:26px 24px;background:rgba(36,29,24,.55)}
+.who__t{font-weight:600;font-size:16px;color:var(--cream);margin:0 0 8px;display:flex;align-items:center;gap:10px}
+.who__t svg{width:19px;height:19px;color:var(--rust-soft);flex:none}
+.who__d{font-size:14.5px;line-height:1.62;color:var(--cream-dim);margin:0}
+
+/* Non fa per te */
+.notfor{margin-top:26px;border:1px dashed rgba(242,237,228,.18);border-radius:14px;padding:24px 26px;background:rgba(20,16,14,.5)}
+.notfor h4{font-size:14px;font-weight:600;color:var(--cream-faint);margin:0 0 12px;letter-spacing:.04em}
+.notfor ul{margin:0;padding-left:19px;display:grid;gap:8px}
+.notfor li{font-size:14.5px;line-height:1.6;color:var(--cream-faint)}
+
+/* Ascolta */
+.listen{
+  background:linear-gradient(150deg,rgba(192,86,60,.13),rgba(184,146,90,.07));
+  border:1px solid var(--line-strong);border-radius:22px;
+  padding:clamp(34px,5vw,58px);text-align:center;
+}
+.listen__t{font-family:var(--serif);font-size:clamp(25px,3.4vw,40px);font-weight:600;margin:0 0 14px;line-height:1.12}
+.listen__d{font-size:16px;color:var(--cream-dim);max-width:56ch;margin:0 auto 30px;line-height:1.68}
+.listen__row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.chip{
+  display:inline-flex;align-items:center;gap:9px;font-size:14px;font-weight:500;
+  color:var(--cream);border:1px solid var(--line-strong);border-radius:100px;
+  padding:12px 22px;transition:border-color .3s,color .3s,transform .3s var(--ease),background .3s;
+}
+.chip:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px);background:rgba(184,146,90,.07)}
+.chip svg{width:17px;height:17px;flex:none}
+
+/* FAQ */
+.faq{max-width:850px;margin:0 auto}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{
+  list-style:none;cursor:pointer;padding:24px 44px 24px 0;position:relative;
+  font-size:17px;font-weight:600;color:var(--cream);transition:color .3s;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:hover{color:var(--gold)}
+.faq summary::after{
+  content:"";position:absolute;right:6px;top:31px;width:11px;height:11px;
+  border-right:1.5px solid var(--gold);border-bottom:1.5px solid var(--gold);
+  transform:rotate(45deg);transition:transform .35s var(--ease);
+}
+.faq details[open] summary::after{transform:rotate(-135deg);top:35px}
+.faq__a{padding:0 40px 26px 0;font-size:15.5px;line-height:1.72;color:var(--cream-dim)}
+.faq__a p{margin:0 0 12px}
+.faq__a p:last-child{margin:0}
+
+/* FORM */
+.enroll{background:var(--ink-2);border-top:1px solid var(--line)}
+.enroll__grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(34px,5vw,76px);align-items:start}
+@media(max-width:940px){.enroll__grid{grid-template-columns:1fr;gap:40px}}
+.contacts{display:grid;gap:12px;margin-top:30px}
+.contact{
+  display:flex;align-items:center;gap:14px;background:var(--ink-3);
+  border:1px solid var(--line);border-radius:13px;padding:17px 19px;color:var(--cream);
+  transition:border-color .3s,transform .3s var(--ease);
+}
+.contact:hover{border-color:var(--gold);color:var(--cream);transform:translateX(3px)}
+.contact svg{width:21px;height:21px;color:var(--gold);flex:none}
+.contact__t{display:block;font-weight:600;font-size:15px;line-height:1.25}
+.contact__s{display:block;font-size:13px;color:var(--cream-faint)}
+
+.form{background:var(--ink-3);border:1px solid var(--line-strong);border-radius:20px;padding:clamp(26px,3.6vw,40px)}
+.form__t{font-family:var(--serif);font-size:26px;font-weight:600;margin:0 0 6px}
+.form__s{font-size:14.5px;color:var(--cream-faint);margin:0 0 26px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+@media(max-width:600px){.frow{grid-template-columns:1fr}}
+.field{display:block;margin-bottom:15px}
+.field__l{display:block;font-size:12.5px;font-weight:600;color:var(--cream-dim);margin-bottom:7px}
+.field__l .req{color:var(--rust-soft)}
+.inp,.sel,.txt{
+  width:100%;font-family:inherit;font-size:15px;padding:13px 15px;
+  background:rgba(20,16,14,.72);border:1.5px solid var(--line);border-radius:10px;
+  color:var(--cream);transition:border-color .3s,background .3s;
+}
+.inp::placeholder,.txt::placeholder{color:#6d6459}
+.inp:focus,.sel:focus,.txt:focus{outline:none;border-color:var(--gold);background:rgba(20,16,14,.95)}
+.sel{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23B8925A' stroke-width='1.6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 15px center;padding-right:38px}
+.sel option{background:var(--ink-2);color:var(--cream)}
+.txt{resize:vertical;min-height:92px}
+.consent{display:flex;gap:11px;align-items:flex-start;font-size:12.5px;line-height:1.55;color:var(--cream-faint);margin:20px 0 22px}
+.consent input{margin-top:3px;flex:none;accent-color:var(--gold);width:16px;height:16px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.form .btn{width:100%;justify-content:center}
+.form__err{
+  background:rgba(192,86,60,.12);border:1px solid rgba(192,86,60,.4);border-radius:10px;
+  padding:13px 15px;margin-bottom:17px;font-size:13.5px;color:var(--rust-soft);
+}
+.form__err[hidden]{display:none}
+
+/* Barra sticky mobile */
+.sticky{
+  position:fixed;left:0;right:0;bottom:0;z-index:700;
+  display:none;align-items:center;justify-content:space-between;gap:14px;
+  padding:12px 18px calc(12px + env(safe-area-inset-bottom));
+  background:rgba(20,16,14,.94);backdrop-filter:blur(14px);border-top:1px solid var(--line-strong);
+  transform:translateY(110%);transition:transform .45s var(--ease);
+}
+.sticky.is-on{transform:translateY(0)}
+.sticky__p{font-size:12px;color:var(--cream-faint);line-height:1.3}
+.sticky__p strong{display:block;color:var(--cream);font-size:16px;font-family:var(--serif)}
+.sticky .btn{padding:13px 24px;font-size:14px}
+@media(max-width:768px){.sticky{display:flex}body{padding-bottom:74px}}
+
+/* FOOTER */
+.foot{background:var(--ink);border-top:1px solid var(--line);padding:52px 0 40px;text-align:center}
+.foot__nav{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin-bottom:26px;font-size:13.5px}
+.foot__nav a{color:var(--cream-dim)}
+.foot__nav a:hover{color:var(--gold)}
+.foot__motto{font-family:var(--script);font-style:italic;font-size:19px;color:var(--gold);margin:0 0 8px}
+.foot__meta{font-size:12.5px;color:var(--cream-faint);line-height:1.75}
+
+/* Reveal on scroll */
+[data-rev]{opacity:0;transform:translateY(30px);transition:opacity .85s var(--ease),transform .85s var(--ease)}
+[data-rev].is-in{opacity:1;transform:none}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;scroll-behavior:auto !important}
+  [data-rev]{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════ NAV ═══════════ -->
+<nav class="nav" id="nav">
+  <a href="Home.dc.html" class="nav__brand">
+    <img src="assets/logo.jpg" alt="">
+    <span>
+      <span class="nav__brand-name">Genesi Lavoro</span>
+      <span class="nav__brand-sub">Formazione Professionale</span>
+    </span>
+  </a>
+  <a href="#iscriviti" class="nav__cta">Richiedi un posto</a>
+</nav>
+
+<!-- ═══════════ HERO ═══════════ -->
+<header class="hero">
+  <div class="hero__light hero__light--rust"></div>
+  <div class="hero__light hero__light--gold"></div>
+
+  <svg class="strings" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,150 Q360,150 720,150 T1440,150">
+      <animate attributeName="d" dur="3.7s" repeatCount="indefinite"
+        values="M0,150 Q360,150 720,150 T1440,150;M0,150 Q360,138 720,150 T1440,150;M0,150 Q360,162 720,150 T1440,150;M0,150 Q360,150 720,150 T1440,150"/>
+    </path>
+    <path d="M0,286 Q360,286 720,286 T1440,286">
+      <animate attributeName="d" dur="4.9s" repeatCount="indefinite"
+        values="M0,286 Q360,286 720,286 T1440,286;M0,286 Q360,300 720,286 T1440,286;M0,286 Q360,272 720,286 T1440,286;M0,286 Q360,286 720,286 T1440,286"/>
+    </path>
+    <path d="M0,422 Q360,422 720,422 T1440,422">
+      <animate attributeName="d" dur="3.1s" repeatCount="indefinite"
+        values="M0,422 Q360,422 720,422 T1440,422;M0,422 Q360,406 720,422 T1440,422;M0,422 Q360,438 720,422 T1440,422;M0,422 Q360,422 720,422 T1440,422"/>
+    </path>
+    <path d="M0,558 Q360,558 720,558 T1440,558">
+      <animate attributeName="d" dur="5.6s" repeatCount="indefinite"
+        values="M0,558 Q360,558 720,558 T1440,558;M0,558 Q360,572 720,558 T1440,558;M0,558 Q360,544 720,558 T1440,558;M0,558 Q360,558 720,558 T1440,558"/>
+    </path>
+    <path d="M0,694 Q360,694 720,694 T1440,694">
+      <animate attributeName="d" dur="4.2s" repeatCount="indefinite"
+        values="M0,694 Q360,694 720,694 T1440,694;M0,694 Q360,680 720,694 T1440,694;M0,694 Q360,708 720,694 T1440,694;M0,694 Q360,694 720,694 T1440,694"/>
+    </path>
+    <path d="M0,830 Q360,830 720,830 T1440,830">
+      <animate attributeName="d" dur="6.3s" repeatCount="indefinite"
+        values="M0,830 Q360,830 720,830 T1440,830;M0,830 Q360,842 720,830 T1440,830;M0,830 Q360,818 720,830 T1440,830;M0,830 Q360,830 720,830 T1440,830"/>
+    </path>
+  </svg>
+
+  <div class="shell hero__grid">
+    <div>
+      <span class="hero__flag"><span class="dot"></span>Primo incontro · 31 agosto</span>
+      <p class="hero__kicker">Un percorso di</p>
+      <h1 class="hero__title">
+        <span class="line"><span>Chitarra</span></span>
+        <span class="line"><span>Acustica</span></span>
+      </h1>
+      <p class="hero__name">con Giovanni Baglioni</p>
+      <p class="hero__lede">
+        Quaranta ore con uno degli strumentisti più originali del fingerstyle italiano.
+        Non una lezione: <strong>un percorso</strong> fatto di tecnica, repertorio,
+        simulazioni di performance e consulenze individuali.
+      </p>
+      <div class="hero__actions">
+        <a href="#iscriviti" class="btn btn--primary">Richiedi un posto
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="#percorso" class="btn btn--ghost">Come funziona</a>
+      </div>
+      <div class="hero__meta">
+        <div>Durata<strong>40 ore</strong></div>
+        <div>Sede<strong>Reggio Calabria</strong></div>
+        <div>Posti<strong>Numero chiuso</strong></div>
+      </div>
+    </div>
+
+    <div class="poster">
+      <div class="poster__inner">
+        <img src="assets/locandina-baglioni.jpg" alt="Locandina del percorso di chitarra acustica con Giovanni Baglioni — Genesi Lavoro, Via Sbarre Inferiori 262, Reggio Calabria" width="1080" height="1350">
+      </div>
+    </div>
+  </div>
+
+  <div class="scrollcue"><span>Scorri</span><i></i></div>
+</header>
+
+<!-- ═══════════ NUMERI ═══════════ -->
+<section class="stats">
+  <div class="shell">
+    <div class="stats__grid">
+      <div class="stat"><div class="stat__n" data-count="40">40</div><div class="stat__l">Ore con l'artista</div></div>
+      <div class="stat"><div class="stat__n" data-count="6">6</div><div class="stat__l">Tecniche di fingerstyle<br>contemporaneo in programma</div></div>
+      <div class="stat"><div class="stat__n" data-count="2">2</div><div class="stat__l">Album solisti<br>in quattordici anni</div></div>
+      <div class="stat"><div class="stat__n">1<sup>°</sup></div><div class="stat__l">Incontro conoscitivo<br>il 31 agosto</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CHI È ═══════════ -->
+<section class="sec" id="artista">
+  <div class="shell">
+    <div class="sec__head" data-rev>
+      <span class="eyebrow">L'artista</span>
+      <h2 class="h2">Due album in quattordici anni.<br>Il resto del tempo, <em>a cercare il suono</em>.</h2>
+    </div>
+
+    <div class="bio">
+      <div data-rev>
+        <div class="bio__media">
+          <img src="assets/locandina-baglioni.jpg" alt="Giovanni Baglioni con la chitarra acustica" loading="lazy">
+        </div>
+        <blockquote class="bio__cite">
+          <p>“Uno dei nomi più interessanti e originali nel panorama della chitarra acustica solista contemporanea.”</p>
+          <cite>ANSA</cite>
+        </blockquote>
+      </div>
+
+      <div data-rev>
+        <p class="lede" style="margin-bottom:34px">
+          Giovanni Baglioni è un solista di chitarra acustica fingerstyle. Suona quasi
+          esclusivamente musica strumentale: niente voce, niente accompagnamento. Solo lo
+          strumento, portato dove in pochi lo portano — con il <em style="font-style:italic;color:var(--gold-soft)">tapping</em>,
+          le accordature aperte, gli armonici artificiali e l'uso percussivo della cassa.
+          È endorser Martin, e da vent'anni costruisce un repertorio che sta tutto
+          dentro sei corde.
+        </p>
+
+        <div class="beats">
+          <div class="beat">
+            <div class="beat__y">Gli inizi</div>
+            <div>
+              <p class="beat__t">Otto anni, e una chitarra classica</p>
+              <p class="beat__d">Le prime lezioni da privatista, poi l'elettrica, il rock, la bossa nova. La direzione arriva più tardi, quando incontra il fingerstyle contemporaneo e capisce che è lì che vuole stare.</p>
+            </div>
+          </div>
+          <div class="beat">
+            <div class="beat__y">2004</div>
+            <div>
+              <p class="beat__t">La scuola che si è scelto</p>
+              <p class="beat__d">Allievo di <strong style="color:var(--cream)">Pino Forastiere</strong>, partecipa al Guitar Master condotto da <strong style="color:var(--cream)">Tommy Emmanuel</strong> e si perfeziona con <strong style="color:var(--cream)">Pierre Bensusan</strong>. Studia a fondo l'opera di Michael Hedges, che resta il riferimento.</p>
+            </div>
+          </div>
+          <div class="beat">
+            <div class="beat__y">2009</div>
+            <div>
+              <p class="beat__t">Anima Meccanica</p>
+              <p class="beat__d">Il disco d'esordio esce per <em style="color:var(--gold-soft)">Sony Music</em>. Nello stesso anno suona nell'album <em>If</em> di <strong style="color:var(--cream)">Mario Biondi</strong>, che poi accompagna in tour.</p>
+            </div>
+          </div>
+          <div class="beat">
+            <div class="beat__y">2023</div>
+            <div>
+              <p class="beat__t">Vorrei Bastasse</p>
+              <p class="beat__d">Il secondo album solista, otto brani inediti, uscito per Ice Record su CD e vinile. Due dischi in quattordici anni: la misura di chi pubblica solo quando ha qualcosa da dire.</p>
+            </div>
+          </div>
+          <div class="beat">
+            <div class="beat__y">Il palco</div>
+            <div>
+              <p class="beat__t">Dove lo si è ascoltato</p>
+              <p class="beat__d">Blue Note Milano, Alexanderplatz Roma, Folkclub Torino, Teatro Geox Padova. I festival di chitarra acustica di Soave, Sarzana e Fiorano, e il Canadian Guitar Festival. Collaborazioni con <strong style="color:var(--cream)">Nicola Piovani</strong>, <strong style="color:var(--cream)">Simone Cristicchi</strong>, <strong style="color:var(--cream)">Stefano Di Battista</strong>, Flavio Sala.</p>
+            </div>
+          </div>
+          <div class="beat">
+            <div class="beat__y">L'aula</div>
+            <div>
+              <p class="beat__t">Le masterclass, che tiene di persona</p>
+              <p class="beat__d">Oltre ai concerti porta avanti da anni un'attività didattica sua: masterclass e seminari in cui smonta il proprio repertorio davanti a chi ascolta. È da lì che nasce questo percorso.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ TECNICHE ═══════════ -->
+<section class="sec sec--tint" id="tecniche">
+  <div class="shell">
+    <div class="sec__head" data-rev>
+      <span class="eyebrow">Cosa si impara</span>
+      <h2 class="h2">Sei corde che diventano <em>un'orchestra</em>.</h2>
+      <p class="lede" style="margin-top:20px">
+        Il vocabolario tecnico su cui si lavora nelle quaranta ore. Non esercizi astratti:
+        ogni tecnica viene mostrata dal vivo su brani del suo repertorio, smontata e poi
+        rimessa nelle vostre mani.
+      </p>
+    </div>
+
+    <div class="tech">
+      <div class="tech__card" data-rev>
+        <svg class="tech__ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <path d="M6 14h36M6 22h36M6 30h36M6 38h36" opacity=".38"/>
+          <circle cx="16" cy="14" r="3.4" fill="currentColor" stroke="none"/>
+          <circle cx="27" cy="22" r="3.4" fill="currentColor" stroke="none"/>
+          <circle cx="36" cy="30" r="3.4" fill="currentColor" stroke="none"/>
+        </svg>
+        <h3 class="tech__t">Tapping</h3>
+        <p class="tech__d">Le note nascono direttamente sulla tastiera, percosse con entrambe le mani. La chitarra smette di essere uno strumento a pizzico e diventa, di fatto, un pianoforte verticale.</p>
+      </div>
+
+      <div class="tech__card" data-rev>
+        <svg class="tech__ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="7" y="19" width="34" height="15" rx="3.5"/>
+          <circle cx="18" cy="26.5" r="4"/>
+          <path d="M28 23.5h8M28 29.5h8" opacity=".55"/>
+        </svg>
+        <h3 class="tech__t">Laptapping</h3>
+        <p class="tech__d">Lo strumento appoggiato sulle ginocchia e suonato dall'alto come una tastiera. Cambia completamente la geometria della mano — e quello che è possibile suonare.</p>
+      </div>
+
+      <div class="tech__card" data-rev>
+        <svg class="tech__ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <circle cx="12" cy="11" r="4"/><circle cx="12" cy="24" r="4"/><circle cx="12" cy="37" r="4"/>
+          <path d="M16 11h26M16 24h26M16 37h26" opacity=".45"/>
+          <path d="M34 7v8M39 20v8M30 33v8" opacity=".75"/>
+        </svg>
+        <h3 class="tech__t">Accordature aperte</h3>
+        <p class="tech__d">Uscire dal <em>mi</em> standard riapre la tastiera: risonanze che con l'accordatura normale non esistono, e diteggiature che diventano improvvisamente semplici.</p>
+      </div>
+
+      <div class="tech__card" data-rev>
+        <svg class="tech__ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <path d="M4 24c4-11 8-11 12 0s8 11 12 0 8-11 12 0" opacity=".9"/>
+          <path d="M4 33c4-6 8-6 12 0s8 6 12 0 8-6 12 0" opacity=".42"/>
+          <path d="M4 15c4-4 8-4 12 0s8 4 12 0 8-4 12 0" opacity=".42"/>
+        </svg>
+        <h3 class="tech__t">Armonici artificiali</h3>
+        <p class="tech__d">Il suono cristallino che sembra arrivare da un altro strumento. Si impara a produrli in modo controllato e a intrecciarli con la linea melodica, non a farli capitare per caso.</p>
+      </div>
+
+      <div class="tech__card" data-rev>
+        <svg class="tech__ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <ellipse cx="24" cy="24" rx="15" ry="15"/>
+          <circle cx="24" cy="24" r="6.5" opacity=".55"/>
+          <path d="M24 4v5M24 39v5M4 24h5M39 24h5" opacity=".72"/>
+        </svg>
+        <h3 class="tech__t">Uso percussivo</h3>
+        <p class="tech__d">Slap, colpi sulla cassa, ghost notes: la sezione ritmica sta nello stesso strumento che suona la melodia. Un solo musicista, tre parti simultanee.</p>
+      </div>
+
+      <div class="tech__card" data-rev>
+        <svg class="tech__ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M17 34V12l20-4v22"/>
+          <ellipse cx="12" cy="35" rx="5.5" ry="4.5"/>
+          <ellipse cx="32" cy="30" rx="5.5" ry="4.5"/>
+        </svg>
+        <h3 class="tech__t">Dall'idea all'emozione</h3>
+        <p class="tech__d">La parte che quasi nessuno insegna: come si trasforma un'intuizione musicale in qualcosa che arriva a chi ascolta. Dinamiche, timbro, silenzi, respiro.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ IL PERCORSO ═══════════ -->
+<section class="sec" id="percorso">
+  <div class="shell">
+    <div class="sec__head" data-rev>
+      <span class="eyebrow">Il percorso</span>
+      <h2 class="h2">Quaranta ore, <em>quattro modi</em> di lavorare.</h2>
+      <p class="lede" style="margin-top:20px">
+        Il seminario alterna quattro modalità. Nessuna lezione frontale per quaranta ore:
+        si guarda, si prova, si sbaglia davanti a lui, si corregge.
+      </p>
+    </div>
+
+    <div class="incl">
+      <div class="modlist" data-rev>
+        <div class="mod">
+          <span class="mod__n"></span>
+          <div>
+            <p class="mod__t">Masterclass tecnica</p>
+            <p class="mod__d">Ogni tecnica presentata dal vivo su brani del suo repertorio, usati come casi di studio. Si vede la mano che la esegue, non solo lo spartito che la descrive.</p>
+            <span class="mod__h">Analisi + dimostrazione</span>
+          </div>
+        </div>
+        <div class="mod">
+          <span class="mod__n"></span>
+          <div>
+            <p class="mod__t">Prove guidate</p>
+            <p class="mod__d">Lo strumento in mano per la maggior parte del tempo. Si lavora sul proprio pezzo, con lui che ascolta, ferma, mostra e fa ripetere.</p>
+            <span class="mod__h">Pratica individuale e collettiva</span>
+          </div>
+        </div>
+        <div class="mod">
+          <span class="mod__n"></span>
+          <div>
+            <p class="mod__t">Simulazioni di performance</p>
+            <p class="mod__d">Suonare davanti a qualcuno è un mestiere a parte. Si simula l'esecuzione pubblica: gestione dell'errore, respiro, presenza scenica, rapporto con il silenzio in sala.</p>
+            <span class="mod__h">Esecuzione in condizioni reali</span>
+          </div>
+        </div>
+        <div class="mod">
+          <span class="mod__n"></span>
+          <div>
+            <p class="mod__t">Consulenze individuali</p>
+            <p class="mod__d">Un confronto uno-a-uno sul proprio percorso: cosa studiare, come impostare la routine, che direzione dare al proprio repertorio. La parte che vale di più e che nei corsi non c'è quasi mai.</p>
+            <span class="mod__h">Uno a uno</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="price" data-rev>
+        <div class="price__k">Quota di partecipazione</div>
+        <div class="price__v"><span>€</span>1.500</div>
+        <p class="price__note">Quaranta ore con l'artista. Posti a numero chiuso.</p>
+        <ul class="price__list">
+          <li><strong style="color:var(--cream)">40 ore</strong> di seminario con Giovanni Baglioni</li>
+          <li>Masterclass tecnica su repertorio dal vivo</li>
+          <li>Prove guidate con lo strumento in mano</li>
+          <li>Simulazioni di performance pubblica</li>
+          <li>Consulenze individuali sul proprio percorso</li>
+          <li>Materiale preparatorio prima dell'avvio</li>
+          <li>Attestato di partecipazione Genesi Lavoro</li>
+        </ul>
+        <a href="#iscriviti" class="btn btn--gold">Richiedi un posto</a>
+        <p class="price__micro">
+          La richiesta non è vincolante.<br>Vi ricontattiamo per un colloquio conoscitivo.
+        </p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ A CHI È RIVOLTO ═══════════ -->
+<section class="sec sec--tint" id="destinatari">
+  <div class="shell">
+    <div class="sec__head" data-rev>
+      <span class="eyebrow">A chi è rivolto</span>
+      <h2 class="h2">Serve saper già suonare.<br>Non serve <em>essere bravi</em>.</h2>
+    </div>
+
+    <div class="who" data-rev>
+      <div class="who__card">
+        <p class="who__t">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+          Chitarristi autodidatti
+        </p>
+        <p class="who__d">Suonate da anni, avete imparato da soli e siete arrivati a un punto in cui non sapete più cosa studiare. Questo percorso è il modo più rapido per capirlo.</p>
+      </div>
+      <div class="who__card">
+        <p class="who__t">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          Allievi di scuola di musica
+        </p>
+        <p class="who__d">Studiate già con un insegnante e volete un confronto con un professionista che vive di concerti. Un punto di vista diverso, non sostitutivo.</p>
+      </div>
+      <div class="who__card">
+        <p class="who__t">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>
+          Insegnanti di chitarra
+        </p>
+        <p class="who__d">Volete portare in aula un vocabolario tecnico che oggi non padroneggiate. Il fingerstyle contemporaneo si insegna solo se lo si sa suonare.</p>
+      </div>
+      <div class="who__card">
+        <p class="who__t">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 00-3 3v7a3 3 0 006 0V5a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2M12 19v3"/></svg>
+          Musicisti di altri strumenti
+        </p>
+        <p class="who__d">Arrivate dal pianoforte, dal basso, dalla batteria e volete capire come la chitarra acustica possa fare da sola quello che di solito fa una band.</p>
+      </div>
+    </div>
+
+    <div class="notfor" data-rev>
+      <h4>Diciamolo chiaramente: non fa per voi se…</h4>
+      <ul>
+        <li>non avete mai preso in mano una chitarra — qui si parte da chi già suona, anche in modo imperfetto</li>
+        <li>cercate un corso per imparare gli accordi delle canzoni: questo è un percorso su strumentale e tecnica avanzata</li>
+        <li>non potete dedicare tempo allo studio individuale tra un incontro e l'altro</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ ASCOLTA ═══════════ -->
+<section class="sec" id="ascolta">
+  <div class="shell">
+    <div class="listen" data-rev>
+      <h2 class="listen__t">Prima di decidere, ascoltatelo.</h2>
+      <p class="listen__d">
+        Trenta secondi di video spiegano di questo percorso più di qualsiasi pagina.
+        Guardate cosa fa con sei corde — poi valutate se è il tipo di chitarra che volete imparare.
+      </p>
+      <div class="listen__row">
+        <a href="https://www.youtube.com/channel/UCB9K2p_7brYRrcGvqEBnCiw" target="_blank" rel="noopener" class="chip">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.9-.5-5.8a3 3 0 00-2.1-2.1C18.5 3.6 12 3.6 12 3.6s-6.5 0-8.4.5A3 3 0 001.5 6.2C1 8.1 1 12 1 12s0 3.9.5 5.8a3 3 0 002.1 2.1c1.9.5 8.4.5 8.4.5s6.5 0 8.4-.5a3 3 0 002.1-2.1c.5-1.9.5-5.8.5-5.8zM9.8 15.6V8.4l6.2 3.6z"/></svg>
+          Guarda su YouTube
+        </a>
+        <a href="https://open.spotify.com/album/69WckQmBypu07F84kU3gEg" target="_blank" rel="noopener" class="chip">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm4.6 14.4a.6.6 0 01-.9.2c-2.4-1.4-5.4-1.8-9-1a.6.6 0 11-.3-1.2c3.9-.9 7.2-.5 9.9 1.1.3.2.4.6.3.9zm1.2-2.7a.8.8 0 01-1 .3c-2.7-1.7-6.9-2.2-10.1-1.2a.8.8 0 11-.4-1.5c3.7-1.1 8.3-.6 11.4 1.4.4.2.5.7.1 1zm.1-2.8C14.7 8.9 9.4 8.7 6.3 9.7a.9.9 0 11-.5-1.8c3.6-1.1 9.4-.9 13 1.3a.9.9 0 11-.9 1.6z"/></svg>
+          Ascolta <em style="font-style:italic;margin-left:3px">Vorrei Bastasse</em>
+        </a>
+        <a href="https://www.giovannibaglioni.com/" target="_blank" rel="noopener" class="chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20 15 15 0 010-20z"/></svg>
+          Sito ufficiale
+        </a>
+        <a href="https://www.instagram.com/giovanni.baglioni.official/" target="_blank" rel="noopener" class="chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
+          Instagram
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FAQ ═══════════ -->
+<section class="sec sec--tint" id="faq">
+  <div class="shell">
+    <div class="sec__head" data-rev style="text-align:center;margin-left:auto;margin-right:auto">
+      <span class="eyebrow">Domande</span>
+      <h2 class="h2">Quello che ci chiedono <em>sempre</em>.</h2>
+    </div>
+
+    <div class="faq" data-rev>
+      <details open>
+        <summary>Che livello serve per partecipare?</summary>
+        <div class="faq__a"><p>Bisogna già suonare la chitarra: conoscere la tastiera, avere una mano destra che funziona, essere in grado di eseguire un brano dall'inizio alla fine. Non serve essere avanzati né saper leggere la musica. Al primo incontro conoscitivo del 31 agosto valutiamo insieme se il livello è adeguato — è esattamente per questo che l'incontro esiste.</p></div>
+      </details>
+      <details>
+        <summary>Devo portare la mia chitarra?</summary>
+        <div class="faq__a"><p>Sì. Si lavora sul proprio strumento, perché parte del percorso riguarda proprio il rapporto con la chitarra che si ha. Una chitarra acustica va benissimo, non serve uno strumento costoso.</p></div>
+      </details>
+      <details>
+        <summary>Come sono distribuite le 40 ore?</summary>
+        <div class="faq__a"><p>Il calendario viene definito con i partecipanti dopo il primo incontro, per renderlo compatibile con impegni di lavoro e di studio. Le date esatte vengono comunicate prima della formalizzazione dell'iscrizione: nessuno versa nulla senza sapere quando si terranno gli incontri.</p></div>
+      </details>
+      <details>
+        <summary>La quota è pagabile a rate?</summary>
+        <div class="faq__a"><p>Ne parliamo in segreteria. Per gli altri nostri percorsi gestiamo abitualmente piani di pagamento personalizzati e valutiamo caso per caso: chiamate il <a href="tel:+393935726245">393 572 6245</a> e troviamo la formula.</p></div>
+      </details>
+      <details>
+        <summary>Che cos'è il primo incontro del 31 agosto?</summary>
+        <div class="faq__a"><p>Un incontro conoscitivo gratuito e senza impegno nella nostra sede di Via Sbarre Inferiori 262. Serve a presentare il percorso, conoscere i partecipanti, valutare i livelli e rispondere alle domande di persona. Da lì si decide, non prima.</p></div>
+      </details>
+      <details>
+        <summary>Rilasciate un attestato?</summary>
+        <div class="faq__a"><p>Sì, un attestato di partecipazione Genesi Lavoro. È un seminario di alta formazione artistica: non è una qualifica professionale regionale come i nostri corsi finanziati, e non lo presentiamo come tale.</p></div>
+      </details>
+      <details>
+        <summary>Ricevo del materiale prima di iniziare?</summary>
+        <div class="faq__a"><p>Sì. Ai partecipanti viene inviato materiale preparatorio prima dell'avvio, così si arriva al primo incontro avendo già visto gli argomenti. Per richiederlo in anticipo scrivete a <a href="mailto:formazione@genesilavoro.it">formazione@genesilavoro.it</a>.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ ISCRIZIONE ═══════════ -->
+<section class="sec enroll" id="iscriviti">
+  <div class="shell">
+    <div class="enroll__grid">
+      <div data-rev>
+        <span class="eyebrow">Richiedi un posto</span>
+        <h2 class="h2" style="margin:16px 0 20px">I posti sono <em>a numero chiuso</em>.</h2>
+        <p class="lede">
+          Compilate il modulo: vi richiamiamo per un colloquio conoscitivo, valutiamo insieme
+          il livello e vi diciamo se c'è ancora posto. Nessun impegno e nessun pagamento
+          in questa fase.
+        </p>
+
+        <div class="contacts">
+          <a href="tel:+393935726245" class="contact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg>
+            <span><span class="contact__t">393 572 6245</span><span class="contact__s">Info, prenotazioni e materiale preparatorio</span></span>
+          </a>
+          <a href="mailto:formazione@genesilavoro.it" class="contact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+            <span><span class="contact__t">formazione@genesilavoro.it</span><span class="contact__s">Scriveteci quando volete</span></span>
+          </a>
+          <div class="contact" style="cursor:default">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span><span class="contact__t">Via Sbarre Inferiori 262</span><span class="contact__s">89129 Reggio Calabria — primo incontro il 31 agosto</span></span>
+          </div>
+        </div>
+      </div>
+
+      <form class="form" id="seminarioForm" action="/api/invia-seminario.php" method="POST" novalidate data-rev>
+        <h3 class="form__t">Modulo di preadesione</h3>
+        <p class="form__s">Vi ricontattiamo entro 2 giorni lavorativi.</p>
+
+        <div class="form__err" id="formErr" hidden></div>
+
+        <div class="hp" aria-hidden="true">
+          <label>Non compilare<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+        </div>
+
+        <div class="frow">
+          <label class="field">
+            <span class="field__l">Nome e cognome <span class="req">*</span></span>
+            <input class="inp" name="nome" type="text" required autocomplete="name" placeholder="Es. Marco Rossi">
+          </label>
+          <label class="field">
+            <span class="field__l">Telefono <span class="req">*</span></span>
+            <input class="inp" name="telefono" type="tel" required autocomplete="tel" placeholder="Es. 333 1234567">
+          </label>
+        </div>
+
+        <label class="field">
+          <span class="field__l">Email <span class="req">*</span></span>
+          <input class="inp" name="email" type="email" required autocomplete="email" placeholder="nome@email.it">
+        </label>
+
+        <div class="frow">
+          <label class="field">
+            <span class="field__l">Da quanto suoni? <span class="req">*</span></span>
+            <select class="sel" name="livello" required>
+              <option value="">— Scegli —</option>
+              <option>Meno di 1 anno</option>
+              <option>1–3 anni</option>
+              <option>3–7 anni</option>
+              <option>Più di 7 anni</option>
+              <option>Sono un professionista</option>
+            </select>
+          </label>
+          <label class="field">
+            <span class="field__l">Come studi oggi?</span>
+            <select class="sel" name="formazione">
+              <option value="">— Scegli —</option>
+              <option>Da autodidatta</option>
+              <option>Con un insegnante privato</option>
+              <option>In una scuola di musica</option>
+              <option>Conservatorio</option>
+              <option>Non sto studiando in questo periodo</option>
+            </select>
+          </label>
+        </div>
+
+        <label class="field">
+          <span class="field__l">Vieni al primo incontro del 31 agosto?</span>
+          <select class="sel" name="incontro">
+            <option>Sì, ci sarò</option>
+            <option>Vorrei, ma devo verificare</option>
+            <option>No, ma sono interessato al percorso</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span class="field__l">Raccontaci qualcosa di te</span>
+          <textarea class="txt" name="note" rows="3" placeholder="Che chitarra suoni, cosa ti piacerebbe portarti a casa da questo percorso, eventuali domande…"></textarea>
+        </label>
+
+        <label class="consent">
+          <input type="checkbox" name="privacy" required>
+          <span>Ho letto e accetto l'informativa privacy e autorizzo il trattamento dei miei dati per essere ricontattato in merito a questo percorso, ai sensi del <strong style="color:var(--cream-dim)">Reg. UE 2016/679 (GDPR)</strong>.</span>
+        </label>
+
+        <button type="submit" class="btn btn--primary" id="submitBtn">
+          Invia la richiesta
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+        <p class="price__micro" style="margin-top:16px">Nessun pagamento in questa fase. La richiesta non è vincolante.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer class="foot">
+  <div class="shell">
+    <div class="foot__nav">
+      <a href="Home.dc.html">Home</a>
+      <a href="corsi.dc.html">Corsi</a>
+      <a href="eventi.dc.html">Eventi</a>
+      <a href="finanziamenti.dc.html">Finanziamenti</a>
+      <a href="candidati.dc.html">Candidati</a>
+      <a href="lavora-con-noi.dc.html">Lavora con noi</a>
+    </div>
+    <p class="foot__motto">Sapere · Saper fare · Saper essere</p>
+    <div class="foot__meta">
+      Genesi Lavoro E.T.S. · P.IVA 92104080806 · Accreditamento Regione Calabria D.D. 3251/2022<br>
+      Via Sbarre Inferiori 262, 89129 Reggio Calabria · 0965 375421 · 393 572 6245
+    </div>
+  </div>
+</footer>
+
+<!-- Barra sticky mobile -->
+<div class="sticky" id="sticky">
+  <div class="sticky__p">Quaranta ore<strong>€ 1.500</strong></div>
+  <a href="#iscriviti" class="btn btn--primary">Richiedi un posto</a>
+</div>
+
+<script>
+(() => {
+  'use strict';
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* Nav: fondo opaco dopo lo scroll */
+  const nav = document.getElementById('nav');
+  const sticky = document.getElementById('sticky');
+  const hero = document.querySelector('.hero');
+  const onScroll = () => {
+    const y = window.scrollY;
+    nav.classList.toggle('is-stuck', y > 40);
+    // La barra sticky compare superato l'hero e sparisce sul form
+    const form = document.getElementById('iscriviti');
+    const formTop = form.getBoundingClientRect().top;
+    sticky.classList.toggle('is-on', y > hero.offsetHeight * .75 && formTop > window.innerHeight * .6);
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* Reveal progressivo */
+  if (!reduce && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (!e.isIntersecting) return;
+        setTimeout(() => e.target.classList.add('is-in'), i * 70);
+        io.unobserve(e.target);
+      });
+    }, { threshold: .12, rootMargin: '0px 0px -8% 0px' });
+    document.querySelectorAll('[data-rev]').forEach(el => io.observe(el));
+  } else {
+    document.querySelectorAll('[data-rev]').forEach(el => el.classList.add('is-in'));
+  }
+
+  /* Contatori */
+  if (!reduce && 'IntersectionObserver' in window) {
+    const counters = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        const el = e.target;
+        const to = parseInt(el.dataset.count, 10);
+        const dur = 1300;
+        const t0 = performance.now();
+        const tick = (now) => {
+          const p = Math.min((now - t0) / dur, 1);
+          // easeOutExpo
+          const eased = p === 1 ? 1 : 1 - Math.pow(2, -10 * p);
+          el.textContent = Math.round(to * eased);
+          if (p < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+        counters.unobserve(el);
+      });
+    }, { threshold: .6 });
+    document.querySelectorAll('[data-count]').forEach(el => counters.observe(el));
+  }
+
+  /* FAQ: apertura esclusiva */
+  const faqs = document.querySelectorAll('.faq details');
+  faqs.forEach(d => d.addEventListener('toggle', () => {
+    if (d.open) faqs.forEach(o => { if (o !== d) o.open = false; });
+  }));
+
+  /* Invio form */
+  const form = document.getElementById('seminarioForm');
+  const btn = document.getElementById('submitBtn');
+  const err = document.getElementById('formErr');
+
+  form.addEventListener('submit', async (e) => {
+    if (!form.checkValidity()) { e.preventDefault(); form.reportValidity(); return; }
+    e.preventDefault();
+    err.hidden = true;
+    btn.disabled = true;
+    btn.style.opacity = '.62';
+    btn.textContent = 'Invio in corso…';
+
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json', 'X-Requested-With': 'fetch' }
+      });
+      const data = await res.json().catch(() => ({ ok: res.ok }));
+      if (data.ok) {
+        window.location.href = '/grazie.html?tipo=seminario';
+      } else {
+        throw new Error(data.error || 'errore');
+      }
+    } catch (ex) {
+      err.hidden = false;
+      err.textContent = 'Non siamo riusciti a inviare la richiesta. Riprova, oppure chiamaci al 393 572 6245.';
+      btn.disabled = false;
+      btn.style.opacity = '';
+      btn.textContent = 'Invia la richiesta';
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

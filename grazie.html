@@ -102,6 +102,10 @@
     document.getElementById('title').textContent = 'Richiesta inviata!';
     document.getElementById('lead').innerHTML =
       "Grazie. Ti ricontatteremo <em>al più presto</em> per confermare il colloquio. Se hai lasciato l'email, ne trovi una copia in casella.";
+  } else if (tipo === 'seminario') {
+    document.getElementById('title').textContent = 'Preadesione ricevuta.';
+    document.getElementById('lead').innerHTML =
+      "Grazie. Ti ricontattiamo entro <em>2 giorni lavorativi</em> per il colloquio conoscitivo sul percorso di chitarra acustica con Giovanni Baglioni. Per qualsiasi cosa nel frattempo: <strong>393 572 6245</strong>.";
   }
 
   if (err) {
