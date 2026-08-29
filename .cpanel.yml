@@ -52,7 +52,6 @@ deployment:
     - /bin/mkdir -p $DEPLOYPATH/assets/brand
     - /bin/cp -f assets/*.js $DEPLOYPATH/assets/
     - /bin/cp -f assets/*.jpg $DEPLOYPATH/assets/
-    - /bin/cp -f assets/*.jpeg $DEPLOYPATH/assets/
     - /bin/cp -f assets/*.png $DEPLOYPATH/assets/
     - /bin/cp -f assets/corsi/* $DEPLOYPATH/assets/corsi/
     - /bin/cp -rf assets/brand/. $DEPLOYPATH/assets/brand/
