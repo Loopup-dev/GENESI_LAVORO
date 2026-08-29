@@ -44,9 +44,6 @@ deployment:
     - /bin/cp -f blog.dc.html $DEPLOYPATH/
     - /bin/cp -f blog-*.html $DEPLOYPATH/
 
-    # ── Script condiviso (ancora usato da Home e finanziamenti) ──
-    - /bin/cp -f support.js $DEPLOYPATH/
-
     # ── Assets ──────────────────────────────────────────────
     - /bin/mkdir -p $DEPLOYPATH/assets/corsi
     - /bin/mkdir -p $DEPLOYPATH/assets/brand
