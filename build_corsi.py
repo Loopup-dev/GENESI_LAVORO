@@ -159,6 +159,7 @@ PAGE = """<!DOCTYPE html>
   .footer__nav{{margin-bottom:20px;display:flex;flex-wrap:wrap;gap:20px;justify-content:center;font-size:13.5px}}
   .footer__nav a{{color:rgba(247,243,236,.8)}}.footer__nav a:hover{{color:#B8925A}}
 </style>
+<script src="assets/analytics.js" defer></script>
 </head>
 <body>
 
