@@ -72,7 +72,7 @@
     </p>
 
     <div class="actions">
-      <a href="https://wa.me/390965375421" target="_blank" rel="noopener" class="btn btn--primary">💬 Apri WhatsApp</a>
+      <a href="https://wa.me/393935726245" target="_blank" rel="noopener" class="btn btn--primary">💬 Apri WhatsApp</a>
       <a href="Home.dc.html" class="btn btn--ghost">← Torna alla home</a>
     </div>
 
@@ -106,6 +106,15 @@
     document.getElementById('title').textContent = 'Preadesione ricevuta.';
     document.getElementById('lead').innerHTML =
       "Grazie. Ti ricontattiamo entro <em>2 giorni lavorativi</em> per il colloquio conoscitivo sul percorso di chitarra acustica con Giovanni Baglioni. Per qualsiasi cosa nel frattempo: <strong>393 572 6245</strong>.";
+
+  } else if (tipo === 'docente') {
+    document.getElementById('title').textContent = 'Candidatura ricevuta.';
+    document.getElementById('lead').innerHTML =
+      "Grazie. Sei entrato nel nostro albo docenti: ti ricontattiamo entro <em>15 giorni lavorativi</em> e ti scriviamo quando parte un corso nella tua area.";
+  } else if (tipo === 'newsletter') {
+    document.getElementById('title').textContent = 'Iscrizione confermata.';
+    document.getElementById('lead').innerHTML =
+      "Grazie. Ti scriveremo quando apriamo un nuovo corso, quando esce un bando che potrebbe riguardarti e quando pubblichiamo qualcosa di <em>davvero utile</em>. Niente spam.";
   }
 
   if (err) {

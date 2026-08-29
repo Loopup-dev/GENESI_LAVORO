@@ -1,7 +1,7 @@
 <?php
 // Endpoint per il form "Prenota colloquio" (candidati.dc.html).
 
-require_once __DIR__ . '/shared.php';
+require_once __DIR__ . '/newsletter.php';
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
@@ -75,5 +75,7 @@ $ok = gl_send_mail(
     [],
     $email ?: null    // copia di cortesia al mittente solo se ha lasciato l'email
 );
+
+gl_newsletter_from_post($email, $nome, 'colloquio', array_filter([$corso]));
 
 gl_respond($ok, '/grazie.html?tipo=colloquio', $ok ? null : 'send_failed');

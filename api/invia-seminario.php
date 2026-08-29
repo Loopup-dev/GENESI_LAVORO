@@ -2,7 +2,7 @@
 // Endpoint per il modulo di preadesione al seminario di chitarra
 // (seminario-chitarra-baglioni.html).
 
-require_once __DIR__ . '/shared.php';
+require_once __DIR__ . '/newsletter.php';
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
@@ -65,5 +65,7 @@ $text = "Nuova preadesione — Seminario chitarra acustica (Giovanni Baglioni)\n
       . "Note: " . ($note ?: '-') . "\n";
 
 $ok = gl_send_mail($oggetto, $html, $text, $email, $nome, [], $email);
+
+gl_newsletter_from_post($email, $nome, 'seminario', ['Musica e chitarra']);
 
 gl_respond($ok, '/grazie.html?tipo=seminario', $ok ? null : 'send_failed');

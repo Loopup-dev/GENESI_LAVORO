@@ -7,13 +7,13 @@
       "titolo_breve": "OSS",
       "area": "Socio-sanitaria",
       "tipo": "pagamento",
-      "badge": "A pagamento — rate personalizzate",
+      "badge": "A pagamento — 12 rate da 150 €",
       "durata": "1.000 ore",
       "durata_dettaglio": "550 ore di teoria e laboratorio + 450 ore di tirocinio",
       "foto": "assets/corsi/01-oss.jpg",
       "foto_alt": "Operatore socio sanitario in corsia",
       "meta_desc": "Corso OSS a Reggio Calabria: qualifica riconosciuta dalla Regione Calabria, 1.000 ore con tirocinio in struttura. Rate personalizzate.",
-      "lead": "La qualifica più richiesta del settore socio-sanitario in Calabria. Un percorso serio, con tirocinio vero in struttura, che si chiude con un titolo riconosciuto dalla Regione.",
+      "lead": "La qualifica più richiesta del settore socio-sanitario in Calabria. Un percorso serio, con tirocinio vero in struttura, che si chiude con un titolo riconosciuto dalla Regione. Si paga in 12 rate da 150 €, senza interessi.",
       "imparerai": [
         "Igiene e assistenza diretta alla persona non autosufficiente",
         "Mobilizzazione, postura e prevenzione delle lesioni da decubito",
@@ -34,7 +34,53 @@
         "Centri diurni e strutture per disabilità"
       ],
       "esperienza": "Le 450 ore di tirocinio non sono un adempimento burocratico: sono il momento in cui si impara davvero. Vi accompagniamo nella scelta della struttura e vi seguiamo per tutta la durata, perché è lì che nasce quasi sempre la prima proposta di lavoro.",
-      "cta_titolo": "Pronto a entrare in corsia?"
+      "cta_titolo": "Pronto a entrare in corsia?",
+      "prossimo": true,
+      "posti_rimasti": 3,
+      "rate": {
+        "numero": 12,
+        "importo": 150,
+        "totale": 1800
+      },
+      "formato": "corso"
+    },
+    {
+      "slug": "seminario-chitarra-baglioni",
+      "titolo": "Chitarra Acustica — percorso con Giovanni Baglioni",
+      "titolo_breve": "Seminario chitarra",
+      "area": "Spettacolo · Musica",
+      "tipo": "pagamento",
+      "formato": "seminario",
+      "badge": "Seminario · 1.500 €",
+      "durata": "40 ore",
+      "durata_dettaglio": "40 ore con l'artista, tra masterclass, prove guidate, simulazioni e consulenze individuali",
+      "foto": "assets/locandina-baglioni.jpg",
+      "foto_alt": "Giovanni Baglioni con la chitarra acustica",
+      "prossimo": true,
+      "posti_rimasti": null,
+      "link_esterno": "seminario-chitarra-baglioni.html",
+      "meta_desc": "Seminario di chitarra acustica con Giovanni Baglioni a Reggio Calabria: 40 ore di fingerstyle contemporaneo. Primo incontro il 31 agosto.",
+      "lead": "Quaranta ore con uno degli strumentisti più originali del fingerstyle italiano. Primo incontro conoscitivo il 31 agosto.",
+      "imparerai": [
+        "Tapping e laptapping",
+        "Accordature aperte",
+        "Armonici artificiali",
+        "Uso percussivo dello strumento",
+        "Dinamiche, timbro e resa emotiva",
+        "Gestione della performance dal vivo"
+      ],
+      "rivolto": [
+        "Chitarristi autodidatti",
+        "Allievi di scuola di musica",
+        "Insegnanti di chitarra"
+      ],
+      "sbocchi": [
+        "Repertorio solistico",
+        "Performance dal vivo",
+        "Didattica della chitarra acustica"
+      ],
+      "esperienza": "Un percorso di alta formazione artistica a numero chiuso.",
+      "cta_titolo": "Richiedi un posto."
     },
     {
       "slug": "osss",
@@ -69,7 +115,10 @@
         "Coordinamento di piccole équipe assistenziali"
       ],
       "esperienza": "Il corso è pensato per chi lavora: la didattica è organizzata per essere compatibile con i turni, e il tirocinio può essere svolto in accordo con la struttura in cui si è già impiegati.",
-      "cta_titolo": "Fai il salto di livello."
+      "cta_titolo": "Fai il salto di livello.",
+      "formato": "corso",
+      "prossimo": false,
+      "posti_rimasti": null
     },
     {
       "slug": "tecnico-del-suono",
@@ -104,7 +153,10 @@
         "Post-produzione audio per media e broadcast"
       ],
       "esperienza": "Le nostre aule audio sono attrezzate con strumentazione professionale, non didattica. Si lavora su sessioni reali, si sbaglia, si rifà. Chi esce da qui ha già le mani sporche di lavoro vero.",
-      "cta_titolo": "Pronto a mettere le mani sul mixer?"
+      "cta_titolo": "Pronto a mettere le mani sul mixer?",
+      "formato": "corso",
+      "prossimo": false,
+      "posti_rimasti": null
     },
     {
       "slug": "dizione-recitazione-doppiaggio",
@@ -139,7 +191,10 @@
         "Formazione e public speaking aziendale"
       ],
       "esperienza": "Si lavora in piccoli gruppi, perché sulla voce non si può fare lezione frontale. Ogni allievo entra in sala, registra, riascolta e rifà — con il docente accanto.",
-      "cta_titolo": "La tua voce merita di essere allenata."
+      "cta_titolo": "La tua voce merita di essere allenata.",
+      "formato": "corso",
+      "prossimo": false,
+      "posti_rimasti": null
     },
     {
       "slug": "sab-somministrazione",
@@ -174,7 +229,10 @@
         "Gestione di strutture ricettive con somministrazione"
       ],
       "esperienza": "È un corso breve e denso, pensato per chi ha già un progetto in testa. Alla fine dovete sapere non solo cosa dice la norma, ma cosa fare lunedì mattina per aprire.",
-      "cta_titolo": "Il tuo locale inizia da qui."
+      "cta_titolo": "Il tuo locale inizia da qui.",
+      "formato": "corso",
+      "prossimo": false,
+      "posti_rimasti": null
     },
     {
       "slug": "amministrativo-contabile",
@@ -209,7 +267,10 @@
         "Associazioni di categoria e enti del terzo settore"
       ],
       "esperienza": "Le 80 ore di project work si svolgono su documentazione reale anonimizzata: fatture vere, registri veri, scadenze vere. Perché la contabilità sui libri di testo non esiste.",
-      "cta_titolo": "Le aziende cercano chi sa fare i conti."
+      "cta_titolo": "Le aziende cercano chi sa fare i conti.",
+      "formato": "corso",
+      "prossimo": false,
+      "posti_rimasti": null
     },
     {
       "slug": "meccatronico-auto",
@@ -244,7 +305,10 @@
         "Manutenzione industriale e mezzi speciali"
       ],
       "esperienza": "Metà del corso si svolge in officina, con veicoli reali e strumentazione diagnostica professionale. Le 320 ore di tirocinio si fanno presso officine del territorio con cui collaboriamo.",
-      "cta_titolo": "L'officina ti aspetta."
+      "cta_titolo": "L'officina ti aspetta.",
+      "formato": "corso",
+      "prossimo": false,
+      "posti_rimasti": null
     },
     {
       "slug": "sviluppo-web",
@@ -279,7 +343,10 @@
         "Freelance e lavoro da remoto"
       ],
       "esperienza": "Le ultime 180 ore sono dedicate interamente al progetto personale: ognuno costruisce e pubblica qualcosa di suo, seguito da un docente. Alla fine avete un link da mettere nel CV.",
-      "cta_titolo": "Il tuo primo commit ti aspetta."
+      "cta_titolo": "Il tuo primo commit ti aspetta.",
+      "formato": "corso",
+      "prossimo": false,
+      "posti_rimasti": null
     },
     {
       "slug": "cybersecurity",
@@ -314,7 +381,10 @@
         "Supporto sistemistico con focus sulla sicurezza"
       ],
       "esperienza": "Tutte le esercitazioni si svolgono in laboratorio isolato, su macchine predisposte. Si impara ad attaccare per capire come si difende — in un ambiente controllato e nel pieno rispetto della legge.",
-      "cta_titolo": "Difendere è un mestiere."
+      "cta_titolo": "Difendere è un mestiere.",
+      "formato": "corso",
+      "prossimo": false,
+      "posti_rimasti": null
     },
     {
       "slug": "hardware-reti",
@@ -349,7 +419,125 @@
         "Sistemista junior in azienda"
       ],
       "esperienza": "Il laboratorio è attrezzato con apparati veri: armadi, switch gestiti, patch panel. Si monta, si smonta, si configura. Il tirocinio si svolge presso aziende di assistenza del territorio.",
-      "cta_titolo": "Tieni in piedi la rete."
+      "cta_titolo": "Tieni in piedi la rete.",
+      "formato": "corso",
+      "prossimo": false,
+      "posti_rimasti": null
+    },
+    {
+      "slug": "icdl",
+      "titolo": "ICDL — Patente Europea del Computer",
+      "titolo_breve": "ICDL",
+      "area": "Informatica · Certificazioni",
+      "tipo": "pagamento",
+      "formato": "certificazione",
+      "badge": "Certificazione · in convenzione",
+      "durata": "Percorso modulare",
+      "durata_dettaglio": "Preparazione modulare agli esami, con calendario concordato",
+      "foto": "assets/corsi/11-icdl.jpg",
+      "foto_alt": "Postazioni informatiche in aula",
+      "convenzione": "Forma Menti — Bova (RC)",
+      "meta_desc": "Certificazione ICDL a Reggio Calabria con Genesi Lavoro, in convenzione con Forma Menti (Bova). Preparazione agli esami e rilascio della patente europea del computer.",
+      "lead": "La certificazione informatica più riconosciuta in Europa: vale punteggio nelle graduatorie scolastiche e nei concorsi pubblici, ed è richiesta da molte selezioni aziendali.",
+      "imparerai": [
+        "Fondamenti del computer e gestione dei file",
+        "Navigazione e comunicazione in rete",
+        "Elaborazione testi (Word)",
+        "Fogli di calcolo (Excel)",
+        "Presentazioni (PowerPoint)",
+        "Sicurezza informatica di base (IT Security)"
+      ],
+      "rivolto": [
+        "Chi partecipa a concorsi pubblici o graduatorie scolastiche",
+        "Chi cerca lavoro d'ufficio e deve certificare le competenze",
+        "Studenti e adulti che vogliono colmare le lacune digitali"
+      ],
+      "sbocchi": [
+        "Punteggio in graduatorie ATA e docenti",
+        "Requisito in concorsi e selezioni pubbliche",
+        "Competenze certificate per il lavoro d'ufficio"
+      ],
+      "esperienza": "Il percorso si svolge in convenzione con Forma Menti di Bova, centro accreditato per le certificazioni. Si studia con noi, si sostiene l'esame nella sede d'esame convenzionata.",
+      "cta_titolo": "Certifica quello che sai già fare.",
+      "prossimo": false,
+      "posti_rimasti": null
+    },
+    {
+      "slug": "eipass",
+      "titolo": "EIPASS — Certificazioni Informatiche",
+      "titolo_breve": "EIPASS",
+      "area": "Informatica · Certificazioni",
+      "tipo": "pagamento",
+      "formato": "certificazione",
+      "badge": "Certificazione · in convenzione",
+      "durata": "Percorso modulare",
+      "durata_dettaglio": "Preparazione modulare agli esami, con calendario concordato",
+      "foto": "assets/corsi/12-eipass.jpg",
+      "foto_alt": "Aula informatica durante una sessione d'esame",
+      "convenzione": "Forma Menti — Bova (RC)",
+      "meta_desc": "Certificazioni EIPASS a Reggio Calabria con Genesi Lavoro, in convenzione con Forma Menti (Bova). Valide per graduatorie scolastiche e concorsi.",
+      "lead": "Le certificazioni EIPASS coprono percorsi specifici — dal profilo base a quelli per la scuola e la pubblica amministrazione — e sono valutate nelle graduatorie del personale scolastico.",
+      "imparerai": [
+        "Alfabetizzazione digitale e uso del sistema operativo",
+        "Videoscrittura, calcolo e presentazioni",
+        "Servizi online e posta elettronica",
+        "Sicurezza dei dati e privacy",
+        "Moduli specialistici a seconda del profilo scelto",
+        "Preparazione mirata alla prova d'esame"
+      ],
+      "rivolto": [
+        "Personale scolastico e aspiranti docenti",
+        "Chi partecipa a concorsi pubblici",
+        "Chi ha bisogno di una certificazione spendibile in tempi brevi"
+      ],
+      "sbocchi": [
+        "Punteggio nelle graduatorie del personale scolastico",
+        "Requisito in bandi e concorsi",
+        "Attestazione delle competenze digitali per il CV"
+      ],
+      "esperienza": "Come per ICDL, il percorso è in convenzione con Forma Menti di Bova. Prima di iscrivervi valutiamo insieme quale profilo EIPASS conviene davvero al vostro obiettivo: non sono tutti uguali e non tutti danno lo stesso punteggio.",
+      "cta_titolo": "Scegli la certificazione giusta.",
+      "prossimo": false,
+      "posti_rimasti": null
+    },
+    {
+      "slug": "istruttore-forestale",
+      "titolo": "Istruttore Forestale — progetto For.Italy",
+      "titolo_breve": "Istruttore forestale",
+      "area": "Forestale · Ambiente",
+      "tipo": "gratuito",
+      "formato": "corso",
+      "badge": "In apertura — For.Italy",
+      "durata": "280 ore",
+      "durata_dettaglio": "280 ore, sette settimane da 40 ore in periodi non consecutivi, piu' 40 ore di tirocinio didattico",
+      "foto": "assets/corsi/13-forestale.jpg",
+      "foto_alt": "Cantiere forestale in un bosco della Calabria",
+      "prossimo": true,
+      "posti_rimasti": null,
+      "meta_desc": "Corso per Istruttore Forestale in abbattimento e allestimento a Reggio Calabria, nel quadro del progetto nazionale For.Italy. 280 ore. La Calabria e' co-capofila del progetto.",
+      "lead": "La Calabria e' co-capofila nazionale del progetto For.Italy insieme alla Toscana. Il percorso forma chi insegnera' il mestiere agli operatori forestali: 280 ore per diventare Istruttore forestale in abbattimento e allestimento.",
+      "imparerai": [
+        "Tecniche di abbattimento e allestimento in sicurezza",
+        "Uso professionale della motosega e manutenzione dell'attrezzatura",
+        "Valutazione della pianta, del terreno e delle condizioni di cantiere",
+        "Dispositivi di protezione individuale e gestione delle emergenze in bosco",
+        "Metodologia didattica: come si trasferisce un mestiere manuale",
+        "Progettazione e conduzione di un cantiere formativo"
+      ],
+      "rivolto": [
+        "Operatori forestali con esperienza documentata sul campo",
+        "Tecnici e imprese boschive che vogliono formare il proprio personale",
+        "Chi opera in cantieri forestali e punta a un ruolo di coordinamento"
+      ],
+      "sbocchi": [
+        "Docenza nei corsi per operatore forestale",
+        "Coordinamento di cantieri e squadre boschive",
+        "Imprese forestali e manutenzione del verde",
+        "Formazione sulla sicurezza in ambito forestale"
+      ],
+      "esperienza": "For.Italy nasce dal Testo unico in materia di foreste (D.lgs. 34/2018) e dal decreto ministeriale sulla formazione forestale, per dare all'Italia uno standard unico. La Calabria non subisce quel sistema: lo guida, come regione co-capofila della seconda edizione insieme alla Toscana. Con 612.931 ettari di bosco e un indice di boscosita' del 40,6%, e' anche il posto dove quelle competenze servono davvero.",
+      "cta_titolo": "Il bosco ha bisogno di chi lo sa insegnare.",
+      "nota_verifica": "Calendario, requisiti d'accesso e numero di posti sono in via di definizione con la Regione Calabria. Lasciaci un contatto: ti avvisiamo appena il bando e' ufficiale."
     }
   ]
 }

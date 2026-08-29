@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insegna con noi — Albo docenti | Genesi Lavoro Reggio Calabria</title>
+<meta name="description" content="Entra nell'albo docenti di Genesi Lavoro. Candidati indicando la tua materia: ti chiamiamo quando parte un corso che cerca la tua competenza. Reggio Calabria.">
+<link rel="canonical" href="https://genesilavoro.it/docenti.dc.html">
+<meta property="og:title" content="Insegna con noi — Albo docenti Genesi Lavoro">
+<meta property="og:description" content="C'è posto per far brillare ogni competenza. Candidati all'albo docenti di Genesi Lavoro.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,500;0,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}html,body{margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:#F7F3EC;color:#4A2B25;font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.58}
+  a{color:#8A4B3A;text-decoration:none;transition:color .25s}a:hover{color:#B8925A}
+  img{max-width:100%;height:auto;display:block}
+  input,select,textarea,button{font-family:inherit}
+  ::selection{background:#B8925A;color:#FBF8F2}
+  :focus-visible{outline:2px solid #B8925A;outline-offset:3px;border-radius:6px}
+
+  .shell{max-width:1240px;margin:0 auto;padding:0 40px}
+  @media(max-width:900px){.shell{padding:0 20px}}
+
+  /* NAV */
+  .nav{position:sticky;top:0;z-index:900;display:flex;align-items:center;justify-content:space-between;padding:14px 40px;background:rgba(247,243,236,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(74,43,37,.08)}
+  .nav__brand{display:flex;align-items:center;gap:12px;color:#4A2B25}
+  .nav__brand img{width:44px;height:44px;object-fit:contain}
+  .nav__brand-name{font-family:'Playfair Display',serif;font-weight:700;font-size:19px;display:block;line-height:1}
+  .nav__brand-sub{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:#8C8478;margin-top:3px;display:block}
+  .nav__links{display:flex;align-items:center;gap:26px;font-size:14px;font-weight:500}
+  .nav__links a{color:#4A2B25}
+  .nav__cta{font-size:13px;font-weight:600;color:#FBF8F2;background:#B8925A;padding:11px 22px;border-radius:100px;box-shadow:0 5px 16px rgba(184,146,90,.32);transition:transform .3s}
+  .nav__cta:hover{transform:translateY(-2px);color:#FBF8F2}
+  @media(max-width:900px){.nav__links{display:none}.nav{padding:12px 20px}}
+
+  /* HERO */
+  .hero{position:relative;padding:84px 0 70px;overflow:hidden}
+  .hero::before{content:"";position:absolute;width:620px;height:620px;border-radius:50%;background:rgba(184,146,90,.14);filter:blur(90px);top:-42%;right:-10%;pointer-events:none}
+  .hero__grid{position:relative;z-index:2;display:grid;grid-template-columns:1.06fr .94fr;gap:60px;align-items:center}
+  @media(max-width:940px){.hero__grid{grid-template-columns:1fr;gap:38px}}
+  .eyebrow{font-size:12px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:#B8925A;margin-bottom:16px}
+  h1{font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(38px,5.8vw,74px);line-height:1;letter-spacing:-.025em;margin:0 0 22px}
+  h1 em{font-style:italic;color:#8A4B3A;font-weight:500}
+  .lede{font-size:clamp(16px,1.8vw,19px);line-height:1.7;color:#5c4038;max-width:56ch;margin:0 0 30px}
+  .hero__cta{display:inline-flex;align-items:center;gap:10px;font-size:15.5px;font-weight:600;color:#FBF8F2;background:#4A2B25;padding:16px 32px;border-radius:100px;transition:transform .3s,background .3s;box-shadow:0 8px 24px rgba(74,43,37,.22)}
+  .hero__cta:hover{transform:translateY(-2px);background:#8A4B3A;color:#FBF8F2}
+
+  .hero__art{position:relative;aspect-ratio:1;display:flex;align-items:center;justify-content:center}
+  .hero__art img{width:100%;height:100%;object-fit:cover;border-radius:20px;box-shadow:0 28px 64px -20px rgba(74,43,37,.34)}
+
+  /* SEZIONI */
+  .sec{padding:clamp(64px,8vw,108px) 0}
+  .sec--tint{background:#FBF8F2;border-top:1px solid rgba(74,43,37,.08);border-bottom:1px solid rgba(74,43,37,.08)}
+  .h2{font-family:'Playfair Display',serif;font-weight:600;font-size:clamp(28px,4vw,48px);line-height:1.06;letter-spacing:-.02em;margin:0 0 20px}
+  .h2 em{font-style:italic;color:#8A4B3A;font-weight:500}
+
+  /* Come funziona */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+  @media(max-width:860px){.steps{grid-template-columns:1fr}}
+  .step{background:#F7F3EC;border:1px solid rgba(74,43,37,.1);border-radius:16px;padding:30px 26px}
+  .sec--tint .step{background:#fff}
+  .step__n{font-family:'Playfair Display',serif;font-size:32px;color:#B8925A;line-height:1;margin-bottom:14px}
+  .step__t{font-weight:600;font-size:17px;margin:0 0 8px}
+  .step__d{font-size:14.5px;line-height:1.62;color:#7a6258;margin:0}
+
+  /* Aree */
+  .aree{display:grid;grid-template-columns:repeat(auto-fit,minmax(228px,1fr));gap:16px;margin-top:40px}
+  .area{background:#FBF8F2;border:1px solid rgba(74,43,37,.1);border-radius:14px;padding:24px;transition:border-color .3s,transform .3s}
+  .area:hover{border-color:#B8925A;transform:translateY(-3px)}
+  .area__t{font-weight:600;font-size:16px;margin:0 0 7px;display:flex;align-items:center;gap:9px}
+  .area__t svg{width:19px;height:19px;color:#8A4B3A;flex:none}
+  .area__d{font-size:14px;line-height:1.58;color:#7a6258;margin:0}
+
+  /* FORM */
+  .form-wrap{display:grid;grid-template-columns:.86fr 1.14fr;gap:clamp(32px,5vw,70px);align-items:start}
+  @media(max-width:940px){.form-wrap{grid-template-columns:1fr;gap:38px}}
+  .form{background:#FBF8F2;border:1px solid rgba(74,43,37,.12);border-radius:20px;padding:clamp(26px,3.6vw,40px);box-shadow:0 20px 56px -22px rgba(74,43,37,.2)}
+  .form__t{font-family:'Playfair Display',serif;font-size:27px;font-weight:600;margin:0 0 6px}
+  .form__s{font-size:14.5px;color:#8C8478;margin:0 0 26px}
+  .frow{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+  @media(max-width:600px){.frow{grid-template-columns:1fr}}
+  .field{display:block;margin-bottom:16px}
+  .field__l{display:block;font-size:12.5px;font-weight:600;color:#5c4038;margin-bottom:7px}
+  .req{color:#8A4B3A}
+  .inp,.sel,.txt{width:100%;font-size:15px;padding:13px 15px;border:1.5px solid rgba(74,43,37,.16);border-radius:10px;background:#fff;color:#4A2B25;transition:border-color .25s}
+  .inp:focus,.sel:focus,.txt:focus{outline:none;border-color:#7C8A5A}
+  .inp::placeholder,.txt::placeholder{color:#a99f92}
+  .txt{resize:vertical;min-height:92px}
+  .sel{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238A4B3A' stroke-width='1.6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 15px center;padding-right:38px}
+
+  /* Checkbox ambiti */
+  .ambiti{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:6px}
+  @media(max-width:600px){.ambiti{grid-template-columns:1fr}}
+  .amb{display:flex;align-items:flex-start;gap:9px;background:#fff;border:1.5px solid rgba(74,43,37,.14);border-radius:10px;padding:12px 13px;cursor:pointer;transition:border-color .25s,background .25s;font-size:14px;line-height:1.4}
+  .amb:hover{border-color:#B8925A}
+  .amb input{margin-top:2px;flex:none;accent-color:#7C8A5A;width:16px;height:16px}
+  .amb input:checked ~ span{font-weight:600;color:#4A2B25}
+  .amb:has(input:checked){border-color:#7C8A5A;background:rgba(124,138,90,.08)}
+
+  /* Upload CV */
+  .upload{display:flex;align-items:center;gap:15px;background:#fff;border:1.5px dashed rgba(74,43,37,.26);border-radius:12px;padding:18px 20px;cursor:pointer;transition:border-color .25s,background .25s}
+  .upload:hover{border-color:#7C8A5A;background:rgba(124,138,90,.05)}
+  .upload.has-file{border-style:solid;border-color:#7C8A5A;background:rgba(124,138,90,.08)}
+  .upload__ico{width:40px;height:40px;border-radius:10px;background:rgba(138,75,58,.1);color:#8A4B3A;display:flex;align-items:center;justify-content:center;flex:none}
+  .upload__t{font-weight:600;font-size:14.5px;margin:0 0 2px}
+  .upload__m{font-size:12.5px;color:#8C8478;margin:0}
+  .upload input[type=file]{position:absolute;left:-9999px}
+
+  /* Consensi */
+  .consent{display:flex;gap:11px;align-items:flex-start;font-size:12.5px;line-height:1.55;color:#7a6258;margin:16px 0}
+  .consent input{margin-top:3px;flex:none;accent-color:#7C8A5A;width:16px;height:16px}
+  .consent--news{background:rgba(184,146,90,.1);border:1px solid rgba(184,146,90,.32);border-radius:11px;padding:14px 16px;margin:18px 0 20px}
+
+  .submit{width:100%;display:inline-flex;align-items:center;justify-content:center;gap:10px;font-size:16px;font-weight:600;color:#FBF8F2;background:#4A2B25;border:none;padding:17px;border-radius:100px;cursor:pointer;transition:background .3s,transform .3s}
+  .submit:hover{background:#8A4B3A;transform:translateY(-2px)}
+  .submit:disabled{opacity:.6;cursor:not-allowed;transform:none}
+  .micro{font-size:12px;color:#a2917f;text-align:center;margin:14px 0 0;line-height:1.55}
+  .form__err{background:rgba(138,75,58,.1);border:1px solid rgba(138,75,58,.32);border-radius:10px;padding:13px 15px;margin-bottom:17px;font-size:13.5px;color:#8A4B3A}
+  .form__err[hidden]{display:none}
+  .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+  /* aside */
+  .aside__list{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:16px}
+  .aside__list li{position:relative;padding-left:30px;font-size:15px;line-height:1.6;color:#5c4038}
+  .aside__list li::before{content:"";position:absolute;left:0;top:8px;width:14px;height:14px;border-radius:50%;background:rgba(124,138,90,.2);border:1.5px solid #7C8A5A}
+
+  /* FOOTER */
+  .footer{background:#4A2B25;color:#F7F3EC;padding:52px 40px 42px;text-align:center}
+  .footer__nav{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin-bottom:24px;font-size:13.5px}
+  .footer__nav a{color:rgba(247,243,236,.82)}.footer__nav a:hover{color:#B8925A}
+  .footer__motto{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:20px;color:#B8925A;margin:0 0 8px}
+  .footer__meta{font-size:12.5px;color:rgba(247,243,236,.68);line-height:1.7}
+
+  [data-rev]{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}
+  [data-rev].is-in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){*{animation:none !important;transition:none !important}[data-rev]{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="Home.dc.html" class="nav__brand">
+    <img src="assets/logo-transparent.png" alt="">
+    <span>
+      <span class="nav__brand-name">Genesi Lavoro</span>
+      <span class="nav__brand-sub">Formazione Professionale</span>
+    </span>
+  </a>
+  <div class="nav__links">
+    <a href="corsi.dc.html">Corsi</a>
+    <a href="finanziamenti.dc.html">Finanziamenti</a>
+    <a href="eventi.dc.html">Eventi</a>
+    <a href="blog.dc.html">Blog</a>
+    <a href="docenti.dc.html" aria-current="page">Lavora con noi</a>
+    <a href="Home.dc.html#chisiamo">Chi siamo</a>
+  </div>
+  <a href="#candidati" class="nav__cta">Candidati</a>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="shell hero__grid">
+    <div>
+      <div class="eyebrow">Albo docenti e collaboratori</div>
+      <h1>C'è posto per far brillare <em>ogni qualità</em>.</h1>
+      <p class="lede">
+        Ogni corso che apriamo ha bisogno di qualcuno che quel mestiere lo abbia fatto davvero.
+        Non cerchiamo curriculum perfetti: cerchiamo persone competenti, in aula e sul campo.
+        Lasciaci il tuo nome e la tua materia — quando parte un percorso che ha bisogno di te, ti chiamiamo.
+      </p>
+      <a href="#candidati" class="hero__cta">
+        Entra nell'albo
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+    <div class="hero__art">
+      <img src="assets/aula-audio-2.jpg" alt="Un'aula di Genesi Lavoro durante una lezione">
+    </div>
+  </div>
+</header>
+
+<!-- COME FUNZIONA -->
+<section class="sec sec--tint">
+  <div class="shell">
+    <div data-rev style="max-width:60ch">
+      <div class="eyebrow">Come funziona</div>
+      <h2 class="h2">Non è un annuncio.<br>È un <em>albo che consultiamo davvero</em>.</h2>
+      <p class="lede" style="margin-bottom:0">
+        I nostri corsi partono quando c'è un finanziamento o un numero sufficiente di iscritti.
+        Quando succede, la prima cosa che facciamo è aprire questo elenco e cercare chi ha
+        la competenza giusta. Per questo la candidatura non scade.
+      </p>
+    </div>
+
+    <div class="steps">
+      <div class="step" data-rev>
+        <div class="step__n">01</div>
+        <p class="step__t">Ti candidi</p>
+        <p class="step__d">Compili il modulo indicando gli ambiti che potresti insegnare e alleghi il CV. Ci vogliono cinque minuti.</p>
+      </div>
+      <div class="step" data-rev>
+        <div class="step__n">02</div>
+        <p class="step__t">Ti inseriamo nell'albo</p>
+        <p class="step__d">Leggiamo il profilo e lo archiviamo per ambito. Se serve, ti chiamiamo per un colloquio conoscitivo anche senza un corso già attivo.</p>
+      </div>
+      <div class="step" data-rev>
+        <div class="step__n">03</div>
+        <p class="step__t">Ti contattiamo quando serve</p>
+        <p class="step__d">All'avvio di un corso nella tua area ti scriviamo con dettagli su ore, calendario e compenso. Nessun impegno finché non accetti.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AREE -->
+<section class="sec">
+  <div class="shell">
+    <div data-rev style="max-width:58ch">
+      <div class="eyebrow">Le aree in cui insegniamo</div>
+      <h2 class="h2">Cerchiamo competenze,<br>non solo titoli.</h2>
+      <p class="lede">
+        Queste sono le aree in cui operiamo oggi. Se la tua non è in elenco, candidati lo stesso:
+        apriamo percorsi nuovi ogni anno e le proposte migliori sono arrivate da chi ci ha
+        scritto per primo.
+      </p>
+    </div>
+
+    <div class="aree">
+      <div class="area" data-rev>
+        <p class="area__t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-7-10a7 7 0 0114 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg>Socio-sanitaria</p>
+        <p class="area__d">OSS e OSSS: infermieri, fisioterapisti, educatori, coordinatori di struttura, esperti di igiene e sicurezza.</p>
+      </div>
+      <div class="area" data-rev>
+        <p class="area__t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>Informatica</p>
+        <p class="area__d">Sviluppo web, reti e hardware, cybersecurity, certificazioni ICDL ed EIPASS, alfabetizzazione digitale.</p>
+      </div>
+      <div class="area" data-rev>
+        <p class="area__t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>Spettacolo e audio</p>
+        <p class="area__d">Tecnica del suono, regia, dizione, recitazione e doppiaggio, musica, produzione di eventi dal vivo.</p>
+      </div>
+      <div class="area" data-rev>
+        <p class="area__t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 00.3 1.9l.1.1a2 2 0 11-2.8 2.8l-.1-.1a1.7 1.7 0 00-1.9-.3 1.7 1.7 0 00-1 1.5V21a2 2 0 11-4 0v-.1A1.7 1.7 0 007 19.4a1.7 1.7 0 00-1.9.3l-.1.1a2 2 0 11-2.8-2.8l.1-.1a1.7 1.7 0 00.3-1.9 1.7 1.7 0 00-1.5-1H1a2 2 0 110-4h.1A1.7 1.7 0 002.6 7a1.7 1.7 0 00-.3-1.9l-.1-.1a2 2 0 112.8-2.8l.1.1a1.7 1.7 0 001.9.3H7a1.7 1.7 0 001-1.5V1a2 2 0 114 0v.1a1.7 1.7 0 001 1.5 1.7 1.7 0 001.9-.3l.1-.1a2 2 0 112.8 2.8l-.1.1a1.7 1.7 0 00-.3 1.9V9a1.7 1.7 0 001.5 1H21a2 2 0 110 4h-.1a1.7 1.7 0 00-1.5 1z"/></svg>Meccatronica</p>
+        <p class="area__d">Meccanica e diagnostica auto, elettronica di bordo, motorizzazioni ibride ed elettriche, manutenzione industriale.</p>
+      </div>
+      <div class="area" data-rev>
+        <p class="area__t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg>Amministrazione</p>
+        <p class="area__d">Contabilità, paghe e adempimenti, fiscalità, gestione d'impresa, software gestionali.</p>
+      </div>
+      <div class="area" data-rev>
+        <p class="area__t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4zM6 1v3M10 1v3M14 1v3"/></svg>Ho.Re.Ca</p>
+        <p class="area__d">Somministrazione alimenti e bevande, HACCP, sala e bar, gestione del pubblico esercizio.</p>
+      </div>
+      <div class="area" data-rev>
+        <p class="area__t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12M12 12L7 6M12 12l5-6M12 6V2"/><path d="M4 22h16"/></svg>Forestale e ambiente</p>
+        <p class="area__d">Selvicoltura, uso in sicurezza della motosega, gestione del bosco, sicurezza nei cantieri forestali.</p>
+      </div>
+      <div class="area" data-rev>
+        <p class="area__t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg>La tua area</p>
+        <p class="area__d">Insegni qualcosa che qui non è elencato? Scrivicelo nel modulo: i percorsi nuovi nascono quasi sempre così.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="sec sec--tint" id="candidati">
+  <div class="shell form-wrap">
+
+    <div data-rev>
+      <div class="eyebrow">Candidatura</div>
+      <h2 class="h2">Raccontaci<br>cosa sai fare.</h2>
+      <p class="lede" style="margin-bottom:0">
+        Il modulo richiede pochi minuti. Il CV serve, ma quello che leggiamo per primo è
+        l'ambito che scegli e le due righe in cui ti presenti.
+      </p>
+      <ul class="aside__list">
+        <li>La candidatura <strong>non scade</strong>: resta nell'albo finché non ci chiedi di rimuoverla.</li>
+        <li>Ti rispondiamo entro <strong>15 giorni lavorativi</strong>, anche solo per confermarti l'inserimento.</li>
+        <li>Se cerchi un ruolo non di docenza — segreteria, tutoraggio, sviluppo bandi —
+            puoi usare la <a href="lavora-con-noi.dc.html">pagina dedicata</a>.</li>
+      </ul>
+    </div>
+
+    <form class="form" id="docenteForm" action="/api/invia-docente.php" method="POST" enctype="multipart/form-data" novalidate data-rev>
+      <h3 class="form__t">Entra nell'albo docenti</h3>
+      <p class="form__s">Ti ricontattiamo quando parte un corso nella tua area.</p>
+
+      <div class="form__err" id="formErr" hidden></div>
+
+      <div class="hp" aria-hidden="true">
+        <label>Non compilare<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+      </div>
+
+      <div class="frow">
+        <label class="field">
+          <span class="field__l">Nome <span class="req">*</span></span>
+          <input class="inp" name="nome" type="text" required autocomplete="given-name">
+        </label>
+        <label class="field">
+          <span class="field__l">Cognome <span class="req">*</span></span>
+          <input class="inp" name="cognome" type="text" required autocomplete="family-name">
+        </label>
+      </div>
+
+      <div class="frow">
+        <label class="field">
+          <span class="field__l">Email <span class="req">*</span></span>
+          <input class="inp" name="email" type="email" required autocomplete="email">
+        </label>
+        <label class="field">
+          <span class="field__l">Telefono <span class="req">*</span></span>
+          <input class="inp" name="telefono" type="tel" required autocomplete="tel" placeholder="+39 …">
+        </label>
+      </div>
+
+      <div class="field">
+        <span class="field__l">Cosa vorresti insegnare? <span class="req">*</span> <span style="font-weight:400;color:#8C8478">— puoi sceglierne più di uno</span></span>
+        <div class="ambiti">
+          <label class="amb"><input type="checkbox" name="ambiti[]" value="Socio-sanitaria"><span>Socio-sanitaria (OSS, OSSS)</span></label>
+          <label class="amb"><input type="checkbox" name="ambiti[]" value="Informatica e web"><span>Informatica e web</span></label>
+          <label class="amb"><input type="checkbox" name="ambiti[]" value="Cybersecurity e reti"><span>Cybersecurity e reti</span></label>
+          <label class="amb"><input type="checkbox" name="ambiti[]" value="Certificazioni ICDL/EIPASS"><span>Certificazioni ICDL / EIPASS</span></label>
+          <label class="amb"><input type="checkbox" name="ambiti[]" value="Tecnico del suono e audio"><span>Tecnico del suono e audio</span></label>
+          <label class="amb"><input type="checkbox" name="ambiti[]" value="Dizione, recitazione, doppiaggio"><span>Dizione, recitazione, doppiaggio</span></label>
+          <label class="amb"><input type="checkbox" name="ambiti[]" value="Musica e strumento"><span>Musica e strumento</span></label>
+          <label class="amb"><input type="checkbox" name="ambiti[]" value="Meccatronica e autoriparazione"><span>Meccatronica e autoriparazione</span></label>
+          <label class="amb"><input type="checkbox" name="ambiti[]" value="Amministrazione e contabilità"><span>Amministrazione e contabilità</span></label>
+          <label class="amb"><input type="checkbox" name="ambiti[]" value="Ho.Re.Ca e somministrazione"><span>Ho.Re.Ca e somministrazione</span></label>
+          <label class="amb"><input type="checkbox" name="ambiti[]" value="Forestale e ambiente"><span>Forestale e ambiente</span></label>
+          <label class="amb"><input type="checkbox" name="ambiti[]" value="Sicurezza sul lavoro"><span>Sicurezza sul lavoro</span></label>
+        </div>
+        <input class="inp" name="altro_ambito" type="text" placeholder="Altro — scrivi la tua materia" style="margin-top:9px">
+      </div>
+
+      <div class="frow">
+        <label class="field">
+          <span class="field__l">Titolo di studio</span>
+          <select class="sel" name="titolo">
+            <option value="">— Scegli —</option>
+            <option>Licenza media</option>
+            <option>Diploma</option>
+            <option>Laurea triennale</option>
+            <option>Laurea magistrale</option>
+            <option>Master o dottorato</option>
+            <option>Qualifica professionale</option>
+          </select>
+        </label>
+        <label class="field">
+          <span class="field__l">Esperienza nel settore</span>
+          <select class="sel" name="esperienza">
+            <option value="">— Scegli —</option>
+            <option>Meno di 2 anni</option>
+            <option>2–5 anni</option>
+            <option>5–10 anni</option>
+            <option>Più di 10 anni</option>
+          </select>
+        </label>
+      </div>
+
+      <label class="field">
+        <span class="field__l">Disponibilità</span>
+        <select class="sel" name="modalita">
+          <option value="">— Scegli —</option>
+          <option>Mattina</option>
+          <option>Pomeriggio</option>
+          <option>Sera</option>
+          <option>Weekend</option>
+          <option>Flessibile</option>
+        </select>
+      </label>
+
+      <label class="field">
+        <span class="field__l">Presentati in poche righe</span>
+        <textarea class="txt" name="messaggio" rows="3" placeholder="Che lavoro fai, cosa ti piacerebbe insegnare, se hai già esperienza in aula…"></textarea>
+      </label>
+
+      <div class="field">
+        <span class="field__l">Carica il tuo CV <span class="req">*</span></span>
+        <label class="upload" for="cvfile" id="cvBox">
+          <span class="upload__ico">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          </span>
+          <span>
+            <span class="upload__t" id="cvTitle">Trascina qui il CV o clicca per scegliere</span>
+            <span class="upload__m" id="cvMeta">PDF / DOC / DOCX — massimo 8 MB</span>
+          </span>
+          <input id="cvfile" name="cv" type="file" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" required>
+        </label>
+      </div>
+
+      <label class="consent consent--news">
+        <input type="checkbox" name="newsletter" value="1" checked>
+        <span>Tienimi aggiornato via email su <strong>nuovi corsi in partenza, bandi e opportunità di collaborazione</strong>. Puoi cancellarti quando vuoi.</span>
+      </label>
+
+      <label class="consent">
+        <input type="checkbox" name="privacy" required>
+        <span>Ho letto e accetto l'informativa privacy e autorizzo il trattamento dei miei dati per finalità di selezione, ai sensi del <strong>Reg. UE 2016/679 (GDPR)</strong>. <span class="req">*</span></span>
+      </label>
+
+      <button type="submit" class="submit" id="submitBtn">
+        Invia la candidatura
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </button>
+      <p class="micro">Rispondiamo entro 15 giorni lavorativi. Nessun impegno da parte tua.</p>
+    </form>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__nav">
+    <a href="Home.dc.html">Home</a>
+    <a href="corsi.dc.html">Corsi</a>
+    <a href="finanziamenti.dc.html">Finanziamenti</a>
+    <a href="eventi.dc.html">Eventi</a>
+    <a href="blog.dc.html">Blog</a>
+    <a href="candidati.dc.html">Candidati</a>
+    <a href="lavora-con-noi.dc.html">Altri ruoli</a>
+  </div>
+  <p class="footer__motto">Sapere · Saper fare · Saper essere</p>
+  <div class="footer__meta">
+    Genesi Lavoro E.T.S. · P.IVA 92104080806 · Accreditamento Regione Calabria D.D. 3251/2022<br>
+    Via Sbarre Inferiori 262, 89129 Reggio Calabria · 0965 375421 · 393 572 6245
+  </div>
+</footer>
+
+<script>
+(() => {
+  'use strict';
+
+  /* Reveal */
+  if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const io = new IntersectionObserver((es) => {
+      es.forEach((e, i) => {
+        if (!e.isIntersecting) return;
+        setTimeout(() => e.target.classList.add('is-in'), i * 60);
+        io.unobserve(e.target);
+      });
+    }, { threshold: .12, rootMargin: '0px 0px -6% 0px' });
+    document.querySelectorAll('[data-rev]').forEach(el => io.observe(el));
+  } else {
+    document.querySelectorAll('[data-rev]').forEach(el => el.classList.add('is-in'));
+  }
+
+  /* CV */
+  const input = document.getElementById('cvfile');
+  const box   = document.getElementById('cvBox');
+  const title = document.getElementById('cvTitle');
+  const meta  = document.getElementById('cvMeta');
+  const MAX   = 8 * 1024 * 1024;
+  const human = b => b < 1024 ? b + ' B' : b < 1048576 ? (b/1024).toFixed(1) + ' KB' : (b/1048576).toFixed(2) + ' MB';
+
+  input.addEventListener('change', () => {
+    const f = input.files[0];
+    if (!f) return;
+    if (f.size > MAX) {
+      title.textContent = 'File troppo grande';
+      meta.textContent = human(f.size) + ' — il limite è 8 MB. Comprimi il PDF e riprova.';
+      meta.style.color = '#8A4B3A';
+      box.classList.remove('has-file');
+      input.value = '';
+      return;
+    }
+    box.classList.add('has-file');
+    title.textContent = f.name;
+    meta.style.color = '';
+    meta.textContent = human(f.size) + ' · pronto per l\'invio';
+  });
+  ['dragover','drop'].forEach(ev => box.addEventListener(ev, e => e.preventDefault()));
+
+  /* Submit */
+  const form = document.getElementById('docenteForm');
+  const btn  = document.getElementById('submitBtn');
+  const err  = document.getElementById('formErr');
+
+  form.addEventListener('submit', async (e) => {
+    const ambiti = form.querySelectorAll('input[name="ambiti[]"]:checked').length;
+    const altro  = form.querySelector('input[name="altro_ambito"]').value.trim();
+    if (!ambiti && !altro) {
+      e.preventDefault();
+      err.hidden = false;
+      err.textContent = 'Scegli almeno un ambito, oppure scrivi la tua materia nel campo "Altro".';
+      err.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      return;
+    }
+    if (!form.checkValidity()) { e.preventDefault(); form.reportValidity(); return; }
+    e.preventDefault();
+    err.hidden = true;
+    btn.disabled = true;
+    btn.textContent = 'Invio in corso…';
+
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json', 'X-Requested-With': 'fetch' }
+      });
+      const data = await res.json().catch(() => ({ ok: res.ok }));
+      if (data.ok) { window.location.href = '/grazie.html?tipo=docente'; }
+      else throw new Error(data.error || 'errore');
+    } catch (ex) {
+      err.hidden = false;
+      err.textContent = 'Non siamo riusciti a inviare la candidatura. Riprova, oppure scrivici a formazione@genesilavoro.it allegando il CV.';
+      btn.disabled = false;
+      btn.textContent = 'Invia la candidatura';
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

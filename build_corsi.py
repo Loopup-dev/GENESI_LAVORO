@@ -29,7 +29,14 @@ BADGE_CLASS = {
 
 
 def badge_class_for(corso):
-    """Il badge segue il testo, non solo il tipo: 'Finanziabile' ha un colore suo."""
+    """Il colore del badge segue il formato, poi il testo, poi il tipo."""
+    formato = corso.get("formato", "corso")
+    if formato == "seminario":
+        return "card__badge--sem"
+    if formato == "certificazione":
+        return "card__badge--cert"
+    if corso["badge"].startswith("In apertura"):
+        return "card__badge--soon"
     if corso["badge"].startswith("Finanziabile"):
         return "card__badge--fin"
     return BADGE_CLASS.get(corso["tipo"], "card__badge--paid")
@@ -88,6 +95,9 @@ PAGE = """<!DOCTYPE html>
   .card__badge--free{{background:#7C8A5A;color:#FBF8F2}}
   .card__badge--fin{{background:#B8925A;color:#4A2B25}}
   .card__badge--paid{{background:#8A4B3A;color:#FBF8F2}}
+  .card__badge--sem{{background:#4A2B25;color:#F7F3EC}}
+  .card__badge--cert{{background:#5f6d42;color:#FBF8F2}}
+  .card__badge--soon{{background:#4A2B25;color:#F0DFC0}}
   .hero__eyebrow{{font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:#B8925A;margin-bottom:14px}}
   .hero__title{{font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(38px,5.6vw,74px);line-height:1;letter-spacing:-.02em;margin:0;max-width:15ch}}
   .hero__lead{{font-size:17px;line-height:1.65;color:#5c4038;margin:22px 0 28px;max-width:52ch}}
@@ -114,6 +124,9 @@ PAGE = """<!DOCTYPE html>
   .prose em{{font-style:italic;color:#7C8A5A;font-weight:500}}
 
   .quote{{background:#FBF8F2;border:1px solid rgba(74,43,37,.1);border-left:3px solid #B8925A;border-radius:0 16px 16px 0;padding:30px 34px;margin-top:26px}}
+  .nota{{background:rgba(184,146,90,.12);border:1px solid rgba(184,146,90,.4);border-radius:14px;padding:22px 24px;margin:26px 0 0;display:flex;gap:14px;align-items:flex-start}}
+  .nota svg{{width:22px;height:22px;color:#8A4B3A;flex:none;margin-top:1px}}
+  .nota p{{margin:0;font-size:14.5px;line-height:1.62;color:#5c4038}}
   .quote p{{margin:0;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:21px;line-height:1.5;color:#4A2B25}}
 
   /* GALLERY */
@@ -215,7 +228,7 @@ PAGE = """<!DOCTYPE html>
     <p class="prose">{esperienza}</p>
     <div class="quote">
       <p>“{durata_dettaglio}.”</p>
-    </div>
+    </div>{nota}
   </section>
 
   <section class="section">
@@ -278,10 +291,10 @@ PAGE = """<!DOCTYPE html>
 </html>
 """
 
-CARD = """    <a href="corso-{slug}.html" class="card" data-area="{data_area}" data-tipo="{tipo}">
+CARD = """    <a href="{href}" class="card{card_mod}" data-area="{data_area}" data-tipo="{tipo}" data-formato="{formato}">
       <div class="card__photo">
         <img src="{foto}" alt="{foto_alt}" loading="lazy">
-        <span class="card__badge {badge_cls}">{badge}</span>
+        <span class="card__badge {badge_cls}">{badge}</span>{flag}
       </div>
       <div class="card__body">
         <div class="card__meta">{area}</div>
@@ -290,6 +303,15 @@ CARD = """    <a href="corso-{slug}.html" class="card" data-area="{data_area}" d
         <div class="card__foot"><span class="card__foot-durata">{durata}</span><span class="card__foot-cta">Scopri →</span></div>
       </div>
     </a>"""
+
+NOTA = """
+    <div class="nota">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+      <p>{t}</p>
+    </div>"""
+
+FLAG_PROSSIMO = '\n        <span class="card__flag">Prossimo a partire</span>'
+FLAG_POSTI    = '\n        <span class="card__posti">Solo {n} posti</span>'
 
 # I filtri di corsi.dc.html leggono data-area con questi valori esatti.
 DATA_AREA = {
@@ -303,6 +325,10 @@ DATA_AREA = {
     "sviluppo-web": "Informatica",
     "cybersecurity": "Informatica",
     "hardware-reti": "Informatica",
+    "seminario-chitarra-baglioni": "Spettacolo",
+    "icdl": "Informatica",
+    "eipass": "Informatica",
+    "istruttore-forestale": "Forestale",
 }
 
 
@@ -313,32 +339,53 @@ def build():
 
     for c in corsi:
         badge_cls = badge_class_for(c)
-        html = PAGE.format(
-            slug=c["slug"],
-            titolo=esc(c["titolo"]),
-            meta_desc=esc(c["meta_desc"]),
-            area=esc(c["area"]),
-            badge=esc(c["badge"]),
-            badge_cls=badge_cls,
-            durata=esc(c["durata"]),
-            durata_dettaglio=esc(c["durata_dettaglio"]),
-            foto=c["foto"],
-            foto_alt=esc(c["foto_alt"]),
-            lead=esc(c["lead"]),
-            esperienza=esc(c["esperienza"]),
-            cta_titolo=esc(c["cta_titolo"]),
-            imparerai=li_list(c["imparerai"]),
-            rivolto=li_list(c["rivolto"]),
-            sbocchi=li_list(c["sbocchi"]),
-        )
-        out = ROOT / f"corso-{c['slug']}.html"
-        out.write_text(html, encoding="utf-8")
-        print(f"  scritto {out.name}")
+
+        # Le voci con link_esterno hanno gia' una pagina propria (es. la landing
+        # del seminario): entrano nel catalogo ma non vengono rigenerate.
+        if c.get("link_esterno"):
+            href = c["link_esterno"]
+        else:
+            href = f"corso-{c['slug']}.html"
+
+        if not c.get("link_esterno"):
+            html = PAGE.format(
+                slug=c["slug"],
+                titolo=esc(c["titolo"]),
+                meta_desc=esc(c["meta_desc"]),
+                area=esc(c["area"]),
+                badge=esc(c["badge"]),
+                badge_cls=badge_cls,
+                durata=esc(c["durata"]),
+                durata_dettaglio=esc(c["durata_dettaglio"]),
+                foto=c["foto"],
+                foto_alt=esc(c["foto_alt"]),
+                lead=esc(c["lead"]),
+                esperienza=esc(c["esperienza"]),
+                cta_titolo=esc(c["cta_titolo"]),
+                nota=NOTA.format(t=esc(c["nota_verifica"])) if c.get("nota_verifica") else "",
+                imparerai=li_list(c["imparerai"]),
+                rivolto=li_list(c["rivolto"]),
+                sbocchi=li_list(c["sbocchi"]),
+            )
+            out = ROOT / f"corso-{c['slug']}.html"
+            out.write_text(html, encoding="utf-8")
+            print(f"  scritto {out.name}")
+        else:
+            print(f"  saltato {c['slug']} (pagina propria: {href})")
 
         # La descrizione breve della card e' la prima frase del lead.
         desc = c["lead"].split(". ")[0].rstrip(".") + "."
+        flag = ""
+        if c.get("prossimo"):
+            flag += FLAG_PROSSIMO
+        if c.get("posti_rimasti"):
+            flag += FLAG_POSTI.format(n=c["posti_rimasti"])
+
         cards.append(CARD.format(
-            slug=c["slug"],
+            href=href,
+            card_mod=" card--prossimo" if c.get("prossimo") else "",
+            formato=c.get("formato", "corso"),
+            flag=flag,
             data_area=DATA_AREA[c["slug"]],
             tipo=c["tipo"],
             foto=c["foto"],

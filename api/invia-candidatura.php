@@ -1,7 +1,7 @@
 <?php
 // Endpoint per il form "Lavora con noi" (lavora-con-noi.dc.html) con upload CV.
 
-require_once __DIR__ . '/shared.php';
+require_once __DIR__ . '/newsletter.php';
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
@@ -112,5 +112,7 @@ $ok = gl_send_mail(
 
 // Cleanup upload dopo invio (o dopo fallimento).
 @unlink($dest);
+
+gl_newsletter_from_post($email, $full_name, 'candidatura', array_filter([$area]));
 
 gl_respond($ok, '/grazie.html?tipo=candidatura', $ok ? null : 'send_failed');

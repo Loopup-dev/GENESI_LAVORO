@@ -75,6 +75,12 @@
   .card__badge--free{background:#7C8A5A;color:#FBF8F2}
   .card__badge--fin{background:#B8925A;color:#4A2B25}
   .card__badge--paid{background:#8A4B3A;color:#FBF8F2}
+  .card__badge--sem{background:#4A2B25;color:#F7F3EC}
+  .card__badge--cert{background:#5f6d42;color:#FBF8F2}
+  .card__badge--soon{background:#4A2B25;color:#F0DFC0}
+  .card__flag{position:absolute;top:12px;right:12px;font-size:10.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:6px 12px;border-radius:100px;background:#F7F3EC;color:#4A2B25;box-shadow:0 3px 10px rgba(74,43,37,.22)}
+  .card__posti{position:absolute;bottom:12px;right:12px;font-size:11px;font-weight:600;letter-spacing:.04em;padding:6px 13px;border-radius:100px;background:#8A4B3A;color:#FBF8F2;box-shadow:0 4px 14px rgba(138,75,58,.4)}
+  .card--prossimo{border-color:rgba(184,146,90,.5);box-shadow:0 4px 18px rgba(184,146,90,.16)}
   .card__body{padding:20px 20px 22px;display:flex;flex-direction:column;flex:1}
   .card__meta{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#8C8478;margin-bottom:10px}
   .card__title{font-family:'Playfair Display',serif;font-weight:600;font-size:20px;line-height:1.15;margin:0 0 8px;color:#4A2B25}
@@ -175,6 +181,7 @@
         <button class="chip" data-filter-area="Spettacolo">Spettacolo / Audio</button>
         <button class="chip" data-filter-area="Amministrazione">Amministrazione</button>
         <button class="chip" data-filter-area="HoReCa">Ho.Re.Ca</button>
+        <button class="chip" data-filter-area="Forestale">Forestale</button>
       </div>
     </div>
     <div class="filters__group" style="max-width:340px">
@@ -185,17 +192,28 @@
         <button class="chip" data-filter-tipo="pagamento">A pagamento</button>
       </div>
     </div>
+    <div class="filters__group">
+      <div class="filters__label">Formato</div>
+      <div class="filters__chips" id="filterFormato">
+        <button class="chip is-active" data-filter-formato="tutti">Tutti</button>
+        <button class="chip" data-filter-formato="corso">Corsi</button>
+        <button class="chip" data-filter-formato="seminario">Seminari</button>
+        <button class="chip" data-filter-formato="certificazione">Certificazioni</button>
+      </div>
+    </div>
   </div>
 </div>
 
 <!-- GRID -->
 <section class="grid-section">
-  <div class="grid-count" id="gridCount"><strong>10 corsi</strong> nel catalogo</div>
+  <div class="grid-count" id="gridCount"><strong>14 percorsi</strong> nel catalogo</div>
   <div class="grid" id="grid">
-    <a href="corso-oss.html" class="card" data-area="Socio-sanitario" data-tipo="pagamento">
+    <a href="corso-oss.html" class="card card--prossimo" data-area="Socio-sanitario" data-tipo="pagamento" data-formato="corso">
       <div class="card__photo">
         <img src="assets/corsi/01-oss.jpg" alt="Operatore socio sanitario in corsia" loading="lazy">
-        <span class="card__badge card__badge--paid">A pagamento — rate personalizzate</span>
+        <span class="card__badge card__badge--paid">A pagamento — 12 rate da 150 €</span>
+        <span class="card__flag">Prossimo a partire</span>
+        <span class="card__posti">Solo 3 posti</span>
       </div>
       <div class="card__body">
         <div class="card__meta">Socio-sanitaria</div>
@@ -205,7 +223,21 @@
       </div>
     </a>
 
-    <a href="corso-osss.html" class="card" data-area="Socio-sanitario" data-tipo="pagamento">
+    <a href="seminario-chitarra-baglioni.html" class="card card--prossimo" data-area="Spettacolo" data-tipo="pagamento" data-formato="seminario">
+      <div class="card__photo">
+        <img src="assets/locandina-baglioni.jpg" alt="Giovanni Baglioni con la chitarra acustica" loading="lazy">
+        <span class="card__badge card__badge--sem">Seminario · 1.500 €</span>
+        <span class="card__flag">Prossimo a partire</span>
+      </div>
+      <div class="card__body">
+        <div class="card__meta">Spettacolo · Musica</div>
+        <h3 class="card__title">Chitarra Acustica — percorso con Giovanni Baglioni</h3>
+        <p class="card__desc">Quaranta ore con uno degli strumentisti più originali del fingerstyle italiano.</p>
+        <div class="card__foot"><span class="card__foot-durata">40 ore</span><span class="card__foot-cta">Scopri →</span></div>
+      </div>
+    </a>
+
+    <a href="corso-osss.html" class="card" data-area="Socio-sanitario" data-tipo="pagamento" data-formato="corso">
       <div class="card__photo">
         <img src="assets/corsi/02-osss.jpg" alt="OSS specializzato in reparto" loading="lazy">
         <span class="card__badge card__badge--paid">A pagamento — rate personalizzate</span>
@@ -218,7 +250,7 @@
       </div>
     </a>
 
-    <a href="corso-tecnico-del-suono.html" class="card" data-area="Spettacolo" data-tipo="gratuito">
+    <a href="corso-tecnico-del-suono.html" class="card" data-area="Spettacolo" data-tipo="gratuito" data-formato="corso">
       <div class="card__photo">
         <img src="assets/corsi/03-tecnico-suono.jpg" alt="Tecnico del suono al banco mixer" loading="lazy">
         <span class="card__badge card__badge--fin">Finanziabile</span>
@@ -231,7 +263,7 @@
       </div>
     </a>
 
-    <a href="corso-dizione-recitazione-doppiaggio.html" class="card" data-area="Spettacolo" data-tipo="pagamento">
+    <a href="corso-dizione-recitazione-doppiaggio.html" class="card" data-area="Spettacolo" data-tipo="pagamento" data-formato="corso">
       <div class="card__photo">
         <img src="assets/corsi/04-dizione.jpg" alt="Doppiatore al leggio in sala di registrazione" loading="lazy">
         <span class="card__badge card__badge--paid">A pagamento — rate personalizzate</span>
@@ -244,7 +276,7 @@
       </div>
     </a>
 
-    <a href="corso-sab-somministrazione.html" class="card" data-area="HoReCa" data-tipo="gratuito">
+    <a href="corso-sab-somministrazione.html" class="card" data-area="HoReCa" data-tipo="gratuito" data-formato="corso">
       <div class="card__photo">
         <img src="assets/corsi/05-sab.jpg" alt="Barista al banco di un pubblico esercizio" loading="lazy">
         <span class="card__badge card__badge--free">Gratuito via GOL*</span>
@@ -257,7 +289,7 @@
       </div>
     </a>
 
-    <a href="corso-amministrativo-contabile.html" class="card" data-area="Amministrazione" data-tipo="gratuito">
+    <a href="corso-amministrativo-contabile.html" class="card" data-area="Amministrazione" data-tipo="gratuito" data-formato="corso">
       <div class="card__photo">
         <img src="assets/corsi/06-amministrativo.jpg" alt="Addetta amministrativa alla scrivania" loading="lazy">
         <span class="card__badge card__badge--free">Gratuito via GOL*</span>
@@ -270,7 +302,7 @@
       </div>
     </a>
 
-    <a href="corso-meccatronico-auto.html" class="card" data-area="Meccatronica" data-tipo="gratuito">
+    <a href="corso-meccatronico-auto.html" class="card" data-area="Meccatronica" data-tipo="gratuito" data-formato="corso">
       <div class="card__photo">
         <img src="assets/corsi/07-meccatronico.jpg" alt="Meccatronico con strumento di diagnostica elettronica" loading="lazy">
         <span class="card__badge card__badge--fin">Finanziabile</span>
@@ -283,7 +315,7 @@
       </div>
     </a>
 
-    <a href="corso-sviluppo-web.html" class="card" data-area="Informatica" data-tipo="gratuito">
+    <a href="corso-sviluppo-web.html" class="card" data-area="Informatica" data-tipo="gratuito" data-formato="corso">
       <div class="card__photo">
         <img src="assets/corsi/08-web-dev.jpg" alt="Sviluppatore web davanti al codice" loading="lazy">
         <span class="card__badge card__badge--fin">Finanziabile</span>
@@ -296,7 +328,7 @@
       </div>
     </a>
 
-    <a href="corso-cybersecurity.html" class="card" data-area="Informatica" data-tipo="gratuito">
+    <a href="corso-cybersecurity.html" class="card" data-area="Informatica" data-tipo="gratuito" data-formato="corso">
       <div class="card__photo">
         <img src="assets/corsi/09-cybersecurity.jpg" alt="Analista di sicurezza informatica al lavoro" loading="lazy">
         <span class="card__badge card__badge--fin">Finanziabile</span>
@@ -309,7 +341,7 @@
       </div>
     </a>
 
-    <a href="corso-hardware-reti.html" class="card" data-area="Informatica" data-tipo="gratuito">
+    <a href="corso-hardware-reti.html" class="card" data-area="Informatica" data-tipo="gratuito" data-formato="corso">
       <div class="card__photo">
         <img src="assets/corsi/10-hardware-reti.jpg" alt="Tecnico di rete all'armadio di cablaggio" loading="lazy">
         <span class="card__badge card__badge--fin">Finanziabile</span>
@@ -319,6 +351,46 @@
         <h3 class="card__title">Tecnico Hardware e Reti</h3>
         <p class="card__desc">Quando la rete aziendale si ferma, si ferma l'azienda.</p>
         <div class="card__foot"><span class="card__foot-durata">400 ore</span><span class="card__foot-cta">Scopri →</span></div>
+      </div>
+    </a>
+
+    <a href="corso-icdl.html" class="card" data-area="Informatica" data-tipo="pagamento" data-formato="certificazione">
+      <div class="card__photo">
+        <img src="assets/corsi/11-icdl.jpg" alt="Postazioni informatiche in aula" loading="lazy">
+        <span class="card__badge card__badge--cert">Certificazione · in convenzione</span>
+      </div>
+      <div class="card__body">
+        <div class="card__meta">Informatica · Certificazioni</div>
+        <h3 class="card__title">ICDL — Patente Europea del Computer</h3>
+        <p class="card__desc">La certificazione informatica più riconosciuta in Europa: vale punteggio nelle graduatorie scolastiche e nei concorsi pubblici, ed è richiesta da molte selezioni aziendali.</p>
+        <div class="card__foot"><span class="card__foot-durata">Percorso modulare</span><span class="card__foot-cta">Scopri →</span></div>
+      </div>
+    </a>
+
+    <a href="corso-eipass.html" class="card" data-area="Informatica" data-tipo="pagamento" data-formato="certificazione">
+      <div class="card__photo">
+        <img src="assets/corsi/12-eipass.jpg" alt="Aula informatica durante una sessione d'esame" loading="lazy">
+        <span class="card__badge card__badge--cert">Certificazione · in convenzione</span>
+      </div>
+      <div class="card__body">
+        <div class="card__meta">Informatica · Certificazioni</div>
+        <h3 class="card__title">EIPASS — Certificazioni Informatiche</h3>
+        <p class="card__desc">Le certificazioni EIPASS coprono percorsi specifici — dal profilo base a quelli per la scuola e la pubblica amministrazione — e sono valutate nelle graduatorie del personale scolastico.</p>
+        <div class="card__foot"><span class="card__foot-durata">Percorso modulare</span><span class="card__foot-cta">Scopri →</span></div>
+      </div>
+    </a>
+
+    <a href="corso-istruttore-forestale.html" class="card card--prossimo" data-area="Forestale" data-tipo="gratuito" data-formato="corso">
+      <div class="card__photo">
+        <img src="assets/corsi/13-forestale.jpg" alt="Cantiere forestale in un bosco della Calabria" loading="lazy">
+        <span class="card__badge card__badge--soon">In apertura — For.Italy</span>
+        <span class="card__flag">Prossimo a partire</span>
+      </div>
+      <div class="card__body">
+        <div class="card__meta">Forestale · Ambiente</div>
+        <h3 class="card__title">Istruttore Forestale — progetto For.Italy</h3>
+        <p class="card__desc">La Calabria e' co-capofila nazionale del progetto For.Italy insieme alla Toscana.</p>
+        <div class="card__foot"><span class="card__foot-durata">280 ore</span><span class="card__foot-cta">Scopri →</span></div>
       </div>
     </a>
 
@@ -370,7 +442,7 @@
   }
 
   // FILTERS
-  var state = { area: 'tutte', tipo: 'tutti' };
+  var state = { area: 'tutte', tipo: 'tutti', formato: 'tutti' };
   var cards = Array.prototype.slice.call(document.querySelectorAll('#grid .card'));
   var empty = document.getElementById('gridEmpty');
   var count = document.getElementById('gridCount');
@@ -380,15 +452,20 @@
     cards.forEach(function(c){
       var area = c.getAttribute('data-area');
       var tipo = c.getAttribute('data-tipo');
+      var formato = c.getAttribute('data-formato') || 'corso';
       var ok = (state.area === 'tutte' || area === state.area) &&
-               (state.tipo === 'tutti' || tipo === state.tipo);
+               (state.tipo === 'tutti' || tipo === state.tipo) &&
+               (state.formato === 'tutti' || formato === state.formato);
       c.style.display = ok ? '' : 'none';
       if(ok) shown++;
     });
     empty.hidden = shown > 0;
-    var s = shown === 1 ? 'corso' : 'corsi';
-    var suffix = state.tipo === 'gratuito' ? ' · gratuiti se rientri nei requisiti' : (state.tipo === 'pagamento' ? ' · a pagamento con rate' : '');
-    count.innerHTML = '<strong>' + shown + ' ' + s + '</strong> visualizzati' + suffix;
+    var noun = shown === 1 ? 'percorso' : 'percorsi';
+    if(state.formato === 'seminario') noun = shown === 1 ? 'seminario' : 'seminari';
+    if(state.formato === 'certificazione') noun = shown === 1 ? 'certificazione' : 'certificazioni';
+    if(state.formato === 'corso') noun = shown === 1 ? 'corso' : 'corsi';
+    var suffix = state.tipo === 'gratuito' ? ' · gratuiti se rientri nei requisiti' : (state.tipo === 'pagamento' ? ' · a pagamento, anche a rate' : '');
+    count.innerHTML = '<strong>' + shown + ' ' + noun + '</strong> ' + (shown === 1 ? 'visualizzato' : 'visualizzati') + suffix;
   }
 
   function bindChips(container, key){
@@ -396,13 +473,15 @@
       chip.addEventListener('click', function(){
         container.querySelectorAll('.chip').forEach(function(c){ c.classList.remove('is-active'); });
         chip.classList.add('is-active');
-        state[key] = chip.getAttribute('data-filter-' + (key === 'area' ? 'area' : 'tipo'));
+        state[key] = chip.getAttribute('data-filter-' + key);
         applyFilters();
       });
     });
   }
   bindChips(document.getElementById('filterAree'), 'area');
   bindChips(document.getElementById('filterTipi'), 'tipo');
+  var fFormato = document.getElementById('filterFormato');
+  if(fFormato) bindChips(fFormato, 'formato');
 })();
 </script>
 
