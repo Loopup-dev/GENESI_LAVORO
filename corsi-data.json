@@ -1,5 +1,5 @@
 {
-  "_nota": "Fonte di verita' per le pagine corso. Modifica qui, poi rilancia `python build_corsi.py` per rigenerare i file corso-*.html.",
+  "_nota": "Fonte di verità per le pagine corso. Modifica qui, poi rilancia `python build_corsi.py` per rigenerare i file corso-*.html.",
   "corsi": [
     {
       "slug": "oss",
@@ -509,13 +509,13 @@
       "formato": "corso",
       "badge": "In apertura — For.Italy",
       "durata": "280 ore",
-      "durata_dettaglio": "280 ore, sette settimane da 40 ore in periodi non consecutivi, piu' 40 ore di tirocinio didattico",
+      "durata_dettaglio": "280 ore, sette settimane da 40 ore in periodi non consecutivi, più 40 ore di tirocinio didattico",
       "foto": "assets/corsi/13-forestale.jpg",
       "foto_alt": "Cantiere forestale in un bosco della Calabria",
       "prossimo": true,
       "posti_rimasti": null,
-      "meta_desc": "Corso per Istruttore Forestale in abbattimento e allestimento a Reggio Calabria, nel quadro del progetto nazionale For.Italy. 280 ore. La Calabria e' co-capofila del progetto.",
-      "lead": "La Calabria e' co-capofila nazionale del progetto For.Italy insieme alla Toscana. Il percorso forma chi insegnera' il mestiere agli operatori forestali: 280 ore per diventare Istruttore forestale in abbattimento e allestimento.",
+      "meta_desc": "Corso per Istruttore Forestale in abbattimento e allestimento a Reggio Calabria, nel quadro del progetto nazionale For.Italy. 280 ore. La Calabria è co-capofila del progetto.",
+      "lead": "La Calabria è co-capofila nazionale del progetto For.Italy insieme alla Toscana. Il percorso forma chi insegnerà il mestiere agli operatori forestali: 280 ore per diventare Istruttore forestale in abbattimento e allestimento.",
       "imparerai": [
         "Tecniche di abbattimento e allestimento in sicurezza",
         "Uso professionale della motosega e manutenzione dell'attrezzatura",
@@ -535,9 +535,9 @@
         "Imprese forestali e manutenzione del verde",
         "Formazione sulla sicurezza in ambito forestale"
       ],
-      "esperienza": "For.Italy nasce dal Testo unico in materia di foreste (D.lgs. 34/2018) e dal decreto ministeriale sulla formazione forestale, per dare all'Italia uno standard unico. La Calabria non subisce quel sistema: lo guida, come regione co-capofila della seconda edizione insieme alla Toscana. Con 612.931 ettari di bosco e un indice di boscosita' del 40,6%, e' anche il posto dove quelle competenze servono davvero.",
+      "esperienza": "For.Italy nasce dal Testo unico in materia di foreste (D.lgs. 34/2018) e dal decreto ministeriale sulla formazione forestale, per dare all'Italia uno standard unico. La Calabria non subisce quel sistema: lo guida, come regione co-capofila della seconda edizione insieme alla Toscana. Con 612.931 ettari di bosco e un indice di boscosità del 40,6%, è anche il posto dove quelle competenze servono davvero.",
       "cta_titolo": "Il bosco ha bisogno di chi lo sa insegnare.",
-      "nota_verifica": "Calendario, requisiti d'accesso e numero di posti sono in via di definizione con la Regione Calabria. Lasciaci un contatto: ti avvisiamo appena il bando e' ufficiale."
+      "nota_verifica": "Calendario, requisiti d'accesso e numero di posti sono in via di definizione con la Regione Calabria. Lasciaci un contatto: ti avvisiamo appena il bando è ufficiale."
     }
   ]
 }

@@ -1,0 +1,925 @@
+{
+  "_nota": "Fonte di verità per gli articoli del blog. Modifica qui, poi rilancia `python build_blog.py`. Il campo `aggiornato` va tenuto VERO: è il principale vantaggio competitivo su questo settore, dove quasi tutti i concorrenti hanno pagine ferme a bandi scaduti.",
+  "articoli": [
+    {
+      "slug": "corsi-gratuiti-calabria",
+      "manuale": true,
+      "titolo": "Corsi gratuiti in Calabria: scopri se ne hai diritto",
+      "titolo_breve": "Corsi gratuiti in Calabria",
+      "categoria": "Finanziamenti",
+      "kw": "corsi gratuiti Reggio Calabria",
+      "data": "2026-08-29",
+      "aggiornato": "2026-08-29",
+      "lettura": "7 minuti",
+      "priorita": 0,
+      "meta_desc": "SFL, Assegno di Inclusione, NASpI, GOL: chi ha diritto a un corso gratuito in Calabria. Test in 30 secondi.",
+      "occhiello": "Con il test dei requisiti",
+      "standfirst": "Ogni anno c'è chi paga un corso che avrebbe potuto fare gratis. Quattro domande e scopri se è il tuo caso.",
+      "corpo": []
+    },
+    {
+      "slug": "sfl-500-euro-reggio-calabria",
+      "titolo": "SFL, 500 € al mese: a Reggio Calabria dal 2026 cambia una regola",
+      "titolo_breve": "SFL: cosa cambia a Reggio Calabria",
+      "categoria": "Finanziamenti",
+      "kw": "supporto formazione e lavoro requisiti",
+      "data": "2026-08-29",
+      "aggiornato": "2026-08-29",
+      "lettura": "8 minuti",
+      "priorita": 1,
+      "meta_desc": "Dal 2026 la soglia di esclusione della prima casa per il Supporto Formazione e Lavoro sale a 120.000 € nei capoluoghi di città metropolitana. Reggio Calabria è uno di questi.",
+      "occhiello": "Chi era escluso perché aveva casa",
+      "standfirst": "C'è una riga nella Legge di Bilancio 2026 che riapre l'accesso al Supporto Formazione e Lavoro a un bel po' di reggini. Non l'ha comunicata quasi nessuno.",
+      "corpo": [
+        {
+          "t": "h2",
+          "c": "La cosa in breve, per chi ha fretta"
+        },
+        {
+          "t": "p",
+          "c": "Il <strong>Supporto per la Formazione e il Lavoro</strong> ti dà 500 euro al mese mentre segui un corso, fino a dodici mesi. Uno dei requisiti riguarda il patrimonio immobiliare, e fino al 2025 avere la prima casa bastava spesso a farti uscire dalla porta."
+        },
+        {
+          "t": "p",
+          "c": "Dal 2026 quella soglia si alza. E per chi risiede in un <strong>comune capoluogo di città metropolitana</strong> arriva a <strong>120.000 euro</strong>. Reggio Calabria è capoluogo di città metropolitana."
+        },
+        {
+          "t": "callout",
+          "c": "<p><strong>Tradotto:</strong> se l'anno scorso ti hanno detto di no per via della casa, oggi la risposta può essere diversa. La domanda va rifatta, non ereditata dal diniego precedente.</p>"
+        },
+        {
+          "t": "h2",
+          "c": "Che cos'è l'SFL, senza giri di parole"
+        },
+        {
+          "t": "p",
+          "c": "È una misura per chi è in condizione di povertà ma non rientra nell'Assegno di Inclusione, cioè per chi non ha nel nucleo minori, over 60 o persone con disabilità. In cambio della partecipazione a un percorso di formazione o politica attiva, ricevi un'indennità mensile."
+        },
+        {
+          "t": "ul",
+          "c": [
+            "<strong>500 euro al mese</strong>, per un massimo di dodici mensilità",
+            "prorogabile di <strong>altri dodici mesi</strong> se continui a formarti con corsi registrati nel sistema SIISL",
+            "l'indennità continua fino a <strong>due mesi</strong> anche fra un corso e il successivo, se il successivo è già programmato"
+          ]
+        },
+        {
+          "t": "p",
+          "c": "Quest'ultimo punto è quello che quasi nessuno conosce e che nella pratica fa la differenza: significa che non devi restare scoperto mentre aspetti l'avvio di un nuovo percorso."
+        },
+        {
+          "t": "h2",
+          "c": "I requisiti, in checklist"
+        },
+        {
+          "t": "ul",
+          "c": [
+            "età fra <strong>18 e 59 anni</strong>",
+            "<strong>ISEE familiare non superiore a 10.140 euro</strong>",
+            "residenza in Italia da almeno <strong>5 anni</strong>, di cui gli ultimi 2 continuativi",
+            "patrimonio immobiliare diverso dall'abitazione principale entro <strong>30.000 euro</strong>",
+            "patrimonio mobiliare entro <strong>6.000 euro</strong>, con incrementi previsti in caso di disabilità nel nucleo"
+          ]
+        },
+        {
+          "t": "h3",
+          "c": "E la casa in cui vivi?"
+        },
+        {
+          "t": "p",
+          "c": "Qui sta la novità. L'abitazione principale ha una soglia di esclusione propria, che dal 2026 sale da 52.500 a <strong>91.500 euro</strong> in via generale, e fino a <strong>120.000 euro</strong> per chi risiede nei comuni capoluogo di città metropolitana."
+        },
+        {
+          "t": "p",
+          "c": "Reggio Calabria rientra. Se il valore ISEE della tua abitazione sta sotto quella cifra, la casa non ti esclude più."
+        },
+        {
+          "t": "callout-warn",
+          "c": "<p>Attenzione a una cosa: il <em>valore ISEE</em> di un immobile non è il prezzo di mercato né quello che hai pagato. Si calcola sulla rendita catastale rivalutata, al netto del mutuo residuo. Nella pratica è quasi sempre molto più basso di quanto la gente si aspetta — motivo in più per rifare il calcolo invece di darlo per perso.</p>"
+        },
+        {
+          "t": "h2",
+          "c": "Come si fa domanda"
+        },
+        {
+          "t": "ol",
+          "c": [
+            "Aggiorna l'<strong>ISEE</strong> presso un CAF o sul portale INPS. Senza ISEE valido non si parte.",
+            "Presenta la <strong>domanda telematica all'INPS</strong> con SPID o CIE.",
+            "Sottoscrivi il <strong>Patto di Attivazione Digitale (PAD)</strong> sulla piattaforma SIISL: hai <strong>120 giorni</strong> dall'esito positivo, oltre i quali la domanda decade.",
+            "Vai al <strong>Centro per l'Impiego</strong> per il patto di servizio personalizzato.",
+            "Scegli un corso fra quelli registrati nel sistema. Da qui in poi ce ne occupiamo noi."
+          ]
+        },
+        {
+          "t": "p",
+          "c": "Va poi confermata la disponibilità <strong>ogni 90 giorni</strong>. È il passaggio che fa perdere il beneficio al maggior numero di persone: non per cattiva fede, ma perché se ne dimenticano."
+        },
+        {
+          "t": "h2",
+          "c": "Gli errori che vediamo più spesso"
+        },
+        {
+          "t": "ul",
+          "c": [
+            "<strong>Dare per scontato il diniego dell'anno prima.</strong> Le regole sono cambiate: quel no non vale più automaticamente.",
+            "<strong>Fermarsi alla domanda INPS.</strong> Senza il PAD entro 120 giorni la pratica si chiude da sola.",
+            "<strong>Iscriversi a un corso non registrato nel SIISL.</strong> Il corso può essere ottimo e l'ente serissimo, ma se non è nel sistema quelle ore non valgono ai fini dell'indennità.",
+            "<strong>Saltare l'aggiornamento trimestrale.</strong>"
+          ]
+        },
+        {
+          "t": "h2",
+          "c": "Quali dei nostri corsi rientrano"
+        },
+        {
+          "t": "p",
+          "c": "Dipende dal catalogo attivo nel momento in cui presenti domanda, che cambia più spesso di quanto sarebbe ragionevole. Per questo non pubblichiamo un elenco fisso: sarebbe vecchio dopo un mese, come quelli che trovi in giro."
+        },
+        {
+          "t": "p",
+          "c": "La verifica la facciamo noi, gratis, anche per telefono, anche se poi decidi di iscriverti da un'altra parte. Chiama il <a href=\"tel:+393935726245\">393 572 6245</a> oppure <a href=\"candidati.dc.html\">prenota un colloquio</a>."
+        },
+        {
+          "t": "fonti",
+          "c": [
+            "DL Lavoro 48/2023, convertito in <strong>L. 85/2023</strong> — istituzione dell'SFL",
+            "<strong>Legge di Bilancio 2026</strong> (in Gazzetta Ufficiale il 30/12/2025) — nuovo calcolo ISEE ai fini SFL",
+            "<strong>Messaggio INPS n. 102 del 12 gennaio 2026</strong> — istruzioni operative"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "corso-oss-calabria-requisiti-costi",
+      "titolo": "Corso OSS in Calabria: requisiti, durata e quanto costa davvero",
+      "titolo_breve": "Corso OSS in Calabria",
+      "categoria": "Corsi",
+      "kw": "corso OSS Calabria",
+      "data": "2026-08-29",
+      "aggiornato": "2026-08-29",
+      "lettura": "9 minuti",
+      "priorita": 2,
+      "meta_desc": "Corso OSS in Calabria: 1.000 ore, requisiti d'accesso, costi reali e valore dell'attestato. Cosa dice la DGR 155/2017 e come si riconosce un ente accreditato.",
+      "occhiello": "La guida che avremmo voluto leggere noi",
+      "standfirst": "Mille ore, un tirocinio vero e un attestato che vale in tutta Italia. Ma anche un settore dove circolano corsi che non valgono niente. Ecco come stanno le cose.",
+      "corpo": [
+        {
+          "t": "h2",
+          "c": "Che lavoro fa un OSS, in concreto"
+        },
+        {
+          "t": "p",
+          "c": "L'Operatore Socio Sanitario si occupa dell'assistenza diretta alla persona non autosufficiente: igiene, mobilizzazione, alimentazione, supporto nelle attività quotidiane. Lavora in RSA, in reparto, a domicilio, nei centri diurni."
+        },
+        {
+          "t": "p",
+          "c": "Non è un lavoro per tutti e non lo diciamo per fare i duri: si sta in piedi otto ore, si sollevano persone, si entra in contatto con la fragilità e con la morte. Chi regge, però, trova un mestiere che in Calabria non manca mai."
+        },
+        {
+          "t": "h2",
+          "c": "I requisiti per iscriversi"
+        },
+        {
+          "t": "ul",
+          "c": [
+            "<strong>maggiore età</strong> al momento dell'iscrizione",
+            "<strong>licenza media</strong> (diploma di scuola secondaria di primo grado)",
+            "<strong>certificazione di idoneità fisica</strong> alla mansione",
+            "per i cittadini stranieri, conoscenza dell'italiano almeno a livello <strong>B1</strong>"
+          ]
+        },
+        {
+          "t": "p",
+          "c": "Non serve alcun titolo sanitario pregresso. È un percorso pensato per chi parte da zero."
+        },
+        {
+          "t": "h2",
+          "c": "Com'è fatto il percorso"
+        },
+        {
+          "t": "p",
+          "c": "In Calabria il corso è di <strong>1.000 ore</strong>, autorizzato ai sensi della <strong>DGR n. 155 del 21 aprile 2017</strong>. Si divide fra didattica in aula, laboratorio e tirocinio in struttura."
+        },
+        {
+          "t": "ul",
+          "c": [
+            "circa <strong>550 ore</strong> fra teoria ed esercitazioni pratiche",
+            "circa <strong>450 ore</strong> di tirocinio in RSA, ospedale o struttura convenzionata",
+            "frequenza minima obbligatoria: <strong>90%</strong> del monte ore"
+          ]
+        },
+        {
+          "t": "p",
+          "c": "Quel 90% è un vincolo serio, non una formalità: sotto quella soglia non si accede all'esame finale e l'anno è perso. Organizza il lavoro e la famiglia tenendone conto, e parlane con noi prima di iscriverti se hai turni complicati."
+        },
+        {
+          "t": "h3",
+          "c": "Il tirocinio è la parte che conta"
+        },
+        {
+          "t": "p",
+          "c": "Le 450 ore in struttura non sono un adempimento burocratico. Sono il momento in cui si impara davvero il mestiere, ed è anche il canale da cui nasce la maggior parte delle prime assunzioni: chi ti ha visto lavorare per tre mesi sa già se ti vuole."
+        },
+        {
+          "t": "h2",
+          "c": "Quanto vale l'attestato"
+        },
+        {
+          "t": "p",
+          "c": "L'attestato di qualifica OSS è rilasciato dalla Regione ai sensi dell'<strong>Accordo Stato-Regioni del 22 febbraio 2001</strong>. È inquadrato al <strong>livello 3 EQF</strong>, vale su tutto il territorio nazionale e nell'Unione Europea, e <strong>non scade</strong>: non c'è nessun rinnovo da pagare."
+        },
+        {
+          "t": "callout",
+          "c": "<p>Attenzione a non confonderlo con un <em>attestato di frequenza</em>, che certifica solo che eri presente. La qualifica certifica le competenze ed è l'unica cosa che ti fa entrare in graduatoria o in un concorso. Se un ente è vago su questo punto, è un segnale.</p>"
+        },
+        {
+          "t": "h2",
+          "c": "Quanto costa"
+        },
+        {
+          "t": "p",
+          "c": "Il corso OSS in genere non rientra fra quelli finanziati, perché i bandi regionali privilegiano percorsi più brevi. Da noi costa <strong>1.800 euro</strong>, pagabili in <strong>12 rate da 150 euro</strong>, senza interessi e senza finanziarie: l'accordo è direttamente con la scuola."
+        },
+        {
+          "t": "p",
+          "c": "Se però percepisci SFL, Assegno di Inclusione o NASpI, vale la pena verificare: alcune combinazioni aprono a coperture parziali. Ne parliamo nel <a href=\"blog-corsi-gratuiti-calabria.html\">pezzo sui corsi gratuiti</a>, dove c'è anche un test da fare in trenta secondi."
+        },
+        {
+          "t": "h2",
+          "c": "Dove si lavora, dopo"
+        },
+        {
+          "t": "ul",
+          "c": [
+            "RSA, case di riposo e case protette",
+            "reparti ospedalieri e case di cura",
+            "assistenza domiciliare, in proprio o tramite cooperativa",
+            "centri diurni e strutture per la disabilità"
+          ]
+        },
+        {
+          "t": "p",
+          "c": "Sul fronte pubblico: nel 2026 <strong>Azienda Zero Regione Calabria</strong> ha bandito un concorso per <strong>176 posti a tempo indeterminato</strong> nelle province di Catanzaro, Cosenza e Reggio Calabria. Requisito d'accesso: l'attestato di qualifica OSS. Chi non ce l'aveva è rimasto fuori — ed è esattamente il motivo per cui conviene prendersela prima che esca il bando, non dopo."
+        },
+        {
+          "t": "h2",
+          "c": "Come verificare che un ente sia serio"
+        },
+        {
+          "t": "p",
+          "c": "Tre controlli che puoi fare da solo, in dieci minuti:"
+        },
+        {
+          "t": "ol",
+          "c": [
+            "Chiedi il <strong>numero di accreditamento regionale</strong> e verificalo nell'elenco pubblico della Regione Calabria. Noi siamo accreditati con <strong>D.D. 3251/2022</strong>.",
+            "Chiedi <strong>dove si svolge il tirocinio</strong> e con quali strutture c'è convenzione. Un corso OSS senza tirocinio in struttura non può rilasciare la qualifica.",
+            "Diffida di chi promette la qualifica <strong>interamente online</strong>: sulle mille ore calabresi non è possibile."
+          ]
+        },
+        {
+          "t": "p",
+          "c": "Su questo abbiamo scritto un pezzo a parte, con i casi giudiziari veri: <a href=\"blog-corsi-oss-falsi.html\">come riconoscere un corso OSS falso</a>."
+        },
+        {
+          "t": "fonti",
+          "c": [
+            "<strong>DGR Regione Calabria n. 155 del 21/04/2017</strong> — disciplina del percorso OSS",
+            "<strong>Accordo Stato-Regioni 22 febbraio 2001</strong> — figura e profilo dell'OSS",
+            "Bando <strong>Azienda Zero Regione Calabria</strong> 2026, 176 posti OSS"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "corsi-oss-falsi",
+      "titolo": "Corsi OSS falsi: come riconoscere un ente accreditato",
+      "titolo_breve": "Corsi OSS falsi",
+      "categoria": "Guide",
+      "kw": "corso OSS truffa",
+      "data": "2026-08-29",
+      "aggiornato": "2026-08-29",
+      "lettura": "6 minuti",
+      "priorita": 3,
+      "meta_desc": "Attestati OSS venduti a 3.000 euro senza corsi né tirocinio: i casi giudiziari e i cinque segnali per riconoscere un ente non accreditato prima di pagare.",
+      "occhiello": "Prima di firmare qualsiasi cosa",
+      "standfirst": "Ci sono persone che hanno pagato tremila euro per un pezzo di carta senza valore. Le inchieste sono pubbliche, i segnali erano riconoscibili. Vediamoli.",
+      "corpo": [
+        {
+          "t": "h2",
+          "c": "Perché proprio l'OSS"
+        },
+        {
+          "t": "p",
+          "c": "La qualifica OSS ha tre caratteristiche che la rendono il bersaglio perfetto: serve a molte persone, apre a concorsi pubblici, e chi la cerca spesso non conosce il funzionamento della formazione regionale. Aggiungi che il titolo lo rilascia la Regione ma il corso lo eroga un privato, e il gioco è fatto."
+        },
+        {
+          "t": "h2",
+          "c": "I casi, che non sono leggende"
+        },
+        {
+          "t": "p",
+          "c": "In provincia di Lecce un'inchiesta si è chiusa con cinque arresti per truffa legata a corsi OSS. Nel Lazio l'operazione nota come <em>Magic Oss</em> ha portato alla luce attestati emessi da istituti di Velletri e Latina <strong>senza che i corsi si fossero mai tenuti</strong> e senza alcun tirocinio."
+        },
+        {
+          "t": "p",
+          "c": "Le vittime avevano pagato intorno ai <strong>3.000 euro</strong>. I documenti riportavano loghi contraffatti dell'Unione Europea, di Regioni e Ministeri: a occhio nudo sembravano credibili."
+        },
+        {
+          "t": "h2",
+          "c": "I cinque segnali"
+        },
+        {
+          "t": "h3",
+          "c": "1. Non sanno dirti il numero di accreditamento"
+        },
+        {
+          "t": "p",
+          "c": "Ogni ente autorizzato a rilasciare qualifiche ha un provvedimento regionale con numero e data. Il nostro è il <strong>D.D. 3251/2022</strong> della Regione Calabria. È un dato pubblico e verificabile: chiederlo è normale, non offensivo. Se rispondono con formule vaghe tipo \"siamo riconosciuti a livello nazionale\", quella non è una risposta."
+        },
+        {
+          "t": "h3",
+          "c": "2. Promettono la qualifica interamente online"
+        },
+        {
+          "t": "p",
+          "c": "In Calabria il percorso OSS è di mille ore e comprende circa 450 ore di tirocinio in struttura. Non esiste modo di svolgerlo davanti a uno schermo. Chi ti dice il contrario o non conosce la norma, o sa benissimo cosa sta facendo."
+        },
+        {
+          "t": "h3",
+          "c": "3. Chiedono soldi in anticipo per un corso \"gratuito\""
+        },
+        {
+          "t": "p",
+          "c": "Un corso finanziato non prevede pagamenti dal partecipante. Se ti chiedono una quota di iscrizione, un contributo per il materiale o una caparra \"per bloccare il posto\" su un percorso presentato come gratuito, la contraddizione è lì e non si risolve."
+        },
+        {
+          "t": "h3",
+          "c": "4. Non ti dicono con quale finanziamento è coperto"
+        },
+        {
+          "t": "p",
+          "c": "GOL, avviso regionale, fondo interprofessionale: sono cose diverse con regole diverse. Un ente serio te lo dice subito, perché da quello dipendono i tuoi requisiti. Chi non lo nomina, spesso non ce l'ha."
+        },
+        {
+          "t": "h3",
+          "c": "5. Mettono fretta"
+        },
+        {
+          "t": "p",
+          "c": "\"Ultimi due posti, devi decidere oggi.\" Le iscrizioni ai corsi finanziati seguono avvisi pubblici con scadenze pubblicate. L'urgenza artificiale serve a impedirti di fare le verifiche che stai leggendo adesso."
+        },
+        {
+          "t": "callout",
+          "c": "<p>Nota onesta: anche noi scriviamo \"solo 3 posti\" sul corso OSS. La differenza sta nel fatto che puoi chiamarci e chiedere quanti iscritti ci sono davvero, e ti diciamo un numero. Metti alla prova chiunque su questo, noi compresi.</p>"
+        },
+        {
+          "t": "h2",
+          "c": "Come si verifica un ente, passo per passo"
+        },
+        {
+          "t": "ol",
+          "c": [
+            "Chiedi <strong>numero e data del provvedimento</strong> di accreditamento regionale.",
+            "Cerca l'ente nell'<strong>elenco degli organismi accreditati</strong> pubblicato dalla Regione Calabria.",
+            "Verifica che l'accreditamento copra la <strong>macrotipologia formativa giusta</strong>: alcuni enti sono accreditati per la formazione continua ma non per il rilascio di qualifiche.",
+            "Chiedi <strong>l'indirizzo della sede</strong> dove si tengono le lezioni e vai a vederla.",
+            "Chiedi <strong>con quali strutture</strong> è convenzionato il tirocinio."
+          ]
+        },
+        {
+          "t": "h2",
+          "c": "Cosa deve esserci su un attestato valido"
+        },
+        {
+          "t": "ul",
+          "c": [
+            "l'intestazione della <strong>Regione</strong> che rilascia la qualifica",
+            "il riferimento al <strong>provvedimento di autorizzazione</strong> del corso",
+            "il <strong>monte ore</strong> e il periodo di svolgimento",
+            "la denominazione esatta della figura professionale",
+            "il livello <strong>EQF</strong>"
+          ]
+        },
+        {
+          "t": "h2",
+          "c": "Se sei già stato truffato"
+        },
+        {
+          "t": "p",
+          "c": "Conserva tutto: ricevute, contratto, messaggi, il volantino. Presenta denuncia ai Carabinieri o alla Polizia — nelle inchieste citate sono state proprio le segnalazioni delle vittime a far partire tutto. Segnala anche all'ufficio formazione professionale della Regione: l'ente potrebbe operare ancora."
+        },
+        {
+          "t": "p",
+          "c": "E se hai un dubbio su un corso che stai valutando, anche di un altro ente, chiamaci al <a href=\"tel:+393935726245\">393 572 6245</a>. Rispondere a questa domanda non ci costa nulla e ci fa comodo che il settore sia pulito."
+        },
+        {
+          "t": "fonti",
+          "c": [
+            "Inchiesta su corsi OSS fraudolenti in provincia di Lecce, cinque arresti",
+            "Operazione <em>Magic Oss</em>, attestati falsi emessi nel Lazio",
+            "Elenco degli organismi accreditati della <strong>Regione Calabria</strong>"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ciad-graduatorie-ata-2027",
+      "titolo": "CIAD e graduatorie ATA 2027: perché conviene muoversi adesso",
+      "titolo_breve": "CIAD e graduatorie ATA",
+      "categoria": "Certificazioni",
+      "kw": "CIAD graduatorie ATA",
+      "data": "2026-08-29",
+      "aggiornato": "2026-08-29",
+      "lettura": "7 minuti",
+      "priorita": 4,
+      "meta_desc": "Il DM 89/2024 ha reso la certificazione digitale requisito d'accesso per le graduatorie ATA. Chi è stato escluso può rientrare nel 2027: ecco come prepararsi.",
+      "occhiello": "Hai otto mesi, non di più",
+      "standfirst": "Molti sono stati esclusi dalle graduatorie di terza fascia per una certificazione che non avevano. Il prossimo aggiornamento è in primavera 2027, e chi vuole rientrare deve muoversi ora.",
+      "corpo": [
+        {
+          "t": "h2",
+          "c": "Cos'è successo"
+        },
+        {
+          "t": "p",
+          "c": "Il <strong>DM 89/2024</strong> ha reso la <strong>CIAD</strong> — Certificazione Internazionale di Alfabetizzazione Digitale — requisito <strong>obbligatorio di accesso</strong> per tutti i profili del personale ATA, con la sola eccezione del collaboratore scolastico."
+        },
+        {
+          "t": "p",
+          "c": "Chi non l'aveva conseguita o dichiarata entro il <strong>30 aprile 2025</strong> è stato escluso dalle graduatorie di terza fascia per il triennio 2024/2027. Gli avvisi di esclusione sono partiti."
+        },
+        {
+          "t": "callout",
+          "c": "<p>Il punto che interessa a te: il <strong>prossimo aggiornamento è previsto in primavera 2027</strong>, per il triennio 2027/2030. Chi è decaduto può rientrare allora. Siamo ad agosto 2026: hai circa otto mesi, che sono abbastanza ma non tantissimi.</p>"
+        },
+        {
+          "t": "h2",
+          "c": "Per quali profili serve"
+        },
+        {
+          "t": "p",
+          "c": "Serve per assistente amministrativo, assistente tecnico, cuoco, infermiere, guardarobiere e addetto alle aziende agrarie. <strong>Non</strong> serve per il collaboratore scolastico."
+        },
+        {
+          "t": "h2",
+          "c": "Quali certificazioni valgono"
+        },
+        {
+          "t": "p",
+          "c": "Le due più diffuse e riconosciute sono <strong>ICDL</strong> — l'ex Patente Europea del Computer — ed <strong>EIPASS</strong>. Entrambe coprono i requisiti CIAD, ma non sono intercambiabili in tutto: cambiano i moduli, i tempi e in certi casi il punteggio attribuito."
+        },
+        {
+          "t": "callout-warn",
+          "c": "<p><strong>Verifica prima di comprare.</strong> Sui punteggi attribuiti alle certificazioni informatiche circolano tabelle diverse, e i valori cambiano fra graduatorie ATA di terza fascia, ATA 24 mesi e GPS docenti. Prima di scegliere un profilo, controlla il decreto che riguarda la <em>tua</em> graduatoria, oppure chiedi a noi: la verifica la facciamo gratis.</p><p>Sta inoltre emergendo il tema dell'accreditamento <strong>Accredia</strong> degli organismi certificatori. È la domanda che si fanno in molti e su cui in rete si trovano risposte contraddittorie: se un venditore ti risponde con troppa sicurezza, chiedigli su quale atto si basa.</p>"
+        },
+        {
+          "t": "h2",
+          "c": "ICDL o EIPASS?"
+        },
+        {
+          "t": "p",
+          "c": "Non c'è una risposta valida per tutti, ed è onesto dirlo invece di spingerti su quella che conviene a noi."
+        },
+        {
+          "t": "ul",
+          "c": [
+            "<strong>ICDL</strong> ha un riconoscimento internazionale più ampio e una spendibilità che va oltre la scuola: se pensi anche al privato o all'estero, ha senso.",
+            "<strong>EIPASS</strong> ha percorsi disegnati specificamente sul mondo scolastico e sulla pubblica amministrazione, e in genere si conclude in tempi più rapidi."
+          ]
+        },
+        {
+          "t": "p",
+          "c": "Se il tuo obiettivo è solo rientrare in graduatoria nel 2027, il criterio giusto è quale profilo copre il requisito nel modo più rapido e sicuro. Ne parliamo prima di iscriverti, non dopo."
+        },
+        {
+          "t": "h2",
+          "c": "Quanto tempo serve davvero"
+        },
+        {
+          "t": "p",
+          "c": "Dipende da dove parti. Chi usa il computer tutti i giorni e deve solo certificare quello che già sa se la cava in poche settimane. Chi parte da un uso occasionale ha bisogno di più tempo, soprattutto sul foglio di calcolo, che è il modulo su cui si inciampa più spesso."
+        },
+        {
+          "t": "p",
+          "c": "Otto mesi bastano in entrambi i casi. Otto settimane, per il secondo caso, no."
+        },
+        {
+          "t": "h2",
+          "c": "Come lo facciamo noi"
+        },
+        {
+          "t": "p",
+          "c": "Eroghiamo la preparazione a ICDL ed EIPASS <strong>in convenzione con Forma Menti di Bova</strong>, centro accreditato per le certificazioni. Studi con noi, sostieni l'esame nella sede convenzionata. Le due pagine sono qui: <a href=\"corso-icdl.html\">ICDL</a> e <a href=\"corso-eipass.html\">EIPASS</a>."
+        },
+        {
+          "t": "h2",
+          "c": "Il calendario che consigliamo"
+        },
+        {
+          "t": "ol",
+          "c": [
+            "<strong>Settembre–ottobre 2026</strong>: scegli il profilo e verifica quale copre il requisito per la tua graduatoria.",
+            "<strong>Ottobre–gennaio</strong>: preparazione ed esami modulari.",
+            "<strong>Febbraio 2027</strong>: conseguimento della certificazione, con margine per un eventuale recupero.",
+            "<strong>Primavera 2027</strong>: presentazione della domanda con la certificazione già in mano."
+          ]
+        },
+        {
+          "t": "p",
+          "c": "Il margine di febbraio non è pessimismo: è che se salti un esame e la sessione successiva slitta di sei settimane, senza margine arrivi fuori tempo massimo."
+        },
+        {
+          "t": "fonti",
+          "c": [
+            "<strong>DM 89/2024</strong> — requisiti di accesso alle graduatorie ATA di terza fascia",
+            "Avvisi di esclusione per mancato conseguimento della CIAD entro il 30/04/2025"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "meccatronica-termine-scaduto",
+      "titolo": "Meccatronica: il termine è scaduto il 5 luglio. E adesso?",
+      "titolo_breve": "Meccatronica, termine scaduto",
+      "categoria": "Guide",
+      "kw": "scadenza meccatronica 2026",
+      "data": "2026-08-29",
+      "aggiornato": "2026-08-29",
+      "lettura": "6 minuti",
+      "priorita": 5,
+      "meta_desc": "Il termine per l'adeguamento alla meccatronica è scaduto il 5 luglio 2026. Cosa rischia un'officina non adeguata, chi è esonerato e come rimettersi in regola.",
+      "occhiello": "Per le officine rimaste indietro",
+      "standfirst": "Tutti hanno scritto \"affrettati, scade il 5 luglio\". Nessuno ha scritto cosa succede l'8. Questo pezzo parla di quello.",
+      "corpo": [
+        {
+          "t": "h2",
+          "c": "Cos'era il termine"
+        },
+        {
+          "t": "p",
+          "c": "La <strong>L. 224/2012</strong> ha riorganizzato l'attività di autoriparazione in tre sezioni: <strong>meccatronica</strong>, carrozzeria e gommista. Le vecchie abilitazioni separate di meccanico-motorista ed elettrauto sono confluite nell'unica figura del meccatronico, e chi ne possedeva una sola doveva adeguarsi."
+        },
+        {
+          "t": "p",
+          "c": "Il termine è stato prorogato più volte. L'ultima proroga, al <strong>5 luglio 2026</strong>, è arrivata con la <strong>L. 26/2026</strong> di conversione del DL 200/2025, il cosiddetto Milleproroghe. Quel termine è passato."
+        },
+        {
+          "t": "h2",
+          "c": "Cosa succede a chi non si è adeguato"
+        },
+        {
+          "t": "p",
+          "c": "Il responsabile tecnico che non possiede i requisiti aggiornati <strong>non può più abilitare l'impresa</strong> allo svolgimento dell'attività. Da qui discende tutto il resto."
+        },
+        {
+          "t": "ul",
+          "c": [
+            "l'impresa deve comunicare al Registro Imprese la <strong>cessazione o sospensione</strong> dell'attività di meccatronica",
+            "in assenza di comunicazione, la Camera di Commercio avvia il <strong>procedimento di inibizione</strong>",
+            "l'attività esercitata senza requisiti espone a sanzioni"
+          ]
+        },
+        {
+          "t": "callout-warn",
+          "c": "<p>Non è una questione formale che si sistema alla prossima visura. Un'officina inibita non può fatturare interventi di meccatronica, e i clienti che hanno un contenzioso su una riparazione si trovano un fornitore privo di titolo. Il danno arriva da lì, non dalla sanzione.</p>"
+        },
+        {
+          "t": "h2",
+          "c": "Chi era esonerato"
+        },
+        {
+          "t": "p",
+          "c": "Non tutti dovevano fare qualcosa. Erano già a posto:"
+        },
+        {
+          "t": "ul",
+          "c": [
+            "chi possedeva <strong>entrambe</strong> le abilitazioni, meccanica-motoristica ed elettrauto",
+            "chi aveva compiuto <strong>55 anni al 5 gennaio 2013</strong>, data di entrata in vigore della norma",
+            "chi ha conseguito l'abilitazione dopo la riforma, già come meccatronico"
+          ]
+        },
+        {
+          "t": "p",
+          "c": "Se rientri in uno di questi casi e hai ricevuto comunque una comunicazione dalla Camera di Commercio, è quasi sempre un disallineamento nei dati del Registro: si risolve documentando la propria posizione, non facendo un corso."
+        },
+        {
+          "t": "h2",
+          "c": "Il corso da 40 ore"
+        },
+        {
+          "t": "p",
+          "c": "Per chi possedeva <strong>una sola</strong> delle due qualifiche, l'adeguamento passa da un corso di <strong>40 ore</strong> sui contenuti dell'abilitazione mancante. Non è un percorso da zero: è un ponte fra quello che già sai e quello che ti manca."
+        },
+        {
+          "t": "p",
+          "c": "Gli argomenti riguardano l'area complementare alla tua: se vieni dalla meccanica, elettronica di bordo, diagnostica e sistemi elettrici; se vieni dall'elettrauto, motore, trasmissione e organi meccanici."
+        },
+        {
+          "t": "h2",
+          "c": "Come rimettersi in regola"
+        },
+        {
+          "t": "ol",
+          "c": [
+            "Verifica la tua posizione esatta con la <strong>Camera di Commercio</strong> competente: cosa risulta a loro può non coincidere con quello che ricordi.",
+            "Se serve il corso, iscriviti alle prime <strong>40 ore</strong> disponibili.",
+            "Sostieni la <strong>prova finale</strong>.",
+            "Aggiorna la posizione al <strong>Registro Imprese</strong> con il nuovo titolo."
+          ]
+        },
+        {
+          "t": "p",
+          "c": "Quanto tempo ci vuole dipende dai calendari disponibili in zona. Il nostro <a href=\"corso-meccatronico-auto.html\">percorso di meccatronica</a> è più ampio delle 40 ore di adeguamento: se ti serve solo il modulo di allineamento, chiamaci e organizziamo su quello."
+        },
+        {
+          "t": "p",
+          "c": "Il numero è <a href=\"tel:+393935726245\">393 572 6245</a>. Se hai già ricevuto una lettera dalla Camera di Commercio, portala al colloquio: ci dice esattamente cosa manca."
+        },
+        {
+          "t": "fonti",
+          "c": [
+            "<strong>L. 224/2012</strong> — disciplina dell'attività di autoriparazione",
+            "<strong>L. 26/2026</strong>, di conversione del <strong>DL 200/2025</strong> — proroga al 5 luglio 2026",
+            "Comunicazioni delle Camere di Commercio sull'adeguamento dei requisiti"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "corso-sab-reggio-calabria",
+      "titolo": "Corso SAB: ti serve davvero per aprire un bar?",
+      "titolo_breve": "Corso SAB: serve davvero?",
+      "categoria": "Guide",
+      "kw": "corso SAB Reggio Calabria",
+      "data": "2026-08-29",
+      "aggiornato": "2026-08-29",
+      "lettura": "5 minuti",
+      "priorita": 6,
+      "meta_desc": "Il corso SAB è obbligatorio per aprire un bar o un ristorante, ma esistono casi di esonero previsti dal D.Lgs. 59/2010. Verifica se rientri prima di iscriverti.",
+      "occhiello": "Prima di pagare, leggi questo",
+      "standfirst": "Una parte di chi si iscrive al corso SAB non ne aveva bisogno. Nessuno glielo dice, perché a tutti conviene vendere il corso. Vediamo se rientri in un esonero.",
+      "corpo": [
+        {
+          "t": "h2",
+          "c": "Cos'è il SAB"
+        },
+        {
+          "t": "p",
+          "c": "Il corso SAB — Somministrazione Alimenti e Bevande, l'ex REC — abilita all'esercizio dell'attività di somministrazione al pubblico. Serve al titolare oppure a un <strong>preposto</strong> dell'attività: non è necessario che ce l'abbiano tutti i soci."
+        },
+        {
+          "t": "p",
+          "c": "Riguarda bar, ristoranti, pizzerie, pub, pasticcerie con consumo sul posto, food truck e in generale ogni esercizio dove si somministra da mangiare o da bere."
+        },
+        {
+          "t": "h2",
+          "c": "Quando NON ti serve"
+        },
+        {
+          "t": "p",
+          "c": "Il <strong>D.Lgs. 59/2010</strong> prevede casi di esonero. Se rientri in uno di questi, il corso non ti serve e chi te lo vende sapendo che sei esonerato ti sta facendo un torto."
+        },
+        {
+          "t": "ul",
+          "c": [
+            "hai lavorato per almeno <strong>due anni negli ultimi cinque</strong> nel settore alimentare, anche non continuativi, come dipendente qualificato, socio lavoratore o coadiuvante familiare",
+            "possiedi un <strong>diploma di scuola alberghiera</strong>, o altro titolo di studio a indirizzo alimentare o ristorativo",
+            "eri già iscritto al soppresso <strong>REC</strong>",
+            "hai già l'iscrizione al registro esercenti per la somministrazione"
+          ]
+        },
+        {
+          "t": "callout",
+          "c": "<p>L'esonero per esperienza lavorativa è quello che sfugge più spesso. Due anni negli ultimi cinque, anche spezzettati: chi ha fatto stagioni estive per qualche anno spesso ci rientra senza saperlo. Vale la pena ricostruire le buste paga prima di iscriversi a qualsiasi cosa.</p>"
+        },
+        {
+          "t": "h2",
+          "c": "Quando ti serve"
+        },
+        {
+          "t": "p",
+          "c": "Ti serve se apri un'attività di somministrazione e nessuno fra te e il tuo preposto rientra in un esonero. E ti serve anche se subentri in un'attività di famiglia: il titolo non si eredita insieme al locale."
+        },
+        {
+          "t": "h2",
+          "c": "Durata, esame, costi"
+        },
+        {
+          "t": "p",
+          "c": "La disciplina del SAB è <strong>regionale</strong>, quindi durata e modalità d'esame variano da regione a regione. Indicativamente i corsi si collocano fra le <strong>90 e le 120 ore</strong>, con verifica finale."
+        },
+        {
+          "t": "callout-warn",
+          "c": "<p>Diffida dei siti che danno un numero di ore valido \"in tutta Italia\": non esiste. Per il dettaglio calabrese aggiornato chiamaci, oppure verifica sul portale della Regione. Noi eroghiamo il percorso da <strong>100 ore</strong>, che in alcune situazioni rientra fra quelli finanziabili tramite GOL — <a href=\"blog-corsi-gratuiti-calabria.html\">qui il test</a> per capire se hai i requisiti.</p>"
+        },
+        {
+          "t": "h2",
+          "c": "Il SAB e la SCIA: l'ordine giusto"
+        },
+        {
+          "t": "p",
+          "c": "L'errore che fa perdere più tempo è presentare la SCIA prima di avere il titolo. La sequenza che funziona è questa:"
+        },
+        {
+          "t": "ol",
+          "c": [
+            "verifichi se rientri in un esonero",
+            "se no, fai il corso e superi l'esame",
+            "reperisci il locale e verifichi i <strong>requisiti urbanistici e igienico-sanitari</strong>, che sono un capitolo a parte e spesso il vero collo di bottiglia",
+            "presenti la <strong>SCIA</strong> al SUAP del Comune",
+            "apri"
+          ]
+        },
+        {
+          "t": "p",
+          "c": "Sul punto tre: è lì che saltano più progetti. Un locale bellissimo con la canna fumaria non a norma costa più del corso, dell'esame e dell'arredamento messi insieme."
+        },
+        {
+          "t": "h2",
+          "c": "In due righe"
+        },
+        {
+          "t": "p",
+          "c": "Controlla prima gli esoneri. Se non rientri, il corso è un passaggio breve e non particolarmente costoso. Se rientri, hai appena risparmiato qualche centinaio di euro e un paio di mesi."
+        },
+        {
+          "t": "p",
+          "c": "La verifica te la facciamo noi al telefono: <a href=\"tel:+393935726245\">393 572 6245</a>. La pagina del corso è <a href=\"corso-sab-somministrazione.html\">qui</a>."
+        },
+        {
+          "t": "fonti",
+          "c": [
+            "<strong>D.Lgs. 59/2010</strong> — attuazione della direttiva servizi, requisiti professionali per la somministrazione",
+            "Disciplina regionale della Regione Calabria sui corsi SAB"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "attestato-qualifica-certificazione",
+      "titolo": "Attestato, qualifica o certificazione: quale ti serve davvero",
+      "titolo_breve": "Attestato, qualifica o certificazione",
+      "categoria": "Guide",
+      "kw": "differenza attestato e qualifica professionale",
+      "data": "2026-08-29",
+      "aggiornato": "2026-08-29",
+      "lettura": "6 minuti",
+      "priorita": 7,
+      "meta_desc": "Attestato di frequenza, qualifica professionale regionale e certificazione privata sono tre cose diverse. Solo una vale in graduatoria: ecco come distinguerle.",
+      "occhiello": "La domanda dietro la domanda",
+      "standfirst": "Chi cerca la differenza fra questi tre documenti in realtà sta chiedendo un'altra cosa: quello che sto per comprare mi serve o no? Rispondiamo a quella.",
+      "corpo": [
+        {
+          "t": "h2",
+          "c": "I tre documenti"
+        },
+        {
+          "t": "h3",
+          "c": "Attestato di frequenza"
+        },
+        {
+          "t": "p",
+          "c": "Certifica che hai frequentato un corso. Non certifica che hai imparato qualcosa, e <strong>non è valutabile come qualifica</strong> nelle graduatorie. Lo rilascia l'ente che ha erogato il corso, in autonomia."
+        },
+        {
+          "t": "p",
+          "c": "Non è inutile: documenta un aggiornamento, arricchisce un curriculum, in certi settori assolve a un obbligo formativo. Ma se lo compri pensando che ti dia un titolo, hai comprato la cosa sbagliata."
+        },
+        {
+          "t": "h3",
+          "c": "Qualifica professionale"
+        },
+        {
+          "t": "p",
+          "c": "È l'atto con cui la <strong>Regione</strong> certifica che possiedi le competenze di una figura professionale definita. Ha caratteristiche precise:"
+        },
+        {
+          "t": "ul",
+          "c": [
+            "è <strong>spendibile su tutto il territorio nazionale</strong> e nell'Unione Europea",
+            "è inquadrata in un <strong>livello EQF</strong>, il quadro europeo delle qualifiche",
+            "<strong>non scade</strong> e non va rinnovata",
+            "è <strong>valutabile</strong> in graduatorie e concorsi pubblici"
+          ]
+        },
+        {
+          "t": "p",
+          "c": "L'OSS è una qualifica. Il corso lo eroga un ente accreditato, ma il titolo lo rilascia la Regione: è questa la differenza che conta."
+        },
+        {
+          "t": "h3",
+          "c": "Certificazione delle competenze"
+        },
+        {
+          "t": "p",
+          "c": "Attesta competenze acquisite anche fuori da un percorso formativo — sul lavoro, da autodidatta, nel volontariato. È meno conosciuta e più laboriosa da ottenere, ma esiste ed è utile per chi ha vent'anni di mestiere e nessun pezzo di carta."
+        },
+        {
+          "t": "h3",
+          "c": "E le certificazioni private?"
+        },
+        {
+          "t": "p",
+          "c": "ICDL, EIPASS, le certificazioni linguistiche e informatiche stanno in una categoria a sé. Non sono qualifiche regionali, ma sono <strong>riconosciute e valutate</strong> in ambiti specifici: le graduatorie scolastiche, per esempio, dove danno punteggio."
+        },
+        {
+          "t": "h2",
+          "c": "La tabella"
+        },
+        {
+          "t": "tabella",
+          "c": {
+            "head": [
+              "",
+              "Attestato di frequenza",
+              "Qualifica regionale",
+              "Certificazione privata"
+            ],
+            "rows": [
+              [
+                "Chi lo rilascia",
+                "L'ente formativo",
+                "La Regione",
+                "L'ente certificatore"
+              ],
+              [
+                "Cosa attesta",
+                "La presenza",
+                "Le competenze",
+                "Competenze specifiche"
+              ],
+              [
+                "Dove vale",
+                "Dipende dal contesto",
+                "Italia e UE",
+                "Dove è riconosciuta"
+              ],
+              [
+                "Scade?",
+                "No, ma perde attualità",
+                "No",
+                "Dipende"
+              ],
+              [
+                "Vale in graduatoria?",
+                "No",
+                "Sì",
+                "A volte, come punteggio"
+              ]
+            ]
+          }
+        },
+        {
+          "t": "h2",
+          "c": "Come si legge un attestato prima di iscriversi"
+        },
+        {
+          "t": "p",
+          "c": "Chiedi il <strong>fac-simile del titolo</strong> che riceverai. Un ente serio te lo mostra senza problemi. Su quel documento devono comparire:"
+        },
+        {
+          "t": "ul",
+          "c": [
+            "l'intestazione della <strong>Regione</strong>, se è una qualifica",
+            "il <strong>provvedimento di autorizzazione</strong> del corso, con numero e data",
+            "il <strong>monte ore</strong> e il periodo",
+            "la <strong>denominazione esatta</strong> della figura professionale",
+            "il <strong>livello EQF</strong>"
+          ]
+        },
+        {
+          "t": "p",
+          "c": "Se manca l'intestazione regionale e il riferimento al provvedimento, quello che hai davanti è un attestato di frequenza. Che va benissimo, se è quello che ti serve."
+        },
+        {
+          "t": "h2",
+          "c": "Quindi, cosa ti serve?"
+        },
+        {
+          "t": "ul",
+          "c": [
+            "Vuoi entrare in <strong>graduatoria o in un concorso</strong>? Ti serve una qualifica regionale.",
+            "Ti serve un <strong>punteggio</strong> nelle graduatorie scolastiche? Una certificazione riconosciuta, tipo ICDL o EIPASS.",
+            "Devi assolvere un <strong>obbligo formativo</strong> di legge? L'attestato del corso specifico basta e avanza.",
+            "Vuoi <strong>aggiornarti</strong> e basta? Prendi il corso migliore, il titolo è secondario."
+          ]
+        },
+        {
+          "t": "p",
+          "c": "Se non sai in quale caso rientri, chiamaci prima di spendere: <a href=\"tel:+393935726245\">393 572 6245</a>. È la telefonata che ci fa perdere più iscritti e che rifacciamo comunque volentieri."
+        },
+        {
+          "t": "fonti",
+          "c": [
+            "<strong>D.Lgs. 13/2013</strong> — sistema nazionale di certificazione delle competenze",
+            "<strong>Quadro europeo delle qualifiche (EQF)</strong>",
+            "Repertorio regionale delle qualificazioni della Regione Calabria"
+          ]
+        }
+      ]
+    }
+  ]
+}
