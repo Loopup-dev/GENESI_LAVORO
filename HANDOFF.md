@@ -311,3 +311,51 @@ cd /home/genesil1/public_html
 git checkout HEAD~1 -- candidati.dc.html lavora-con-noi.dc.html
 rm -rf api grazie.html
 ```
+
+---
+
+## 8. Deploy — da agosto 2026 si fa con un pulsante
+
+**Non si caricano piu' zip a mano.** cPanel Git Version Control e' configurato:
+
+- Repository clonato in **`/home/genesil1/genesi-repo`** (fuori da `public_html`)
+- Il file **`.cpanel.yml`** in radice dice quali file copiare nella cartella pubblica
+
+### La procedura completa
+
+1. Lavori in locale, `git push origin main`
+2. cPanel → **Git™ Version Control** → riga "Genesi Lavoro" → **Gestione**
+3. Scheda **Pull or Deploy**
+4. **Update from Remote** — scarica i commit nuovi da GitHub
+5. **Deploy HEAD Commit** — copia i file in `public_html`
+
+Sono due click. Il primo aggiorna il clone, il secondo pubblica.
+
+### Perche' il repo NON sta dentro public_html
+
+Nel repository ci sono documenti interni (questo file, `04_CONTENUTI_COPY.md`,
+`Genesi_Corsi_Eventi.xlsx`), gli script di build e i JSON con i dati.
+Clonando direttamente in `public_html` sarebbero tutti scaricabili da chiunque
+indovini l'URL. Con questa configurazione rispondono 404 — verificato.
+
+### Cosa il deploy non tocca mai
+
+- `api/smtp-config.php` — contiene la password SMTP, non e' nel repo
+- `api/data/` — archivio iscritti newsletter
+- `api/uploads/` — CV temporanei
+- `wp-old-2026-08-25/` — backup del vecchio WordPress
+- le cartelle dei sottodomini
+
+### Se aggiungi file nuovi
+
+`.cpanel.yml` copia per elenco esplicito, non tutto. Se aggiungi una pagina
+che non rientra nei pattern gia' previsti (`corso-*.html`, `blog-*.html`),
+aggiungi la riga corrispondente nel file, altrimenti il deploy la ignora
+in silenzio.
+
+### Attenzione alle immagini
+
+`Compress-Archive` di PowerShell appiattisce i percorsi: e' il motivo per cui
+in passato le immagini finivano in `assets/` invece che in `assets/corsi/`.
+Con il deploy via git il problema non si pone piu', perche' i percorsi sono
+espliciti nel `.cpanel.yml`.
