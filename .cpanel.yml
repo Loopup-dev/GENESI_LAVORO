@@ -1,0 +1,76 @@
+---
+# Deploy automatico cPanel — Genesi Lavoro
+#
+# COME FUNZIONA
+# Il repository viene clonato in /home/genesil1/genesi-repo, FUORI da
+# public_html. Questo file dice a cPanel quali file copiare nella cartella
+# pubblica quando si preme "Distribuisci HEAD Commit".
+#
+# Perche' non clonare direttamente in public_html: nel repo ci sono documenti
+# interni (HANDOFF.md, 04_CONTENUTI_COPY.md, il file Excel dei corsi), gli
+# script di build e i JSON dei dati. Clonando in public_html diventerebbero
+# tutti scaricabili da chiunque conosca l'URL.
+#
+# COSA NON VIENE MAI TOCCATO
+# - api/smtp-config.php  → contiene la password SMTP reale, non e' nel repo
+# - api/data/            → archivio iscritti newsletter
+# - api/uploads/         → CV temporanei
+# - wp-old-2026-08-25/   → backup del vecchio WordPress
+# - le cartelle dei sottodomini
+#
+# DOPO OGNI DEPLOY
+# Se hai aggiunto immagini nuove, verifica che siano finite in assets/corsi/
+# e non in assets/.
+
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/genesil1/public_html
+
+    # ── Pagine ──────────────────────────────────────────────
+    - /bin/cp -f index.html $DEPLOYPATH/
+    - /bin/cp -f Home.dc.html $DEPLOYPATH/
+    - /bin/cp -f corsi.dc.html $DEPLOYPATH/
+    - /bin/cp -f corso.dc.html $DEPLOYPATH/
+    - /bin/cp -f eventi.dc.html $DEPLOYPATH/
+    - /bin/cp -f finanziamenti.dc.html $DEPLOYPATH/
+    - /bin/cp -f candidati.dc.html $DEPLOYPATH/
+    - /bin/cp -f lavora-con-noi.dc.html $DEPLOYPATH/
+    - /bin/cp -f docenti.dc.html $DEPLOYPATH/
+    - /bin/cp -f grazie.html $DEPLOYPATH/
+    - /bin/cp -f seminario-chitarra-baglioni.html $DEPLOYPATH/
+
+    # Pagine corso e articoli del blog (generati dagli script)
+    - /bin/cp -f corso-*.html $DEPLOYPATH/
+    - /bin/cp -f blog.dc.html $DEPLOYPATH/
+    - /bin/cp -f blog-*.html $DEPLOYPATH/
+
+    # ── Script condiviso (ancora usato da Home e finanziamenti) ──
+    - /bin/cp -f support.js $DEPLOYPATH/
+
+    # ── Assets ──────────────────────────────────────────────
+    - /bin/mkdir -p $DEPLOYPATH/assets/corsi
+    - /bin/mkdir -p $DEPLOYPATH/assets/brand
+    - /bin/cp -f assets/*.js $DEPLOYPATH/assets/
+    - /bin/cp -f assets/*.jpg $DEPLOYPATH/assets/
+    - /bin/cp -f assets/*.jpeg $DEPLOYPATH/assets/
+    - /bin/cp -f assets/*.png $DEPLOYPATH/assets/
+    - /bin/cp -f assets/corsi/* $DEPLOYPATH/assets/corsi/
+    - /bin/cp -rf assets/brand/. $DEPLOYPATH/assets/brand/
+
+    # ── Backend ─────────────────────────────────────────────
+    # smtp-config.php NON compare: sta solo sul server e contiene la password.
+    - /bin/mkdir -p $DEPLOYPATH/api/vendor/PHPMailer
+    - /bin/cp -f api/shared.php $DEPLOYPATH/api/
+    - /bin/cp -f api/newsletter.php $DEPLOYPATH/api/
+    - /bin/cp -f api/invia-colloquio.php $DEPLOYPATH/api/
+    - /bin/cp -f api/invia-candidatura.php $DEPLOYPATH/api/
+    - /bin/cp -f api/invia-seminario.php $DEPLOYPATH/api/
+    - /bin/cp -f api/invia-docente.php $DEPLOYPATH/api/
+    - /bin/cp -f api/iscrivi-newsletter.php $DEPLOYPATH/api/
+    - /bin/cp -f api/smtp-config.example.php $DEPLOYPATH/api/
+    - /bin/cp -f api/vendor/PHPMailer/*.php $DEPLOYPATH/api/vendor/PHPMailer/
+
+    # ── Permessi ────────────────────────────────────────────
+    - /bin/chmod 755 $DEPLOYPATH/api $DEPLOYPATH/api/vendor $DEPLOYPATH/api/vendor/PHPMailer
+    - /bin/chmod 644 $DEPLOYPATH/api/*.php $DEPLOYPATH/api/vendor/PHPMailer/*.php
+    - /bin/chmod 640 $DEPLOYPATH/api/smtp-config.php
