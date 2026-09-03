@@ -28,6 +28,7 @@ deployment:
 
     # ── Pagine ──────────────────────────────────────────────
     - /bin/cp -f index.html $DEPLOYPATH/
+    - /bin/cp -f favicon.ico $DEPLOYPATH/
     - /bin/cp -f Home.dc.html $DEPLOYPATH/
     - /bin/cp -f corsi.dc.html $DEPLOYPATH/
     - /bin/cp -f corso.dc.html $DEPLOYPATH/
@@ -50,6 +51,7 @@ deployment:
     - /bin/cp -f assets/*.js $DEPLOYPATH/assets/
     - /bin/cp -f assets/*.jpg $DEPLOYPATH/assets/
     - /bin/cp -f assets/*.png $DEPLOYPATH/assets/
+    - /bin/cp -f assets/*.ico $DEPLOYPATH/assets/ 2>/dev/null || true
     - /bin/cp -f assets/corsi/* $DEPLOYPATH/assets/corsi/
     - /bin/cp -rf assets/brand/. $DEPLOYPATH/assets/brand/
 

@@ -225,6 +225,9 @@ ARTICOLO = """<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/assets/favicon-96.png" type="image/png" sizes="96x96">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <title>{titolo} | Genesi Lavoro</title>
 <meta name="description" content="{meta_desc}">
 <link rel="canonical" href="https://genesilavoro.it/blog-{slug}.html">
@@ -291,6 +294,9 @@ INDICE = """<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/assets/favicon-96.png" type="image/png" sizes="96x96">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <title>Blog — corsi, bandi e finanziamenti in Calabria | Genesi Lavoro</title>
 <meta name="description" content="Guide aggiornate su corsi finanziati, requisiti, qualifiche e bandi in Calabria. Scritte da un ente accreditato, con le fonti indicate.">
 <link rel="canonical" href="https://genesilavoro.it/blog.dc.html">
