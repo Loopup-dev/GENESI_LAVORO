@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Genera immagini astratte per le schede corso che non hanno una foto reale.
+Genera l'immagine astratta per le schede corso che non hanno ancora una foto.
 
     python build_placeholder_corsi.py
 
-Stessa logica del placeholder forestale gia' in uso: bande verticali sfocate,
-nessun soggetto riconoscibile. Servono a non lasciare la card vuota, non a
-fingere una foto: appena arriva una foto vera della vostra aula si sostituisce
-il file e basta.
+Bande verticali sfocate, nessun soggetto riconoscibile. Serve a non lasciare
+la card vuota, non a fingere una foto: appena arriva una foto vera si
+sostituisce il file e basta.
+
+ATTENZIONE: qui sotto deve restare SOLO chi e' ancora senza foto. Gli altri
+corsi nuovi (14, 15, 16, 17, 19) hanno ora immagini vere generate da
+build_foto_corsi.py: se li rimetti in GAMME, al primo lancio le sovrascrivi.
 
 NON usare queste immagini su Google Business: li' le foto devono ritrarre
 l'attivita' reale.
@@ -24,35 +27,10 @@ W, H = 1200, 900
 
 # Ogni corso ha la sua gamma: due toni scuri per le bande, due chiari per il fondo.
 GAMME = {
-    "14-idraulico-forestale": {
-        "fondo": [(58, 84, 76), (86, 116, 100)],
-        "bande": [(26, 44, 42), (34, 58, 54)],
-        "verso": "v",
-    },
-    "15-giardinaggio": {
-        "fondo": [(108, 128, 78), (142, 160, 104)],
-        "bande": [(58, 74, 42), (74, 92, 54)],
-        "verso": "o",
-    },
-    "16-musica-camera": {
-        "fondo": [(74, 43, 37), (110, 68, 54)],
-        "bande": [(184, 146, 90), (212, 180, 130)],
-        "verso": "v",
-    },
-    "17-orientatore-hr": {
-        "fondo": [(122, 98, 88), (158, 132, 118)],
-        "bande": [(74, 43, 37), (96, 62, 52)],
-        "verso": "v",
-    },
     "18-inclusione": {
         "fondo": [(138, 75, 58), (176, 112, 88)],
         "bande": [(92, 46, 36), (112, 60, 46)],
         "verso": "o",
-    },
-    "19-albo-forestale": {
-        "fondo": [(70, 78, 62), (104, 114, 90)],
-        "bande": [(34, 40, 32), (48, 56, 44)],
-        "verso": "v",
     },
 }
 
