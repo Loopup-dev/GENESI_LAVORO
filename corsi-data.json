@@ -538,6 +538,221 @@
       "esperienza": "For.Italy nasce dal Testo unico in materia di foreste (D.lgs. 34/2018) e dal decreto ministeriale sulla formazione forestale, per dare all'Italia uno standard unico. La Calabria non subisce quel sistema: lo guida, come regione co-capofila della seconda edizione insieme alla Toscana. Con 612.931 ettari di bosco e un indice di boscosità del 40,6%, è anche il posto dove quelle competenze servono davvero.",
       "cta_titolo": "Il bosco ha bisogno di chi lo sa insegnare.",
       "nota_verifica": "Calendario, requisiti d'accesso e numero di posti sono in via di definizione con la Regione Calabria. Lasciaci un contatto: ti avvisiamo appena il bando è ufficiale."
+    },
+    {
+      "slug": "idraulico-forestale",
+      "titolo": "Idraulico Forestale",
+      "titolo_breve": "Idraulico forestale",
+      "area": "Forestale · Ambiente",
+      "tipo": "gratuito",
+      "formato": "corso",
+      "badge": "Gratuito via GOL*",
+      "durata": "600 ore",
+      "durata_dettaglio": "400 ore tra aula e cantiere didattico + 200 ore di tirocinio",
+      "foto": "assets/corsi/14-idraulico-forestale.jpg",
+      "foto_alt": "Cantiere di sistemazione idraulico-forestale",
+      "meta_desc": "Corso per Idraulico Forestale a Reggio Calabria: regimazione delle acque, opere di ingegneria naturalistica, difesa del suolo. Gratuito con i requisiti GOL.",
+      "lead": "Quattro edizioni già realizzate, tutte finanziate con il Programma GOL. È la figura che tiene insieme bosco e acqua: briglie, canali, versanti, opere in legname e pietrame.",
+      "imparerai": [
+        "Regimazione delle acque superficiali e sistemazione dei versanti",
+        "Opere di ingegneria naturalistica: palificate, viminate, fascinate",
+        "Manutenzione di briglie, canali e alvei",
+        "Uso in sicurezza di motosega, decespugliatore e attrezzatura da cantiere",
+        "Lettura di un progetto di sistemazione idraulico-forestale",
+        "Sicurezza sul lavoro nei cantieri forestali (D.lgs. 81/2008)"
+      ],
+      "rivolto": [
+        "Chi cerca lavoro stabile nella manutenzione del territorio",
+        "Operai forestali che vogliono una qualifica riconosciuta",
+        "Chi punta ai cantieri di Calabria Verde e dei consorzi di bonifica"
+      ],
+      "sbocchi": [
+        "Cantieri di forestazione regionale",
+        "Consorzi di bonifica",
+        "Imprese di sistemazione idraulico-forestale",
+        "Manutenzione del verde e difesa del suolo"
+      ],
+      "esperienza": "In Calabria la difesa del suolo non è un tema astratto: è la ragione per cui certi paesi restano raggiungibili dopo una settimana di pioggia. Il corso si fa in gran parte in cantiere didattico, perché una palificata si impara costruendola.",
+      "cta_titolo": "Il territorio ha bisogno di mani competenti."
+    },
+    {
+      "slug": "giardinaggio",
+      "titolo": "Operatore del Verde e Giardinaggio",
+      "titolo_breve": "Operatore del verde",
+      "area": "Forestale · Ambiente",
+      "tipo": "gratuito",
+      "formato": "corso",
+      "badge": "Finanziato Città Metropolitana",
+      "durata": "300 ore",
+      "durata_dettaglio": "200 ore tra aula e serra + 100 ore di tirocinio",
+      "foto": "assets/corsi/15-giardinaggio.jpg",
+      "foto_alt": "Filari di piante in un vivaio",
+      "meta_desc": "Corso di giardinaggio e manutenzione del verde a Reggio Calabria: potatura, impianti di irrigazione, progettazione di piccoli spazi verdi. Finanziato dalla Città Metropolitana.",
+      "lead": "Realizzato con finanziamento della Città Metropolitana di Reggio Calabria. Forma chi cura giardini privati, verde condominiale e spazi pubblici: un mestiere che in città non manca mai.",
+      "imparerai": [
+        "Riconoscimento delle specie ornamentali mediterranee",
+        "Potatura di siepi, arbusti e alberi di piccola taglia",
+        "Impianti di irrigazione: progettazione e manutenzione",
+        "Preparazione del terreno, semina, trapianto e concimazione",
+        "Difesa fitosanitaria a basso impatto",
+        "Uso e manutenzione delle macchine da giardinaggio"
+      ],
+      "rivolto": [
+        "Chi vuole avviare un'attività di manutenzione del verde",
+        "Giardinieri per pratica che vogliono una qualifica",
+        "Chi lavora in cooperative di servizi e vuole specializzarsi"
+      ],
+      "sbocchi": [
+        "Manutenzione di giardini privati e verde condominiale",
+        "Vivai e garden center",
+        "Appalti di verde pubblico",
+        "Attività in proprio come giardiniere"
+      ],
+      "esperienza": "Si lavora sulle piante vere, con le forbici in mano. La parte in aula serve a capire perché una potatura sbagliata a marzo si paga a luglio, ma il mestiere si impara tagliando.",
+      "cta_titolo": "Un mestiere che non va mai fuori stagione."
+    },
+    {
+      "slug": "musica-da-camera",
+      "titolo": "Repertorio Concertistico e Musica da Camera",
+      "titolo_breve": "Musica da camera",
+      "area": "Spettacolo · Musica",
+      "tipo": "gratuito",
+      "formato": "corso",
+      "badge": "Bando Città Metropolitana",
+      "durata": "200 ore",
+      "durata_dettaglio": "120 ore di prove d'insieme + 80 ore tra teoria e lezioni individuali",
+      "foto": "assets/corsi/16-musica-camera.jpg",
+      "foto_alt": "Corde e legni di strumenti da camera",
+      "meta_desc": "Corso di musica da camera e repertorio concertistico a Reggio Calabria: esecuzione d'insieme, lettura, fraseggio, preparazione del concerto. Realizzato con bando della Città Metropolitana.",
+      "lead": "Realizzato a Laureana di Borrello con la Banda locale, su bando della Città Metropolitana. Un percorso sull'esecuzione d'insieme: la cosa più difficile per chi ha sempre studiato da solo.",
+      "imparerai": [
+        "Lettura ed esecuzione del repertorio cameristico",
+        "Tecniche di esecuzione d'insieme e ascolto reciproco",
+        "Fraseggio, respiri, articolazioni concordate fra le parti",
+        "Dinamiche sonore in relazione a periodi storici e compositori",
+        "Preparazione e conduzione della prova",
+        "Costruzione di un programma da concerto"
+      ],
+      "rivolto": [
+        "Strumentisti di banda e di scuola di musica",
+        "Allievi di conservatorio che vogliono pratica d'insieme",
+        "Chi suona da autodidatta e non ha mai suonato in gruppo"
+      ],
+      "sbocchi": [
+        "Ensemble e complessi cameristici",
+        "Bande musicali e orchestre di fiati",
+        "Attività concertistica sul territorio",
+        "Didattica musicale di base"
+      ],
+      "esperienza": "Suonare in due è un mestiere diverso da suonare da soli: si smette di decidere e si comincia ad ascoltare. Il percorso è nato da una collaborazione con una banda vera, con le sue prove e i suoi concerti.",
+      "cta_titolo": "Suonare insieme si impara."
+    },
+    {
+      "slug": "orientatore-hr",
+      "titolo": "Orientatore e Operatore HR",
+      "titolo_breve": "Orientatore HR",
+      "area": "Amministrazione",
+      "tipo": "gratuito",
+      "formato": "corso",
+      "badge": "Finanziato Città Metropolitana",
+      "durata": "300 ore",
+      "durata_dettaglio": "220 ore d'aula + 80 ore di tirocinio presso servizi per il lavoro",
+      "foto": "assets/corsi/17-orientatore-hr.jpg",
+      "foto_alt": "Colloquio di orientamento professionale",
+      "meta_desc": "Corso per Orientatore e Operatore HR a Reggio Calabria: colloquio di orientamento, bilancio di competenze, politiche attive del lavoro. Finanziato dalla Città Metropolitana.",
+      "lead": "Realizzato con finanziamento della Città Metropolitana, docenti Francesco Triolo e Teresa Marino. Forma chi sta dall'altra parte della scrivania: chi aiuta le persone a capire cosa sanno fare.",
+      "imparerai": [
+        "Conduzione del colloquio di orientamento",
+        "Bilancio di competenze e ricostruzione del percorso professionale",
+        "Il sistema delle politiche attive: GOL, SFL, Centri per l'Impiego",
+        "Ricerca e selezione: screening dei CV, colloquio, valutazione",
+        "Stesura di un progetto formativo individuale",
+        "Normativa del lavoro essenziale per chi orienta"
+      ],
+      "rivolto": [
+        "Chi vuole lavorare in un'agenzia per il lavoro o in un ente di formazione",
+        "Operatori sociali che già fanno orientamento senza averlo studiato",
+        "Laureati in materie umanistiche che cercano uno sbocco concreto"
+      ],
+      "sbocchi": [
+        "Agenzie per il lavoro e società di selezione",
+        "Enti di formazione accreditati",
+        "Centri per l'Impiego e sportelli territoriali",
+        "Uffici del personale di PMI"
+      ],
+      "esperienza": "È un lavoro che sembra fatto di chiacchiere e invece è fatto di metodo. Le 80 ore di tirocinio si svolgono dove l'orientamento si fa davvero, con persone vere che cercano lavoro vero.",
+      "cta_titolo": "Aiutare gli altri a trovare la strada."
+    },
+    {
+      "slug": "inclusione-lavoro",
+      "titolo": "Formazione e Tirocinio per l'Inclusione Lavorativa",
+      "titolo_breve": "Inclusione lavorativa",
+      "area": "Inclusione sociale",
+      "tipo": "gratuito",
+      "formato": "corso",
+      "badge": "Progetto con il Comune",
+      "durata": "Variabile",
+      "durata_dettaglio": "Percorso individualizzato: formazione d'aula più tirocinio in azienda",
+      "foto": "assets/corsi/18-inclusione.jpg",
+      "foto_alt": "Percorso di inserimento lavorativo",
+      "meta_desc": "Percorsi di formazione e tirocinio per l'inclusione lavorativa a Reggio Calabria, in collaborazione con i Servizi Sociali del Comune. Percorsi individualizzati e gratuiti.",
+      "lead": "Realizzato con il Comune di Reggio Calabria, in collaborazione con i Servizi Sociali. Percorsi costruiti su misura per persone in condizione di fragilità, con formazione e tirocinio retribuito.",
+      "imparerai": [
+        "Competenze di base rimodulate sul punto di partenza di ciascuno",
+        "Comportamenti e regole del contesto lavorativo",
+        "Sicurezza sul lavoro secondo il D.lgs. 81/2008",
+        "Competenze tecniche legate all'azienda ospitante",
+        "Gestione del rapporto con colleghi e responsabili"
+      ],
+      "rivolto": [
+        "Persone seguite dai Servizi Sociali del Comune",
+        "Chi è fuori dal mercato del lavoro da molto tempo",
+        "Chi ha bisogno di un percorso graduale e accompagnato"
+      ],
+      "sbocchi": [
+        "Inserimento presso l'azienda ospitante",
+        "Cooperative sociali e di servizi",
+        "Prosecuzione con un percorso di qualifica",
+        "Rientro nei canali ordinari delle politiche attive"
+      ],
+      "esperienza": "Non è un corso a catalogo: si attiva su progetto, con l'invio dei Servizi Sociali. Il percorso viene costruito sulla singola persona, perché è l'unico modo perché funzioni.",
+      "cta_titolo": "C'è una strada anche da qui."
+    },
+    {
+      "slug": "albo-imprese-forestali",
+      "titolo": "Aggiornamento per Imprese Forestali",
+      "titolo_breve": "Aggiornamento imprese forestali",
+      "area": "Forestale · Ambiente",
+      "tipo": "pagamento",
+      "formato": "corso",
+      "badge": "24 ore · per imprese iscritte all'Albo",
+      "durata": "24 ore",
+      "durata_dettaglio": "24 ore tra aula e prova pratica in bosco",
+      "foto": "assets/corsi/19-albo-forestale.jpg",
+      "foto_alt": "Cantiere boschivo",
+      "meta_desc": "Corso di aggiornamento di 24 ore per imprese boschive iscritte all'Albo Regionale delle Imprese Forestali della Calabria. Reggio Calabria.",
+      "lead": "Ventiquattro ore di aggiornamento per chi ha un'impresa boschiva. La Calabria disciplina l'Albo Regionale delle Imprese Forestali con il Regolamento regionale 4/2024, attuativo della L.R. 45/2012: alla tenuta dell'Albo è preposta una Commissione regionale.",
+      "imparerai": [
+        "Tecniche di abbattimento e allestimento in sicurezza",
+        "Uso, manutenzione e affilatura della motosega",
+        "Valutazione della pianta e direzione di caduta",
+        "Sicurezza nel cantiere boschivo e dispositivi di protezione",
+        "Obblighi documentali dell'impresa forestale",
+        "Novità introdotte dal Regolamento regionale 4/2024"
+      ],
+      "rivolto": [
+        "Titolari e soci di imprese boschive",
+        "Operai forestali dipendenti di imprese iscritte all'Albo",
+        "Chi sta preparando la domanda di iscrizione all'Albo"
+      ],
+      "sbocchi": [
+        "Aggiornamento delle competenze aziendali",
+        "Adempimenti connessi all'Albo Regionale delle Imprese Forestali",
+        "Maggiore sicurezza in cantiere",
+        "Accesso a lavorazioni che richiedono personale formato"
+      ],
+      "esperienza": "Il corso alterna aula e prova pratica in bosco. Prima di iscriverti chiamaci: verifichiamo insieme la tua posizione rispetto all'Albo, perché i requisiti dipendono da quando l'impresa si è iscritta e da chi ci lavora.",
+      "cta_titolo": "Mettiamo in regola la tua impresa."
     }
   ]
 }

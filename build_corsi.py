@@ -319,6 +319,12 @@ FLAG_POSTI    = '\n        <span class="card__posti">Solo {n} posti</span>'
 
 # I filtri di corsi.dc.html leggono data-area con questi valori esatti.
 DATA_AREA = {
+    "idraulico-forestale": "Forestale",
+    "giardinaggio": "Forestale",
+    "musica-da-camera": "Spettacolo",
+    "orientatore-hr": "Amministrazione",
+    "inclusione-lavoro": "Inclusione",
+    "albo-imprese-forestali": "Forestale",
     "oss": "Socio-sanitario",
     "osss": "Socio-sanitario",
     "tecnico-del-suono": "Spettacolo",
