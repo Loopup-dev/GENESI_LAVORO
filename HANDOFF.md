@@ -359,3 +359,33 @@ in silenzio.
 in passato le immagini finivano in `assets/` invece che in `assets/corsi/`.
 Con il deploy via git il problema non si pone piu', perche' i percorsi sono
 espliciti nel `.cpanel.yml`.
+
+---
+
+## 9. Foto dei corsi — cosa e' vero e cosa no (aggiornato 08/set/2026)
+
+Tre categorie diverse, non mescolarle:
+
+| Cartella / file | Cosa sono | Si possono usare su Google Business? |
+|---|---|---|
+| `assets/aula-audio-1..4.jpg` | Foto reali della vostra aula, allievi al mixer, roll-up Genesi visibile | **Si'** — sono le uniche |
+| `assets/corsi/01..13-*.jpg` | Stock fotografico | **No** |
+| `assets/corsi/14..19-*.jpg` | Generate con Higgsfield (z_image), settembre 2026, via `build_foto_corsi.py` | **No** |
+
+Su Google Business le foto devono ritrarre l'attivita' reale: caricare stock o
+immagini generate espone la scheda a segnalazione e sospensione. Finche' non
+arrivano foto vere, meglio poche foto autentiche che molte finte.
+
+### Pendenza: `18-inclusione.jpg`
+
+E' l'unica card ancora con il placeholder astratto (bande sfocate). La
+generazione e' fallita per crediti esauriti sull'account Higgsfield. Per
+sistemarla, in ordine di preferenza:
+
+1. Una foto vera di un'attivita' di inclusione lavorativa (la migliore).
+2. Rilanciare `build_foto_corsi.py` aggiungendo la voce 18 con un prompt nuovo,
+   quando l'account ha di nuovo credito.
+3. Lasciare il placeholder: non e' bello ma non mente.
+
+`build_placeholder_corsi.py` ora contiene **solo** la voce 18. Non rimetterci
+dentro 14/15/16/17/19: al primo lancio sovrascriverebbe le foto buone.
