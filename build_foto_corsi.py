@@ -35,7 +35,7 @@ IMG = {
     "15-giardinaggio":        ("hf_20260908_133328_d529abcd-1e66-49b9-8ed0-341911f575a1.png", (427, 734, 1497, 1536)),
     "16-musica-camera":       ("hf_20260908_133430_9117e043-2392-466c-b5f5-533576f665e7.png", None),
     "17-orientatore-hr":      ("hf_20260908_133706_d5a18448-228b-4452-a0c5-3a95f2130ad7.png", None),
-    "19-albo-forestale":      ("hf_20260908_133353_d3c21a67-275d-4d00-930a-3888be5ca212.png", None),
+    "20-abbattimento-base":   ("hf_20260908_133353_d3c21a67-275d-4d00-930a-3888be5ca212.png", None),
 }
 
 

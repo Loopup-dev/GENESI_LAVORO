@@ -719,40 +719,44 @@
       "cta_titolo": "C'è una strada anche da qui."
     },
     {
-      "slug": "albo-imprese-forestali",
-      "titolo": "Aggiornamento per Imprese Forestali",
-      "titolo_breve": "Aggiornamento imprese forestali",
+      "slug": "abbattimento-base",
+      "titolo": "Abbattimento Base — Operatore Forestale",
+      "titolo_breve": "Abbattimento base",
       "area": "Forestale · Ambiente",
       "tipo": "pagamento",
       "formato": "corso",
-      "badge": "24 ore · per imprese iscritte all'Albo",
+      "badge": "24 ore · 3 CFU · 300 €",
       "durata": "24 ore",
-      "durata_dettaglio": "24 ore tra aula e prova pratica in bosco",
-      "foto": "assets/corsi/19-albo-forestale.jpg",
-      "foto_alt": "Cantiere boschivo",
-      "meta_desc": "Corso di aggiornamento di 24 ore per imprese boschive iscritte all'Albo Regionale delle Imprese Forestali della Calabria. Reggio Calabria.",
-      "lead": "Ventiquattro ore di aggiornamento per chi ha un'impresa boschiva. La Calabria disciplina l'Albo Regionale delle Imprese Forestali con il Regolamento regionale 4/2024, attuativo della L.R. 45/2012: alla tenuta dell'Albo è preposta una Commissione regionale.",
+      "durata_dettaglio": "24 ore in tre giornate consecutive da 8: 4 ore di teoria e 20 di pratica in cantiere forestale didattico",
+      "foto": "assets/corsi/20-abbattimento-base.jpg",
+      "foto_alt": "Operatore forestale con DPI completi durante l'abbattimento di una pianta con la motosega",
+      "prossimo": true,
+      "posti_rimasti": null,
+      "meta_desc": "Corso Base Abbattimento per operatori forestali: 24 ore, 3 CFU validi per l'Albo Regionale delle Imprese Forestali della Calabria. 300 € onnicomprensivi, 15 posti. Reggio Calabria.",
+      "lead": "Ventiquattro ore per imparare ad abbattere una pianta senza farsi male. Quattro ore di teoria e venti di pratica in un cantiere forestale vero, con un istruttore ogni cinque allievi. Vale 3 CFU sui 21 che servono per iscrivere l'impresa all'Albo Regionale delle Imprese Forestali.",
       "imparerai": [
-        "Tecniche di abbattimento e allestimento in sicurezza",
-        "Uso, manutenzione e affilatura della motosega",
-        "Valutazione della pianta e direzione di caduta",
-        "Sicurezza nel cantiere boschivo e dispositivi di protezione",
-        "Obblighi documentali dell'impresa forestale",
-        "Novità introdotte dal Regolamento regionale 4/2024"
+        "Aprire la tacca direzionale, eseguire il taglio di abbattimento e governare la cerniera",
+        "Leggere la pianta prima di toccarla: specie, stato di salute, direzione naturale di caduta",
+        "Allestire il cantiere e tracciare le linee di esbosco e le vie di fuga",
+        "Usare la motosega in sicurezza e farne la manutenzione ordinaria",
+        "Sramare e depezzare il legname abbattuto",
+        "Le regole del D.Lgs. 81/2008 applicate al bosco: chi risponde di cosa, quali DPI e perché"
       ],
       "rivolto": [
-        "Titolari e soci di imprese boschive",
-        "Operai forestali dipendenti di imprese iscritte all'Albo",
-        "Chi sta preparando la domanda di iscrizione all'Albo"
+        "Operatori forestali già in attività che devono mettersi in regola con i crediti",
+        "Chi entra adesso nel settore e parte dalle basi",
+        "Titolari e soci di imprese boschive che preparano l'iscrizione all'Albo",
+        "Maggiorenni con obbligo di istruzione assolto e idoneità psico-fisica del medico competente"
       ],
       "sbocchi": [
-        "Aggiornamento delle competenze aziendali",
-        "Adempimenti connessi all'Albo Regionale delle Imprese Forestali",
-        "Maggiore sicurezza in cantiere",
-        "Accesso a lavorazioni che richiedono personale formato"
+        "3 CFU sui 21 (168 ore) richiesti per l'Albo Regionale delle Imprese Forestali",
+        "Attestato di frequenza e attestazione delle competenze con certificazione dei crediti",
+        "Accesso ai cantieri che pretendono personale formato",
+        "Base per gli altri corsi del profilo di Operatore Forestale"
       ],
-      "esperienza": "Il corso alterna aula e prova pratica in bosco. Prima di iscriverti chiamaci: verifichiamo insieme la tua posizione rispetto all'Albo, perché i requisiti dipendono da quando l'impresa si è iscritta e da chi ci lavora.",
-      "cta_titolo": "Mettiamo in regola la tua impresa."
+      "esperienza": "Si lavora in bosco, non in aula: venti ore su ventiquattro sono pratica in un cantiere didattico reale, con un istruttore forestale ogni cinque allievi. Ognuno porta la propria motosega e i propri DPI — abbigliamento antitaglio, casco con visiera e cuffie, guanti, scarponi antitaglio — che l'istruttore controlla prima di iniziare. Se non hai ancora l'attrezzatura chiamaci prima di iscriverti: ti diciamo cosa serve davvero e cosa no. Si può mancare al massimo il 25% delle ore, poi l'attestato non si rilascia.",
+      "cta_titolo": "Tre giorni in bosco, e i primi crediti sono tuoi.",
+      "nota_verifica": "Il corso è autorizzato dalla Regione Calabria con D.D. n. 9908 dell'8 giugno 2026 per sei edizioni. Prima di ogni edizione dobbiamo chiedere il nulla osta, quindi le date si fissano poche settimane prima: lasciaci un contatto e ti avvisiamo appena parte la successiva."
     }
   ]
 }

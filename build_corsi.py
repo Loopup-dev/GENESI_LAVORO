@@ -324,7 +324,7 @@ DATA_AREA = {
     "musica-da-camera": "Spettacolo",
     "orientatore-hr": "Amministrazione",
     "inclusione-lavoro": "Inclusione",
-    "albo-imprese-forestali": "Forestale",
+    "abbattimento-base": "Forestale",
     "oss": "Socio-sanitario",
     "osss": "Socio-sanitario",
     "tecnico-del-suono": "Spettacolo",
