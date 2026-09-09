@@ -389,3 +389,54 @@ sistemarla, in ordine di preferenza:
 
 `build_placeholder_corsi.py` ora contiene **solo** la voce 18. Non rimetterci
 dentro 14/15/16/17/19: al primo lancio sovrascriverebbe le foto buone.
+
+---
+
+## 10. Corso Abbattimento Base — vincoli da rispettare (09/set/2026)
+
+Il corso da 24 ore per operatori forestali che si cercava da settembre ha
+finalmente una fonte: **D.D. n. 9908 del 08/06/2026**, che autorizza Genesi a
+**sei edizioni** del Corso Base "Abbattimento Base" (24 ore, 3 CFU, 300 €
+onnicomprensivi, max 15 allievi), autofinanziato ai sensi dell'art. 8 della
+L.R. 51/2025. Standard formativi: Linee Guida D.D. 6653/2025, profilo
+Operatore Forestale.
+
+Documenti nella cartella Drive del corso:
+`https://drive.google.com/drive/folders/10Dazlby5ynUxs_OrALhgF0K0wr1TOPe5`
+
+### Due cose che vincolano la comunicazione
+
+1. **Nulla osta per ogni edizione.** Ai sensi dell'art. 5 del D.D.G. n. 8361
+   dell'11/08/2021 l'Ente deve chiedere il nulla osta **prima di ciascuna**
+   delle sei edizioni. Quindi sul sito non si pubblicano date certe finche'
+   il nulla osta non c'e': la scheda dice che le date si fissano poche
+   settimane prima e invita a lasciare un contatto. Non cambiarlo in
+   "iscrizioni aperte dal ..." senza il nulla osta in mano.
+2. **Sei mesi dalla notifica** del decreto per avviare le attivita'.
+
+### Il corso NON e' un obbligo di legge
+
+I 3 CFU **concorrono** al monte di 21 CFU (168 ore) utile all'iscrizione
+all'Albo Regionale delle Imprese Forestali. Non e' un corso obbligatorio
+emesso dalla Citta' Metropolitana: quella pista, cercata a settembre, non ha
+mai trovato riscontro. Non scrivere "obbligatorio per legge".
+
+### Cosa porta l'allievo
+
+Motosega e DPI completi sono **a carico del partecipante** (antitaglio, casco
+con visiera e cuffie, guanti, scarponi, radio). E' scritto nella scheda
+perche' e' il tipo di dettaglio che, scoperto dopo l'iscrizione, fa arrabbiare.
+
+### Scheda sostituita
+
+`corso-albo-imprese-forestali.html` ("Aggiornamento per Imprese Forestali") era
+una ricostruzione **senza fonte** dello stesso corso. Ora e' un rimando a
+`corso-abbattimento-base.html`. Non ripristinarla: se serve una scheda separata
+sull'aggiornamento per le imprese iscritte all'Albo, prima serve il documento.
+
+### Altri corsi base della stessa famiglia
+
+Nella cartella Drive c'e' anche "Concentramento ed esbosco via terra" (24 ore,
+3 CFU), ma l'ente gestore e' **E.RA.PRA**, non Genesi, e il documento stesso
+dice che non rientra nelle edizioni autorizzate dal D.D. 9908/2026. **Non
+pubblicarlo** come corso Genesi.
